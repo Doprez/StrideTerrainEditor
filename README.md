@@ -48,6 +48,7 @@ Any important messages after some terrain operations can be found here.
 * First make sure you have generated some unique tiles, then load them. After that you can either generate the world map or load it.
 * When you click 'Generate with rules', the unique tiles are loaded first (if there are none loaded).
 * Any tile in the world is a transformation of a unique tile.
+* Observe my stiching approach and linear smoothing. There is probably a fancier way to stich the different tiles but this approach seems ok and with almost no cost to FPS. Everytime a new tile is within range that has not been generated yet, it is created and stitched on all sides (if a side tile exists). Once a tile has been generated there is no need to recreate it, I just do it the first time only.
 * The tiles are loaded asynchronously as you move about the world.
 * This part of the editor shows you how you can build a basic Civ type game and a lot of the issues involved.
 * Clicking somewhere inside the world map texture will move you to that location (tile) of the world.
