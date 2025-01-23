@@ -1,0 +1,7 @@
+!Texture
+Id: f7499887-59da-47a7-b9a3-9affea174d87
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Resources/Textures/HeightTerrainLevels/level_sand.png
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

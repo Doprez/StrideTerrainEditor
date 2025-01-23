@@ -1,0 +1,7 @@
+!Texture
+Id: ead79f78-968c-4f40-84f9-15dbba5d83b5
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Resources/Vegetation/gylio8vtvaww-GreenPine/bark_texture.jpg
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

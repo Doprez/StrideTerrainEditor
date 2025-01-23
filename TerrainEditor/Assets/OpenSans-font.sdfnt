@@ -1,0 +1,11 @@
+!SpriteFont
+Id: d1d01e7c-b00a-426d-b323-1fa953663476
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+FontSource: !SystemFontProvider
+    FontName: Arial
+    Style: Regular
+FontType: !RuntimeRasterizedSpriteFontType {}
+DefaultCharacter: '@'
+Spacing: 1.0
+LineSpacing: 1.0

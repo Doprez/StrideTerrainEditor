@@ -1,0 +1,19 @@
+!Animation
+Id: b27185f7-d413-4220-8fcd-30e9a81d43ce
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Resources/Animations/Jump_Start.fbx
+ClipDuration:
+    Enabled: false
+    StartAnimationTime: 0:00:00:00.0000000
+    EndAnimationTime: 0:00:30:00.0000000
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+RepeatMode: LoopInfinite
+Type: !StandardAnimationAssetType {}
+Skeleton: 17c61146-9d5c-4e14-a4b5-0a8c362f0eeb:InGameTerrain/PlayerModel/mannequinModel Skeleton
+RootMotion: false
+PreviewModel: ff927b10-d3b0-4e07-b858-40a3247057a5:InGameTerrain/PlayerModel/mannequinModel
+AnimationTimeMinimum: 0:00:00:00.0000000
+AnimationTimeMaximum: 0:00:00:00.2499900
+~SourceHashes:
+    aa36fbea16f51e2a2523f113df601cc8~../../../../Resources/Animations/Jump_Start.fbx: b34aa5727cd683e2d8f13f0c987ba820

@@ -1,0 +1,45 @@
+!MaterialAsset
+Id: 712f24b3-21dd-4ae9-b093-3a6f60806132
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Attributes:
+    Overrides:
+        UVScale: {X: 1.0, Y: 1.0}
+Layers:
+    bdf39aa5379dffb88094153e4086964f:
+        Material: e61e3ec5-2c7d-4c1b-91b2-fe59d87457c9:InGameTerrain/Materials/LayerSandWet
+        BlendMap: !ComputeTextureScalar
+            FallbackValue:
+                Value: 1.0
+            Scale: {X: 1.0, Y: 1.0}
+            Offset: {X: 0.0, Y: 0.0}
+        Overrides:
+            UVScale: {X: 1.0, Y: 1.0}
+    96063d84c20926fc393bf2927d9c6959:
+        Material: 592c67e1-f94f-4073-8da5-4622b19d4b51:InGameTerrain/Materials/LayerSand
+        BlendMap: !ComputeShaderClassScalar
+            MixinReference: Terrain_Blend_Height
+            Generics: {}
+            CompositionNodes:
+                eac091dfb8b3b6ae28e8133d46aee86d~MinHeight: !ComputeFloat
+                    Value: -100.0
+                f41a22b60c5a2a08adb312bfd7d5ab5e~MaxHeight: !ComputeFloat
+                    Value: 20.0
+                5e23b9af9c14609ded767da8690ed3fe~Strength: !ComputeFloat
+                    Value: 400.0
+        Overrides:
+            UVScale: {X: 1.0, Y: 1.0}
+    4be1ecaee388bd16fdf800f5b6b382a2:
+        Material: 5e5c41f7-cea2-4d3e-83ce-e30a988fe47e:InGameTerrain/Materials/LayerGrass
+        BlendMap: !ComputeShaderClassScalar
+            MixinReference: Terrain_Blend_Height
+            Generics: {}
+            CompositionNodes:
+                490fa5345a1cc31a4edc124d847cc218~MinHeight: !ComputeFloat
+                    Value: 20.0
+                e2af0837287eba02d790c04c9b03c132~MaxHeight: !ComputeFloat
+                    Value: 100.0
+                77e5fcd7de6e71f25836bfdcb09ac8ab~Strength: !ComputeFloat
+                    Value: 500.0
+        Overrides:
+            UVScale: {X: 1.0, Y: 1.0}

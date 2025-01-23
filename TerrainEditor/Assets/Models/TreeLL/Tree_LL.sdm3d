@@ -1,0 +1,19 @@
+!Model
+Id: 3adc1bdb-b368-439b-9306-9f502767b759
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Resources/Vegetation/Tree_LL/Tree_LL.fbx
+Skeleton: 9d670297-1a69-48ad-9344-6b948b2952de:Models/TreeLL/Tree_LL Skeleton
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    e12b1122ce49a265f160ce33fb77ea8d:
+        Name: bark_LL
+        MaterialInstance:
+            Material: 5062c303-95fd-4c6d-abcb-c01e7750f0af:Models/TreeLL/bark_LL
+    60f58c6e83fb661549915d8d83281d07:
+        Name: LEafs_LL
+        MaterialInstance:
+            Material: a7e3fa3c-b4e1-4a7e-af7d-bc28a1a8238b:Models/TreeLL/LEafs_LL
+Modifiers: {}
+~SourceHashes:
+    33ca305d389f218fa4fbbc69055ce13a~../../../../Resources/Vegetation/Tree_LL/Tree_LL.fbx: 00a3075f1adfa7615b7ff0db174d2ee8

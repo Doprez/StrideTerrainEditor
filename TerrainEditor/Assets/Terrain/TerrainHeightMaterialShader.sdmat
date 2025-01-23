@@ -1,0 +1,14 @@
+!MaterialAsset
+Id: a2854b24-4ddd-4d3d-bda1-9df3b876cfd8
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Attributes:
+    Diffuse: !MaterialDiffuseMapFeature
+        DiffuseMap: !ComputeShaderClassColor
+            MixinReference: TerrainHeightShader
+            Generics: {}
+            CompositionNodes: {}
+    DiffuseModel: !MaterialDiffuseLambertModelFeature {}
+    Overrides:
+        UVScale: {X: 1.0, Y: 1.0}
+Layers: {}

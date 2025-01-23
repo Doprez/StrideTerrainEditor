@@ -1,0 +1,14 @@
+!Skeleton
+Id: 29e18aa5-bcdb-46ee-a1ce-993c51799cb5
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Resources/Vegetation/gylio8vtvaww-GreenPine/Tree2.fbx
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Nodes:
+    10206796846a438e403b2ad14c65a5c5: {Name: RootNode, Depth: 0}
+    8bf160b164a99bcae807091c51cce8c0: {Name: Camera, Depth: 1}
+    9f15afc91677b909d398198bd918279e: {Name: Sun, Depth: 1}
+    8e29c0f01b064e60cefed995eabdbe02: {Name: tree, Depth: 1}
+    dd527e2d7a1d1ca9942222c138076053: {Name: leaves, Depth: 2}
+~SourceHashes:
+    7f67da4ce0f2d80e404e0f7f00d8bdb3~../../../../Resources/Vegetation/gylio8vtvaww-GreenPine/Tree2.fbx: 21e395bc4a5b96af8231717dd5e3c801

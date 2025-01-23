@@ -1,0 +1,7 @@
+!Texture
+Id: f82a74a7-9f40-424b-adc2-1b0eb1792148
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/Textures/Ground/snow4.jpg
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

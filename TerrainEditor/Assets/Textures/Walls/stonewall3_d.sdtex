@@ -1,0 +1,7 @@
+!Texture
+Id: dc3e315b-5da7-41da-a40b-eb5e5cb38d67
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Resources/Textures/Walls/stonewall3_d.dds
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

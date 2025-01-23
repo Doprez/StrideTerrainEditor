@@ -1,0 +1,7 @@
+!Texture
+Id: 2000be2e-31a5-4c83-ba47-cd4bc2d621c1
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/Water/caust_001.png
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

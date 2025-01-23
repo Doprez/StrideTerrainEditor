@@ -1,0 +1,146 @@
+﻿//by Idomeneas
+//height based texturing, 10 choices can change them at will at runtime
+shader TerrainHeightShader : ComputeColor, Texturing,
+        Transformation, ShaderBase, PositionStream4, Camera
+{         	
+   stage stream float3 Normal : NORMAL;
+   cbuffer PerMaterial
+    {
+       stage int TextureRepeat = 1;  
+     stage float2 HeightRange;
+   stage float SlopeCutoff=0.2f;
+   stage float DistanceMultiplier=10.0f;
+   stage float DetailMappingDistance=100.0f;
+   stage float HeightLevels[10];
+    }
+
+    rgroup PerMaterial    {
+        stage Texture2D HeightMap;
+        stage Texture2D BumpMap_1;
+        stage Texture2D BumpMap_2;
+        stage Texture2D SlopeTex_1;
+        stage Texture2D SlopeTex_2;
+        stage Texture2D DetailTex;
+        stage Texture2D Texture_1;
+        stage Texture2D Texture_2;
+        stage Texture2D Texture_3;
+        stage Texture2D Texture_4;
+        stage Texture2D Texture_5;
+        stage Texture2D Texture_6;
+        stage Texture2D Texture_7;
+        stage Texture2D Texture_8;
+        stage Texture2D Texture_9;
+        stage Texture2D Texture_10;
+    }
+ 
+    float4 GetColor(float2 TexCoord)
+    {
+        float4 outputColour,
+        SlopeTex_1Col=SlopeTex_1.Sample(LinearRepeatSampler, TexCoord);
+        float4 Texs[10];    
+        Texs[0]=Texture_1.Sample(LinearRepeatSampler, TexCoord);
+        Texs[1]=Texture_2.Sample(LinearRepeatSampler, TexCoord);
+        Texs[2]=Texture_3.Sample(LinearRepeatSampler, TexCoord);
+        Texs[3]=Texture_4.Sample(LinearRepeatSampler, TexCoord);
+        Texs[4]=Texture_5.Sample(LinearRepeatSampler, TexCoord);
+        Texs[5]=Texture_6.Sample(LinearRepeatSampler, TexCoord);
+        Texs[6]=Texture_7.Sample(LinearRepeatSampler, TexCoord);
+        Texs[7]=Texture_8.Sample(LinearRepeatSampler, TexCoord);
+        Texs[8]=Texture_9.Sample(LinearRepeatSampler, TexCoord);
+        Texs[9]=Texture_10.Sample(LinearRepeatSampler, TexCoord);
+
+        float Range=HeightRange.y-HeightRange.x;
+        //height in [0,1]
+        float ht= (streams.Position.y-HeightRange.x)/Range;
+        //distances from texture layers
+        float dist[10];
+        dist[0]=exp(-DistanceMultiplier*abs(ht-HeightLevels[0]));
+        dist[1]=exp(-DistanceMultiplier*abs(ht-HeightLevels[1]));
+        dist[2]=exp(-DistanceMultiplier*abs(ht-HeightLevels[2]));
+        dist[3]=exp(-DistanceMultiplier*abs(ht-HeightLevels[3]));
+        dist[4]=exp(-DistanceMultiplier*abs(ht-HeightLevels[4]));
+        dist[5]=exp(-DistanceMultiplier*abs(ht-HeightLevels[5]));
+        dist[6]=exp(-DistanceMultiplier*abs(ht-HeightLevels[6]));
+        dist[7]=exp(-DistanceMultiplier*abs(ht-HeightLevels[7]));
+        dist[8]=exp(-DistanceMultiplier*abs(ht-HeightLevels[8]));
+        dist[9]=exp(-DistanceMultiplier*abs(ht-HeightLevels[9]));
+        //find smallest distance index
+        int ind_min=0;
+        float mindist=100000000.0f;
+        for(int i=0;i<10;i++)
+        {
+            if(dist[i]<mindist)
+            {
+                ind_min=i;
+                mindist=dist[i];
+            }
+        }
+        
+        outputColour = float4(0,0,0,0);
+        float slope = 1.0f - streams.Normal.y;
+        if(slope < SlopeCutoff)
+        {
+            float blendAmount = slope / SlopeCutoff;
+            outputColour = lerp(Texs[ind_min],SlopeTex_1Col, blendAmount);
+        } 
+
+        for(int i=0;i<10;i++)
+        {
+            outputColour = lerp(outputColour, Texs[i],dist[i]);
+        }
+      
+        return outputColour;
+    }
+
+    float4 Shading()
+    {
+        float4 outputColour,
+        BumpMap_1Col=BumpMap_1.Sample(LinearRepeatSampler, streams.TexCoord),
+        BumpMap_2Col=BumpMap_2.Sample(LinearRepeatSampler, streams.TexCoord),
+        SlopeTex_2Col=SlopeTex_2.Sample(LinearRepeatSampler, 
+        streams.TexCoord);
+        // Calculate the slope of this point.
+     //   float[] HeightLevels=float[]{0.1f,0.2f,0.3f,0.4f,0.5f,
+     //    0.6f,0.7f,0.8f,0.9f,1.0f};
+
+    float depthPS = streams.ShadingPosition.z;
+    float depth = ComputeDepthFromZProj(depthPS);
+// Check if the depth value is close to the screen, if so we will apply the detail texture.
+    if(depth < DetailMappingDistance)
+    {
+        outputColour = GetColor(50*TextureRepeat*streams.TexCoord);// float4(0,0,0,0);
+    }
+    else
+       outputColour = GetColor(TextureRepeat*streams.TexCoord);// float4(0,0,0,0);
+        
+    return outputColour;
+    }  
+           
+    float ComputeDepthFromZProj(float depth)
+	{
+        // Retro project non linear 1/z depth to linear depth in view space
+        return ZProjection.y / (depth - ZProjection.x);
+    }
+
+    // vertex shader
+    override stage void VSMain()    
+    { 
+        streams.ShadingPosition = mul(streams.Position, WorldViewProjection);
+    }
+
+    // pixel shader
+    override stage void PSMain()
+    {  
+        streams.ColorTarget = Shading();
+    }
+       
+    //by tebjan, not used. can take a float and turn into a color
+    //use if you choose to pass a texture corresponding to the heightmap
+    float4 BitsToColor(float f)
+    {
+        uint u = asuint(f);
+        float4 c;
+        c = float4((u>>0)%256,(u>>8)%256,(u>>16)%256,(u>>24)%256)/255.0;
+        return c;
+    }
+ };

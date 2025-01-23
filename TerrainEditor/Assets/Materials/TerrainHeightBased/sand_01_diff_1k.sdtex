@@ -1,0 +1,7 @@
+!Texture
+Id: 419dea4c-d787-47cf-a4bd-26189a0a742b
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Resources/Textures/TexturesfromTR.Stride/sand_01_1k/sand_01_diff_1k.png
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

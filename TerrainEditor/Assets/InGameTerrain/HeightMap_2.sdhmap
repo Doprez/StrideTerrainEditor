@@ -1,0 +1,14 @@
+!HeightmapAsset
+Id: 7b717071-a8b1-4df1-aa53-5fd25188d05c
+SerializedVersion: {Stride: 3.0.0.0}
+Tags: []
+Source: !file ../../../Resources/TerrainEditor/HeightMap.bmp
+HeightConversionParameters: !Stride.Assets.Physics.FloatHeightmapHeightConversionParamters,Stride.Assets
+    HeightRange: {X: -10.0, Y: 10.0}
+Resize:
+    Enabled: false
+    Size: {X: 1024, Y: 1024}
+ScaleToHeightRange: false
+FloatingPointComponentRange: {X: -1.0, Y: 1.0}
+IsSymmetricShortComponent: false
+sRGB sampling: true

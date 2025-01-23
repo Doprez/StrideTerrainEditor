@@ -1,0 +1,7 @@
+!Texture
+Id: a5050bb7-3310-434d-a55f-0c112dab98a2
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Resources/Textures/normalmapLower.png
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

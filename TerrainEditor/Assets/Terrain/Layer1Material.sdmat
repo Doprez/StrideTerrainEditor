@@ -1,0 +1,43 @@
+!MaterialAsset
+Id: 7c4adc21-c987-49bd-a7ac-9e90bd84ebf3
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Attributes:
+    Surface: !MaterialNormalMapFeature
+        NormalMap: !ComputeTextureColor
+            Texture: de96aa83-96ec-41e2-a3a3-ba10a799cff9:Terrain/grass5norm
+            FallbackValue:
+                Value: {R: 0.5019608, G: 0.5019608, B: 1.0, A: 1.0}
+            Scale: {X: 1.0, Y: 1.0}
+            Offset: {X: 0.0, Y: 0.0}
+            Swizzle: null
+    MicroSurface: !MaterialGlossinessMapFeature
+        GlossinessMap: !ComputeTextureScalar
+            Texture: e609a593-fe00-4a13-a217-67ffb93a934b:Materials/TerrainHeightBased/sand_01_rough_1k
+            FallbackValue:
+                Value: 1.0
+            Filtering: Anisotropic
+            Scale: {X: 1.0, Y: 1.0}
+            Offset: {X: 0.0, Y: 0.0}
+        Invert: true
+    Diffuse: !MaterialDiffuseMapFeature
+        DiffuseMap: !ComputeTextureColor
+            Texture: c9e123c0-830a-4d1d-9b65-11482c0a9aa3:Terrain/TerrainTexture1
+            FallbackValue:
+                Value: {R: 1.0, G: 0.8856508, B: 0.6091625, A: 1.0}
+            Filtering: Anisotropic
+            Scale: {X: 1.0, Y: 1.0}
+            Offset: {X: 0.0, Y: 0.0}
+            Swizzle: null
+    DiffuseModel: !MaterialDiffuseLambertModelFeature {}
+    Specular: !MaterialMetalnessMapFeature
+        MetalnessMap: !ComputeFloat
+            Value: 0.0
+    SpecularModel: !MaterialSpecularMicrofacetModelFeature
+        Fresnel: !MaterialSpecularMicrofacetFresnelSchlick {}
+        Visibility: !MaterialSpecularMicrofacetVisibilitySmithSchlickGGX {}
+        NormalDistribution: !MaterialSpecularMicrofacetNormalDistributionGGX {}
+        Environment: !MaterialSpecularMicrofacetEnvironmentGGXLUT {}
+    Overrides:
+        UVScale: {X: 1.0, Y: 1.0}
+Layers: {}

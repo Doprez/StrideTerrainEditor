@@ -1,0 +1,15 @@
+!Model
+Id: 0021d6b6-f12d-4f0a-9ba0-f811062fbcdb
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Resources/Vegetation/grass2/fern_02_4k.fbx
+Skeleton: b6e112c8-a726-4fe3-8b05-1a76ceb7d534:Models/Grass/grass2/fern_02_4k Skeleton
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    d3d37c3acd013bfd9accc6dad2d7f4f8:
+        Name: fern_02
+        MaterialInstance:
+            Material: 5ce767b1-c70b-487e-a7c5-28d846e9ce23:Models/Grass/grass2/fern_02
+Modifiers: {}
+~SourceHashes:
+    f86039e95aeafdcfe0be182d02133cd3~../../../../../Resources/Vegetation/grass2/fern_02_4k.fbx: 75c2dd527e82801df9a2b0c6eac482eb

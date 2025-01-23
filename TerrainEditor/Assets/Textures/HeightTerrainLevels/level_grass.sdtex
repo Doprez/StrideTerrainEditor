@@ -1,0 +1,7 @@
+!Texture
+Id: 5dc7b7fd-0095-4c7f-a551-3ad82abfe24d
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Resources/Textures/HeightTerrainLevels/level_grass.jpg
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

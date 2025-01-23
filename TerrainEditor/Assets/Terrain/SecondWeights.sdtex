@@ -1,0 +1,7 @@
+!Texture
+Id: c7df548e-1a42-4516-a352-d4f52aa7b06b
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/TerrainEditor/Weights2.bmp
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

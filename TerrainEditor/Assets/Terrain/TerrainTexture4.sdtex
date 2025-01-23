@@ -1,0 +1,7 @@
+!Texture
+Id: 635d85b1-0e74-4a8f-8f4c-5c40208acb32
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/Textures/Ground/grass1.jpg
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

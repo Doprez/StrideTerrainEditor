@@ -1,0 +1,7 @@
+!Texture
+Id: 187702a1-ab05-4c80-ab1f-e9b244ad9400
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Resources/Vegetation/Tree_LL/bark_texture.jpg
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

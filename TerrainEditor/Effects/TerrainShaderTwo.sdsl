@@ -1,0 +1,119 @@
+﻿shader TerrainShaderTwo : ComputeColor, Texturing, //PositionStream4,
+Transformation,ShaderBase
+{
+   noperspective stage stream float4 ColorAvg;
+
+   float TextureRepeat =1.0f;
+
+    rgroup PerMaterial
+    {
+        stage Texture2D FirstWeights;
+        stage Texture2D SecondWeights;
+        stage Texture2D Texture_1;
+        stage Texture2D Texture_2;
+        stage Texture2D Texture_3;
+        stage Texture2D Texture_4;
+        stage Texture2D Texture_5;
+        stage Texture2D Texture_6;
+        stage Texture2D Texture_7;
+        stage Texture2D Texture_8;
+    }
+
+    cbuffer PerView
+    {
+        stage float4 Viewport;
+    }
+        
+    float4 Shading(float2 TexCoord)
+    {
+        float4 FirstWeightsColour,SecondWeightsColour, outputColour = float4(1.0f, 0.0f, 0.0f, 1.0f);
+        FirstWeightsColour = FirstWeights.SampleLevel(LinearRepeatSampler, TextureRepeat*TexCoord,0);
+        SecondWeightsColour = SecondWeights.SampleLevel(LinearRepeatSampler, TextureRepeat*TexCoord,0);
+        float sum=FirstWeightsColour[0]+
+        FirstWeightsColour[1]+FirstWeightsColour[2]+FirstWeightsColour[3]+
+        SecondWeightsColour[0]+SecondWeightsColour[1]+SecondWeightsColour[2]+SecondWeightsColour[3];
+        outputColour=(Texture_1.SampleLevel(LinearRepeatSampler, TextureRepeat*TexCoord,0)*
+        FirstWeightsColour[0]+
+        Texture_2.SampleLevel(LinearRepeatSampler, TextureRepeat*TexCoord,0)*FirstWeightsColour[1]+
+        Texture_3.SampleLevel(LinearRepeatSampler, TextureRepeat*TexCoord,0)*FirstWeightsColour[2]+
+        Texture_4.SampleLevel(LinearRepeatSampler, TextureRepeat*TexCoord,0)*FirstWeightsColour[3]+
+        Texture_5.SampleLevel(LinearRepeatSampler, TextureRepeat*TexCoord,0)*SecondWeightsColour[0]+
+        Texture_6.SampleLevel(LinearRepeatSampler, TextureRepeat*TexCoord,0)*SecondWeightsColour[1]+
+        Texture_7.SampleLevel(LinearRepeatSampler, TextureRepeat*TexCoord,0)*SecondWeightsColour[2]+
+        Texture_8.SampleLevel(LinearRepeatSampler, TextureRepeat*TexCoord,0)*SecondWeightsColour[3])/sum;
+        return outputColour;
+    }
+
+    stage stream float4 Position : POSITION;
+    stage stream float3 Normal : NORMAL;
+    stage stream float4 Color : COLOR;
+    stage stream float4 Tangent : TANGENT;
+    
+    [Color]
+    float4 ColorStart = float4(1.0f, 0, 0, 1.0f);
+    float amount = 1.0f;
+
+    float4 projToWorld(in float4 pos, in float3 normal)
+    {
+        float3 scaling = normal * (WorldScale - 1);
+        return mul(pos + float4(scaling.x, scaling.y, scaling.z, 0), WorldViewProjection);
+    }
+
+    float w=1;
+    float4 Blend(triangle Input input[3])
+    {
+        float4 col = float4(1.0f, 0, 0, 1.0f);
+        float dist1=w*sqrt((input[0].TexCoord[0]-0)*(input[0].TexCoord[0]-0)
++(input[0].TexCoord[1]-0)*(input[0].TexCoord[1]-0));
+  float dist2=w*sqrt((input[0].TexCoord[0]-0)*(input[0].TexCoord[0]-0)
++(input[0].TexCoord[1]-1)*(input[0].TexCoord[1]-1));
+  float dist3=w*sqrt((input[0].TexCoord[0]-1)*(input[0].TexCoord[0]-1)
++(input[0].TexCoord[1]-0)*(input[0].TexCoord[1]-0));
+  float dist4=w*sqrt((input[0].TexCoord[0]-1)*(input[0].TexCoord[0]-1)
++(input[0].TexCoord[1]-1)*(input[0].TexCoord[1]-1));
+  return col;
+    }
+
+    [maxvertexcount(3)]
+    void GSMain(triangle Input input[3], inout TriangleStream<Output> gsOut)
+    {   
+        //float4 col0 = Texture1.SampleLevel(LinearRepeatSampler, input[0].TexCoord, 0);
+        //float4 col1 = Texture1.SampleLevel(LinearRepeatSampler, input[1].TexCoord, 0);
+       // float4 col2 = Texture1.SampleLevel(LinearRepeatSampler, input[2].TexCoord, 0);
+       // float4 mix=(col0+col1+col2)/3.0f;
+//        Input vert1=input[0],vert2=input[1],vert3=input[3];
+
+        [unroll]
+        for(int i = 0; i < 3; i++)
+        {
+            //float4 newPosition = input[i].ShadingPosition;// + position * amount;
+              streams = input[i];
+         //  streams.ShadingPosition = projToWorld(input[i].Position, input[i].Normal);// mul(input[i].Position, WorldViewProjection);
+        //   streams.Position = input[i].Position;
+        //   streams.Normal = input[i].Normal;
+        //   streams.Tangent = input[i].Tangent;
+        //   streams.TexCoord = input[i].TexCoord;
+        //    streams.Color = input[i].Color;
+    
+            streams.ColorAvg = //Texture1.SampleLevel(LinearRepeatSampler, input[i].TexCoord, 0);
+            //col0;
+            Shading(input[i].TexCoord);
+            gsOut.Append(streams);
+        }
+        gsOut.RestartStrip();
+    }
+
+    stage override void VSMain()    { 
+        streams.ShadingPosition = projToWorld(streams.Position, streams.Normal);   
+        }
+
+    stage override void PSMain()    {
+        streams.ColorTarget = streams.ColorAvg;
+    }
+
+  // override float4 Compute()    {   
+ //   return Texture_1.Sample(PointRepeatSampler, TextureRepeat*streams.TexCoord);
+   //return Shading();    
+//   }
+
+};

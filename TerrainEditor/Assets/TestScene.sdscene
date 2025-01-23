@@ -1,0 +1,151 @@
+!SceneAsset
+Id: 52525f70-626c-4a0d-9458-ca2ce59e21b3
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+ChildrenIds: []
+Offset: {X: 0.0, Y: 0.0, Z: 0.0}
+Hierarchy:
+    RootParts:
+        - ref!! a5b24eda-95d8-4376-ab15-8fef8a7766bc
+        - ref!! c76f21ab-1b09-46b8-9c59-5a929e4ec35d
+        - ref!! a8f69133-2935-496b-9184-7c26ee85da9b
+        - ref!! 493ab8e7-8c3f-47c8-8812-2eddc28c189a
+        - ref!! 574bd4f3-b0cb-4e86-a50a-3ceb3c09d3e4
+        - ref!! 331b1b39-c4ef-46aa-bd0c-b3829003df37
+        - ref!! 947719e2-47fb-41ef-9884-de99e399db06
+        - ref!! 36c8afe3-b894-4ec3-81d9-ff5e1dae6c95
+    Parts:
+        -   Entity:
+                Id: 331b1b39-c4ef-46aa-bd0c-b3829003df37
+                Name: didelta_spinosa_4k
+                Components:
+                    db1be8fbb50b988704c5c3df58976003: !TransformComponent
+                        Id: 2e77dcaa-1676-4f6c-ae77-125f4ef8b9d0
+                        Position: {X: 3.0232348, Y: 0.0, Z: 2.3289728}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    af987da2741259369271a9b3caef7b38: !ModelComponent
+                        Id: 4cce66c0-649e-420a-9000-61364d2b3678
+                        Model: 22cd2f73-df96-4008-9a3b-15c757a5e276:Models/Grass/grass3/didelta_spinosa_4k
+                        Materials: {}
+        -   Folder: Lights
+            Entity:
+                Id: 36c8afe3-b894-4ec3-81d9-ff5e1dae6c95
+                Name: Ambient light
+                Components:
+                    6d92f26f945dc35bc69fa66b4d26e079: !TransformComponent
+                        Id: 2ab12a7e-a773-4a16-bbc3-b3593eb5af0e
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    1e78f05675e6654b24c8d410258141a9: !LightComponent
+                        Id: 7fd5f0b7-8559-4272-9787-f0400646992e
+                        Type: !LightAmbient
+                            Color: !ColorRgbProvider
+                                Value: {R: 0.26875, G: 0.24523439, B: 0.24523439}
+        -   Entity:
+                Id: 493ab8e7-8c3f-47c8-8812-2eddc28c189a
+                Name: fern_02_4k
+                Components:
+                    0fa5ddcdcca3e79c181ff2cfce6fc339: !TransformComponent
+                        Id: cc3818e7-b913-4a1f-af62-d253366f6aaf
+                        Position: {X: 2.1218853, Y: 0.0, Z: 3.6614718}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    3cef9103cf77301f2d9d4dbd8808ae96: !ModelComponent
+                        Id: 89cd9790-c559-41ab-91d8-e789c2fc3df6
+                        Model: 0021d6b6-f12d-4f0a-9ba0-f811062fbcdb:Models/Grass/grass2/fern_02_4k
+                        Materials: {}
+        -   Entity:
+                Id: 574bd4f3-b0cb-4e86-a50a-3ceb3c09d3e4
+                Name: fern_02_4k
+                Components:
+                    45f4905163198fdba0f39e14a7ef01bd: !TransformComponent
+                        Id: 04c80389-76e8-4e22-a6fa-20f2ff5f319b
+                        Position: {X: 2.1752663, Y: 0.0, Z: 3.9372783}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    c20c58bf165273e6cb319fc8204915b1: !ModelComponent
+                        Id: 87f24c07-52dd-4037-8264-5a99b1d3ac02
+                        Model: 0021d6b6-f12d-4f0a-9ba0-f811062fbcdb:Models/Grass/grass2/fern_02_4k
+                        Materials: {}
+        -   Folder: Lights
+            Entity:
+                Id: 947719e2-47fb-41ef-9884-de99e399db06
+                Name: Directional light
+                Components:
+                    5ab3300ae74fa14a9efcaa1f506407ce: !TransformComponent
+                        Id: f4468b88-cd41-421a-9631-8b5e94c5119a
+                        Position: {X: 1.0, Y: 15.0, Z: 0.0}
+                        Rotation: {X: 0.4613943, Y: 0.3798001, Z: 0.716972, W: 0.35891277}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    209f95c46d53de41a3dfff661934ae6c: !LightComponent
+                        Id: f02d8cd9-c348-4a44-913d-fbe30a2bd0fa
+                        Type: !LightDirectional
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                            Shadow:
+                                Enabled: true
+                                Filter: !LightShadowMapFilterTypePcf
+                                    FilterSize: Filter5x5
+                                Size: XLarge
+                                DepthRange: {}
+                                PartitionMode: !LightDirectionalShadowMap.PartitionLogarithmic {}
+                                ComputeTransmittance: false
+                                BiasParameters:
+                                    DepthBias: 0.0015
+                        Intensity: 5.0
+        -   Folder: Lights
+            Entity:
+                Id: a5b24eda-95d8-4376-ab15-8fef8a7766bc
+                Name: Skybox
+                Components:
+                    6e987687711b70418c85dff5a9bbc2ec: !TransformComponent
+                        Id: ce2b8616-9557-4178-9cee-521bfdfa9cdf
+                        Position: {X: 0.0, Y: 15.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    197b9ba9a8d24847a1b8d7261d35f329: !LightComponent
+                        Id: bf7062cc-e853-41bb-9785-cbbac10f4a22
+                        Type: !LightSkybox
+                            Skybox: adce5c56-247f-4dff-b82c-3d7b34b9f94d:Skybox
+                        Intensity: 1.5
+                    f6397b90285248a39a30d9f6245a9f87: !BackgroundComponent
+                        Id: 9a5ac9ee-3698-46db-bed6-78723f8d1ca5
+                        Texture: 42363443-68fe-43b4-ac6c-25a1b1b8ab8b:Skybox texture
+                        Intensity: 3.0
+        -   Entity:
+                Id: a8f69133-2935-496b-9184-7c26ee85da9b
+                Name: Leaves
+                Components:
+                    84ed7ae9c7cca91326ba4d603049187c: !TransformComponent
+                        Id: d3c4033b-5a85-444a-9e98-97c6a5569559
+                        Position: {X: -0.7000861, Y: 0.0, Z: 3.638562}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    c3b27f5c3a9346a50c39959f323bc030: !ModelComponent
+                        Id: dd17767c-7c5f-417a-8762-94eb5e3567a0
+                        Model: f951a4b0-84ed-4659-8db9-52d1e7f87acc:Models/Grass/grass1/Leaves
+                        Materials: {}
+        -   Entity:
+                Id: c76f21ab-1b09-46b8-9c59-5a929e4ec35d
+                Name: TerrainInGame
+                Components:
+                    06ff0d72c8c55ee4acb68fa159eef871: !TransformComponent
+                        Id: 7e929075-763e-40d0-97d6-f6707b37ff51
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    bceee61f6b186f6b6d444ea94b08545a: !ModelComponent
+                        Id: f3f8e747-f64a-4b40-b04d-07f75962efcb
+                        Model: 14b960f4-f4b3-4e37-8907-c52a2600d574:InGameTerrain/TerrainModel
+                        Materials:
+                            7772411412ea46c42974c1104d12fbd3~0: 6f11a236-ac99-461d-9d39-16e4f86f15fe:InGameTerrain/InGameTerrainMaterial

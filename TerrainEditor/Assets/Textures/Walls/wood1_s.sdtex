@@ -1,0 +1,7 @@
+!Texture
+Id: d9b43b7f-2e04-4903-93aa-d014a9638168
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Resources/Textures/Walls/wood1_s.dds
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

@@ -1,0 +1,7 @@
+!Texture
+Id: df64c799-98de-456e-bee5-650c6180cb1b
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/Textures/Ground/rock2.jpg
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

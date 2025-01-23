@@ -1,0 +1,44 @@
+!MaterialAsset
+Id: 3a73d98b-afa8-4c3f-b23f-b27ae5d2fb88
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Attributes:
+    Displacement: !MaterialDisplacementMapFeature
+        Enabled: false
+        DisplacementMap: !ComputeShaderClassScalar
+            MixinReference: VegetationWind
+            Generics: {}
+            CompositionNodes: {}
+        Intensity: !ComputeFloat
+            Value: 1.0
+        Stage: Vertex
+    Diffuse: !MaterialDiffuseMapFeature
+        DiffuseMap: !ComputeTextureColor
+            Texture: 5520a3f9-4ac0-45a9-8e46-9fc414176c42:Models/Tree2/tree_2
+            FallbackValue:
+                Value: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+            Scale: {X: 1.0, Y: 1.0}
+            Offset: {X: 0.0, Y: 0.0}
+            Swizzle: null
+    DiffuseModel: !MaterialDiffuseLambertModelFeature {}
+    Specular: !MaterialSpecularMapFeature
+        Enabled: false
+        SpecularMap: !ComputeTextureColor
+            FallbackValue:
+                Value: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+            Scale: {X: 1.0, Y: 1.0}
+            Offset: {X: 0.0, Y: 0.0}
+            Swizzle: null
+        Intensity: !ComputeFloat
+            Value: 1.0
+    SpecularModel: !MaterialSpecularMicrofacetModelFeature
+        Fresnel: !MaterialSpecularMicrofacetFresnelSchlick {}
+        Visibility: !MaterialSpecularMicrofacetVisibilityImplicit {}
+        NormalDistribution: !MaterialSpecularMicrofacetNormalDistributionBlinnPhong {}
+        Environment: !MaterialSpecularMicrofacetEnvironmentGGXLUT {}
+    Transparency: !MaterialTransparencyCutoffFeature
+        Alpha: !ComputeFloat
+            Value: 0.5
+    Overrides:
+        UVScale: {X: 1.0, Y: 1.0}
+Layers: {}

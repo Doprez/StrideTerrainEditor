@@ -1,0 +1,6 @@
+!Texture
+Id: 59155274-12a2-47ef-b28c-ebe3c2ba1a58
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/Textures/Ground/rock2norm.jpg
+Type: !NormalMapTextureType {}

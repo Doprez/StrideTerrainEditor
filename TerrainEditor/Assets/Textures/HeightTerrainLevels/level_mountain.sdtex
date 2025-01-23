@@ -1,0 +1,7 @@
+!Texture
+Id: cd1c68e5-9628-4bc0-97be-82951e6329c6
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Resources/Textures/HeightTerrainLevels/level_mountain.jpg
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

@@ -1,0 +1,30 @@
+﻿    //by Idomeneas
+    shader CubeInstancingShader: ComputeColor,//Texturing, 
+    Transformation, ShaderBase,
+    PositionStream4,TransformationInstancing
+    {
+      
+      // rgroup PerMaterial    { stage Texture2D shaderTexture;   }
+    // stage float Phase=1.0f;
+   StructuredBuffer<float3> InstanceLocations;
+   StructuredBuffer<float4> InstanceColors;
+   
+  // cbuffer PerView    {        stage float4 Viewport;    }
+
+   stage override void VSMain() 
+        {
+    streams.Position.w=1;
+     streams.Position.x += InstanceLocations[streams.InstanceID].x;//*sin(2*3.14*Phase);
+    streams.Position.y += InstanceLocations[streams.InstanceID].y;
+    streams.Position.z += InstanceLocations[streams.InstanceID].z;
+          streams.ShadingPosition = mul(streams.Position, WorldViewProjection);
+       }      
+        
+ // pixel shader
+    stage override void PSMain()    {        
+        streams.ColorTarget = InstanceColors[streams.InstanceID];
+        //* shaderTexture.Sample(Sampler,streams.TexCoord);  
+    }
+
+    };
+

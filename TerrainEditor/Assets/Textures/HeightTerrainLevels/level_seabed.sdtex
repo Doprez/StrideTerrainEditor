@@ -1,0 +1,7 @@
+!Texture
+Id: 462ab2bf-c160-4ec9-ac1b-cd8a50c1b0ea
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Resources/Textures/HeightTerrainLevels/level_seabed.jpg
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

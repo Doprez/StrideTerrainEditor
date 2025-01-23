@@ -1,0 +1,7 @@
+!Texture
+Id: f518ac13-6b64-49c4-8871-f0762360de6a
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/Textures/Ground/dirt4bump.jpg
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

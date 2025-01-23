@@ -1,0 +1,7 @@
+!Texture
+Id: c543efd3-ee24-40a3-967c-ed2c939aa7ab
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Resources/Textures/Floor/stonefloor2_d.dds
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

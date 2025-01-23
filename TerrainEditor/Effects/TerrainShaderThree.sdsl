@@ -1,0 +1,72 @@
+﻿shader TerrainShaderThree : ComputeColor, Texturing, PositionStream4,
+Transformation,ShaderBase,Camera
+{
+   float TextureRepeat =1.0f;
+
+    rgroup PerMaterial
+    {
+        stage Texture2D FirstWeights;
+        stage Texture2D SecondWeights;
+        stage Texture2D Texture_1;
+        stage Texture2D Texture_2;
+        stage Texture2D Texture_3;
+        stage Texture2D Texture_4;
+        stage Texture2D Texture_5;
+        stage Texture2D Texture_6;
+        stage Texture2D Texture_7;
+        stage Texture2D Texture_8;
+    }
+
+    cbuffer PerView
+    {
+        stage float4 Viewport;
+    }
+     	
+    float4 Shading(float2 TexCoord)
+    {
+        float4 FirstWeightsCol,SecondWeightsCol,outputColour,Tex1Col,Tex2Col,Tex3Col,
+        Tex4Col,Tex5Col,Tex6Col,Tex7Col,Tex8Col;
+
+        FirstWeightsCol = FirstWeights.SampleLevel(LinearRepeatSampler, TextureRepeat*TexCoord,0);
+        SecondWeightsCol = SecondWeights.SampleLevel(LinearRepeatSampler, TextureRepeat*TexCoord,0);
+        Tex1Col=Texture_1.SampleLevel(LinearRepeatSampler, TextureRepeat*TexCoord,0);
+        Tex2Col=Texture_2.SampleLevel(LinearRepeatSampler, TextureRepeat*TexCoord,0);
+        Tex3Col=Texture_3.SampleLevel(LinearRepeatSampler, TextureRepeat*TexCoord,0);
+        Tex4Col=Texture_4.SampleLevel(LinearRepeatSampler, TextureRepeat*TexCoord,0);
+        Tex5Col=Texture_5.SampleLevel(LinearRepeatSampler, TextureRepeat*TexCoord,0);
+        Tex6Col=Texture_6.SampleLevel(LinearRepeatSampler, TextureRepeat*TexCoord,0);
+        Tex7Col=Texture_7.SampleLevel(LinearRepeatSampler, TextureRepeat*TexCoord,0);
+        Tex8Col=Texture_8.SampleLevel(LinearRepeatSampler, TextureRepeat*TexCoord,0);
+        float w1=FirstWeightsCol[0],w2=FirstWeightsCol[1],w3=FirstWeightsCol[2],w4=FirstWeightsCol[3],
+        w5=SecondWeightsCol[0],w6=SecondWeightsCol[1],w7=SecondWeightsCol[2],w8=SecondWeightsCol[3];
+        float sum=w1+w2+w3+w4+w5+w6+w7+w8;
+        if(sum<0.0001f)        
+        {            sum=1;w1=1;w2=0;w3=0;w4=0;w5=0;w6=0;w7=0;w8=0;        }
+        outputColour=//lerp(Tex1Col, Tex2Col, w2/sum);
+        (w1*Tex1Col+ w2*Tex2Col+ w3*Tex3Col+ w4*Tex4Col+ w5*Tex5Col+ 
+        w6*Tex6Col+ w7*Tex7Col+ w8*Tex8Col)/sum;
+        return Tex1Col;//outputColour;
+    }
+
+    float4 projToWorld(in float4 pos, in float3 normal)
+    {
+        float3 scaling = normal * (WorldScale - 1);
+        return mul(pos + float4(scaling.x, scaling.y, scaling.z, 0), WorldViewProjection);
+    }
+        
+    stage stream float3 Normal : NORMAL;
+
+    // vertex shader
+    stage override void VSMain()
+    { 
+        streams.ShadingPosition = projToWorld(streams.Position,streams.Normal);
+    }
+
+ // pixel shader
+    stage override void PSMain()
+    {
+        streams.ColorTarget = Shading(TextureRepeat*streams.TexCoord);
+        //Texture_1.Sample(LinearRepeatSampler, TextureRepeat*streams.TexCoord);
+    }
+
+};

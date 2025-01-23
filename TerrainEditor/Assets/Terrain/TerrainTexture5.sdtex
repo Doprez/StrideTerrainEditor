@@ -1,0 +1,7 @@
+!Texture
+Id: 3a7de2e7-9512-46b0-b3e3-525111e442a0
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/Textures/Ground/dirt4.jpg
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

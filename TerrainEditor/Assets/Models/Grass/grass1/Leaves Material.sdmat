@@ -1,0 +1,52 @@
+!MaterialAsset
+Id: 77d08bd1-5522-4e7d-976a-93a8132c28aa
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Attributes:
+    Displacement: !MaterialDisplacementMapFeature
+        DisplacementMap: !ComputeShaderClassScalar
+            MixinReference: VegetationWind
+            Generics: {}
+            CompositionNodes: {}
+        Intensity: !ComputeFloat
+            Value: 1.0
+        ScaleAndBias: false
+        Stage: Vertex
+    Surface: !MaterialNormalMapFeature
+        NormalMap: !ComputeTextureColor
+            Texture: 94bcd94d-67d0-4bea-a812-b1b5edb0efc2:Models/Grass/grass1/ScatteredLeaves007_2K_Normal
+            FallbackValue:
+                Value: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+            Scale: {X: 1.0, Y: 1.0}
+            Offset: {X: 0.0, Y: 0.0}
+            Swizzle: null
+    MicroSurface: !MaterialGlossinessMapFeature
+        GlossinessMap: !ComputeTextureScalar
+            Texture: 0344c741-1812-4a87-8632-a2b8ff04f429:Models/Grass/grass1/ScatteredLeaves007_2K_Roughness
+            FallbackValue:
+                Value: 1.0
+            Scale: {X: 1.0, Y: 1.0}
+            Offset: {X: 0.0, Y: 0.0}
+    Diffuse: !MaterialDiffuseMapFeature
+        DiffuseMap: !ComputeTextureColor
+            Texture: c606ce02-62a6-439c-88d9-42a58a3681d1:Models/Grass/grass1/ScatteredLeaves007_2K_Color
+            FallbackValue:
+                Value: {R: 1.0, G: 0.8856508, B: 0.6091625, A: 1.0}
+            Scale: {X: 1.0, Y: 1.0}
+            Offset: {X: 0.0, Y: 0.0}
+            Swizzle: null
+    DiffuseModel: !MaterialDiffuseLambertModelFeature {}
+    Specular: !MaterialMetalnessMapFeature
+        MetalnessMap: !ComputeFloat
+            Value: 0.0
+    SpecularModel: !MaterialSpecularMicrofacetModelFeature
+        Fresnel: !MaterialSpecularMicrofacetFresnelSchlick {}
+        Visibility: !MaterialSpecularMicrofacetVisibilitySmithSchlickGGX {}
+        NormalDistribution: !MaterialSpecularMicrofacetNormalDistributionGGX {}
+        Environment: !MaterialSpecularMicrofacetEnvironmentGGXLUT {}
+    Transparency: !MaterialTransparencyCutoffFeature
+        Alpha: !ComputeFloat
+            Value: 0.5
+    Overrides:
+        UVScale: {X: 1.0, Y: 1.0}
+Layers: {}

@@ -1,0 +1,43 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34024.191
+MinimumVisualStudioVersion = 16.0.0.0
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImGui", "ImGui\ImGui.csproj", "{518D2530-3376-47A4-8171-693D9D1D85F5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TerrainEditor.Windows", "TerrainEditor.Windows\TerrainEditor.Windows.csproj", "{AC96DE0A-685E-4EAB-9081-314A7E32306C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HeightMapEditor", "HeightMapEditor\HeightMapEditor.csproj", "{43766863-849A-4CB1-BBA2-095A6A3A15F7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TerrainEditor", "TerrainEditor\TerrainEditor.csproj", "{815D672B-FB17-4BA1-8AFD-0FC8D8BD9179}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{518D2530-3376-47A4-8171-693D9D1D85F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{518D2530-3376-47A4-8171-693D9D1D85F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{518D2530-3376-47A4-8171-693D9D1D85F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{518D2530-3376-47A4-8171-693D9D1D85F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC96DE0A-685E-4EAB-9081-314A7E32306C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC96DE0A-685E-4EAB-9081-314A7E32306C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC96DE0A-685E-4EAB-9081-314A7E32306C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC96DE0A-685E-4EAB-9081-314A7E32306C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43766863-849A-4CB1-BBA2-095A6A3A15F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43766863-849A-4CB1-BBA2-095A6A3A15F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43766863-849A-4CB1-BBA2-095A6A3A15F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43766863-849A-4CB1-BBA2-095A6A3A15F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{815D672B-FB17-4BA1-8AFD-0FC8D8BD9179}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{815D672B-FB17-4BA1-8AFD-0FC8D8BD9179}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{815D672B-FB17-4BA1-8AFD-0FC8D8BD9179}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{815D672B-FB17-4BA1-8AFD-0FC8D8BD9179}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {10E38937-9649-41ED-A691-BCFECB377F5C}
+	EndGlobalSection
+EndGlobal

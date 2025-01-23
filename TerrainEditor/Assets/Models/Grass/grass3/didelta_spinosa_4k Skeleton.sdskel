@@ -1,0 +1,19 @@
+!Skeleton
+Id: 2b934c78-b5ff-4ad0-a311-055465632483
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Resources/Vegetation/grass3/didelta_spinosa_4k.fbx
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Nodes:
+    3b1f0471e90dcfaaf7c20f4abbd6a154: {Name: RootNode, Depth: 0}
+    f830a60d9b5543b2ac678f831f9e23b5: {Name: didelta_spinosa_large_LOD0, Depth: 1}
+    9df10c123efcde5f47d8c88bfd7f0ebd: {Name: didelta_spinosa_large_LOD1, Depth: 1}
+    e01713bba707921732897c6299d60bba: {Name: didelta_spinosa_large_LOD2, Depth: 1}
+    e09f3cefbeabc0bc9e992bb8580318ba: {Name: didelta_spinosa_medium_LOD0, Depth: 1}
+    b244e3c0a3f19968803a912e6e1d0196: {Name: didelta_spinosa_medium_LOD1, Depth: 1}
+    d63b7b054856fbbfe1a3634cace70c54: {Name: didelta_spinosa_medium_LOD2, Depth: 1}
+    83b768e46beff1b9b139079600846b69: {Name: didelta_spinosa_small_LOD0, Depth: 1}
+    98d8032a0f376abaee94f5c85227cd05: {Name: didelta_spinosa_small_LOD1, Depth: 1}
+    0fa7c5cf4b712fe08c1dc5f6948b7a16: {Name: didelta_spinosa_small_LOD2, Depth: 1}
+~SourceHashes:
+    d6eed0ea685047e3e504d7321bad60ae~../../../../../Resources/Vegetation/grass3/didelta_spinosa_4k.fbx: 47c75a73db343f3c2513539b9dfd9f4b

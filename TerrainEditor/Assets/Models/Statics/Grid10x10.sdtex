@@ -1,0 +1,7 @@
+!Texture
+Id: c96b7180-2afd-4c5a-b3ab-a73e269dca12
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Resources/Textures/Grid10x10.png
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

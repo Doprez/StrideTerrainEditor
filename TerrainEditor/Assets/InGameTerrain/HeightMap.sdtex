@@ -1,0 +1,7 @@
+!Texture
+Id: 8ca55094-f095-4268-9fa3-d372e9e2bddf
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/TerrainEditor/HeightMap.bmp
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

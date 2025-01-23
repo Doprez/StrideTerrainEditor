@@ -1,0 +1,6 @@
+!Texture
+Id: de96aa83-96ec-41e2-a3a3-ba10a799cff9
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/Textures/Ground/grass5norm.jpg
+Type: !NormalMapTextureType {}

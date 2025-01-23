@@ -1,0 +1,7 @@
+!Texture
+Id: 9a57bac1-1ff9-4834-9ebc-093a4a73e3d1
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/Textures/DetailTexture.gif
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

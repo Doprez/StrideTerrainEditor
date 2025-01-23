@@ -1,0 +1,7 @@
+!Texture
+Id: 0344c741-1812-4a87-8632-a2b8ff04f429
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Resources/Vegetation/grass1/ScatteredLeaves007_2K_Roughness.jpg
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

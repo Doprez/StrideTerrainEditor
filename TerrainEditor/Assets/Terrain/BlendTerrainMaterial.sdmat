@@ -1,0 +1,91 @@
+!MaterialAsset
+Id: 4d55018c-348a-40b9-9cc1-5bb24b0ed34b
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Attributes:
+    Diffuse: !MaterialDiffuseMapFeature
+        DiffuseMap: !ComputeShaderClassColor
+            MixinReference: TerrainMultiBlendShader
+            Generics: {}
+            CompositionNodes: {}
+    DiffuseModel: !MaterialDiffuseLambertModelFeature {}
+    Overrides:
+        UVScale: {X: 1.0, Y: 1.0}
+Layers:
+    f59ba0aa1b3de7464346761911d99a31:
+        Material: 7c4adc21-c987-49bd-a7ac-9e90bd84ebf3:Terrain/Layer1Material
+        BlendMap: !ComputeTextureScalar
+            FallbackValue:
+                Value: 1.0
+            Scale: {X: 1.0, Y: 1.0}
+            Offset: {X: 0.0, Y: 0.0}
+        Overrides:
+            UVScale: {X: 1.0, Y: 1.0}
+    876d2f03151b7362a0dd7d8768f4b0e3:
+        Material: 7c4adc21-c987-49bd-a7ac-9e90bd84ebf3:Terrain/Layer1Material
+        BlendMap: !ComputeTextureScalar
+            Texture: 3d066a93-80fa-4c23-ba04-e7b479656cfb:Terrain/FirstWeights
+            FallbackValue:
+                Value: 1.0
+            Scale: {X: 1.0, Y: 1.0}
+            Offset: {X: 0.0, Y: 0.0}
+        Overrides:
+            UVScale: {X: 1.0, Y: 1.0}
+    e0806cc68f54e5a547152b27518271c4:
+        Material: 73e70242-8c1d-4d03-980c-6543187365fd:Terrain/Layer3Material
+        BlendMap: !ComputeTextureScalar
+            Texture: 3d066a93-80fa-4c23-ba04-e7b479656cfb:Terrain/FirstWeights
+            FallbackValue:
+                Value: 1.0
+            Channel: G
+            Scale: {X: 1.0, Y: 1.0}
+            Offset: {X: 0.0, Y: 0.0}
+        Overrides:
+            UVScale: {X: 1.0, Y: 1.0}
+    973e291d63b7fb4e76d0c73a3ecabedc:
+        Material: 98fce668-e0b9-4907-9101-9286f78f25d3:Terrain/Layer4Material
+        BlendMap: !ComputeTextureScalar
+            Texture: 3d066a93-80fa-4c23-ba04-e7b479656cfb:Terrain/FirstWeights
+            FallbackValue:
+                Value: 1.0
+            Channel: B
+            Scale: {X: 1.0, Y: 1.0}
+            Offset: {X: 0.0, Y: 0.0}
+        Overrides:
+            UVScale: {X: 1.0, Y: 1.0}
+    b5218762c7983fe78d11be1d07beed00:
+        Material: 5f030b12-9e6a-4352-bfca-21aa0bdd3f1a:Terrain/Layer5Material
+        BlendMap: !ComputeTextureScalar
+            FallbackValue:
+                Value: 1.0
+            Scale: {X: 1.0, Y: 1.0}
+            Offset: {X: 0.0, Y: 0.0}
+        Overrides:
+            UVScale: {X: 1.0, Y: 1.0}
+    b7a6408e416bfe74f1a371351c1fae3f:
+        Material: bda68145-623a-4dea-afde-1a2a8dd3c69c:Terrain/Layer6Material
+        BlendMap: !ComputeTextureScalar
+            FallbackValue:
+                Value: 1.0
+            Scale: {X: 1.0, Y: 1.0}
+            Offset: {X: 0.0, Y: 0.0}
+        Overrides:
+            UVScale: {X: 1.0, Y: 1.0}
+    d10f20a51d69822aa6b745e36cb35bf8:
+        Material: f33dd357-bafb-4593-9cda-33ba0f2b4883:Terrain/Layer7Material
+        BlendMap: !ComputeTextureScalar
+            FallbackValue:
+                Value: 1.0
+            Scale: {X: 1.0, Y: 1.0}
+            Offset: {X: 0.0, Y: 0.0}
+        Overrides:
+            UVScale: {X: 1.0, Y: 1.0}
+    025a71c8d22e3f217d50329be48f7649:
+        Material: 3d1425cf-ca9b-4cf6-9189-c17c65a34da9:Terrain/Layer8Material
+        BlendMap: !ComputeTextureScalar
+            FallbackValue:
+                Value: 1.0
+            Scale: {X: 1.0, Y: 1.0}
+            Offset: {X: 0.0, Y: 0.0}
+        Overrides:
+            UVScale: {X: 1.0, Y: 1.0}

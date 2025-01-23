@@ -1,0 +1,7 @@
+!Texture
+Id: ecdafc6d-2cc4-4572-ad92-7b1f48881f8a
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Resources/Textures/HeightTerrainLevels/level_snow.jpg
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

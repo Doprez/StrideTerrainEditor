@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<AreaObjects Count="0" AreaName="Area0001">
+	<Terrain>
+		<TerrainHeightMap>InGameTerrain/HeightMap</TerrainHeightMap>
+		<TerrainBlendedTexture>InGameTerrain/BlendedTexture</TerrainBlendedTexture>
+	</Terrain>
+</AreaObjects>

@@ -1,0 +1,1139 @@
+!PrefabAsset
+Id: 60d54b5a-2fc6-46aa-99b8-f4f5b0d42774
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+Hierarchy:
+    RootParts:
+        - ref!! 5a236e93-8ae3-4a42-a8f7-d1ab6646dec3
+        - ref!! 67322d71-d4da-4616-8be8-9f328132c23c
+        - ref!! 30a95877-2ab8-43f5-98ba-fed792200d74
+        - ref!! e4fdf880-2eb6-4e3d-b9b1-ce3a11ffa026
+    Parts:
+        -   Folder: null
+            Entity:
+                Id: 02280ab2-f6a2-4bc6-9cc9-954930d0998b
+                Name: Plane
+                Components:
+                    7f38c5bdc77954cdbb7ce391996235d3: !TransformComponent
+                        Id: 97c0fbd2-a8ad-44ba-a64f-29570d62c1cf
+                        Position: {X: 7.0000772, Y: 0.0, Z: 1.0011823}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    28fb2ac822f05add81ce999ac1c1d12d: !ModelComponent
+                        Id: 1f7752a6-a81d-4261-94bb-2877b3d1fb07
+                        Model: 41a4c6ec-e879-472a-9e23-f24f4433be59:Prefabs/Plane
+                        Materials:
+                            6a75f7c5a91e5eff768bc84f02060057~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Folder: null
+            Entity:
+                Id: 06cc1841-dcaf-4a91-8365-0ac946fbda5f
+                Name: Plane
+                Components:
+                    7f38c5bdc77954cdbb7ce391996235d3: !TransformComponent
+                        Id: 3931a0de-115f-4753-86bf-c2a8e01fe629
+                        Position: {X: 3.0, Y: 0.0, Z: 1.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    28fb2ac822f05add81ce999ac1c1d12d: !ModelComponent
+                        Id: dd27b3df-5d4e-4a21-ad6a-bad2e1fd28e4
+                        Model: 41a4c6ec-e879-472a-9e23-f24f4433be59:Prefabs/Plane
+                        Materials:
+                            6a75f7c5a91e5eff768bc84f02060057~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Folder: null
+            Entity:
+                Id: 0853980a-d178-4233-a54f-ed2a34b933f0
+                Name: Plane
+                Components:
+                    7f38c5bdc77954cdbb7ce391996235d3: !TransformComponent
+                        Id: 90c0179e-cbd0-4652-b777-1611bfdf009d
+                        Position: {X: 7.0000772, Y: 0.0, Z: 3.0011823}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    28fb2ac822f05add81ce999ac1c1d12d: !ModelComponent
+                        Id: cc82d7bf-80a2-433f-9556-2f82180b0d7e
+                        Model: 41a4c6ec-e879-472a-9e23-f24f4433be59:Prefabs/Plane
+                        Materials:
+                            6a75f7c5a91e5eff768bc84f02060057~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Folder: null
+            Entity:
+                Id: 094d535a-c4db-47ea-84eb-80ff22ce1eb7
+                Name: Plane
+                Components:
+                    7f38c5bdc77954cdbb7ce391996235d3: !TransformComponent
+                        Id: d8d5aabb-9c13-4847-9a73-00e6cee3f497
+                        Position*: {X: 6.0000772, Y: 0.0, Z: -1.997278}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    28fb2ac822f05add81ce999ac1c1d12d: !ModelComponent
+                        Id: 316577c4-c3fe-4937-8038-0ae43f1362ae
+                        Model: 41a4c6ec-e879-472a-9e23-f24f4433be59:Prefabs/Plane
+                        Materials:
+                            6a75f7c5a91e5eff768bc84f02060057~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Folder: null
+            Entity:
+                Id: 1051f8b9-6e3a-448b-ac7c-d2625748d19d
+                Name: Plane
+                Components:
+                    7f38c5bdc77954cdbb7ce391996235d3: !TransformComponent
+                        Id: d9934e25-9ee8-4642-894c-51eeb409eb6a
+                        Position: {X: 7.0000772, Y: 0.0, Z: 0.0011823112}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    28fb2ac822f05add81ce999ac1c1d12d: !ModelComponent
+                        Id: fdc200a1-cce6-45c4-b0a3-b520c3d2a5cd
+                        Model: 41a4c6ec-e879-472a-9e23-f24f4433be59:Prefabs/Plane
+                        Materials:
+                            6a75f7c5a91e5eff768bc84f02060057~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Folder: null
+            Entity:
+                Id: 1525f881-2fea-4a60-8417-d22b3c5db7d7
+                Name: Plane
+                Components:
+                    7f38c5bdc77954cdbb7ce391996235d3: !TransformComponent
+                        Id: f37df1b4-b6d7-4824-ab09-fa97b854d7e2
+                        Position: {X: 3.0, Y: 0.0, Z: 3.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    28fb2ac822f05add81ce999ac1c1d12d: !ModelComponent
+                        Id: ed9dd47a-028a-4eda-b3e5-a9538b2300ce
+                        Model: 41a4c6ec-e879-472a-9e23-f24f4433be59:Prefabs/Plane
+                        Materials:
+                            6a75f7c5a91e5eff768bc84f02060057~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Folder: null
+            Entity:
+                Id: 162b3eb4-beb3-4e0c-8fd7-441fd4cb062e
+                Name: Plane
+                Components:
+                    7f38c5bdc77954cdbb7ce391996235d3: !TransformComponent
+                        Id: 39cd1cd7-a2eb-4067-87f0-d6ea5b05e90e
+                        Position: {X: 2.0, Y: 0.0, Z: 3.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    28fb2ac822f05add81ce999ac1c1d12d: !ModelComponent
+                        Id: cf43955a-d39d-47f2-a060-eb5c2d57da17
+                        Model: 41a4c6ec-e879-472a-9e23-f24f4433be59:Prefabs/Plane
+                        Materials:
+                            6a75f7c5a91e5eff768bc84f02060057~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Folder: null
+            Entity:
+                Id: 191c34c3-1f8a-4c9e-a7f9-611cfe0d4302
+                Name: Plane
+                Components:
+                    7f38c5bdc77954cdbb7ce391996235d3: !TransformComponent
+                        Id: 8c31f5f2-85d8-49f5-9536-97e010ba24ee
+                        Position: {X: 5.0000772, Y: 0.0, Z: 3.0011823}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    28fb2ac822f05add81ce999ac1c1d12d: !ModelComponent
+                        Id: 7afd3db8-8c0a-4020-b47c-1fdfddc1c971
+                        Model: 41a4c6ec-e879-472a-9e23-f24f4433be59:Prefabs/Plane
+                        Materials:
+                            6a75f7c5a91e5eff768bc84f02060057~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Folder: null
+            Entity:
+                Id: 1c2914df-c01c-4ad1-9615-38099c7a3b67
+                Name: Plane
+                Components:
+                    7f38c5bdc77954cdbb7ce391996235d3: !TransformComponent
+                        Id: 67ded4e1-17b1-4b58-8817-cab698efd7d7
+                        Position: {X: 6.0000772, Y: 0.0, Z: 0.0011823112}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    28fb2ac822f05add81ce999ac1c1d12d: !ModelComponent
+                        Id: 9b0f86e2-0771-4e97-b0da-9095ee8e92ce
+                        Model: 41a4c6ec-e879-472a-9e23-f24f4433be59:Prefabs/Plane
+                        Materials:
+                            6a75f7c5a91e5eff768bc84f02060057~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Folder: null
+            Entity:
+                Id: 21311921-a6fd-4386-b39f-9b3921c20675
+                Name: Plane
+                Components:
+                    7f38c5bdc77954cdbb7ce391996235d3: !TransformComponent
+                        Id: 05a2546d-3d82-4986-a069-a47e4cb98640
+                        Position: {X: 4.0000772, Y: 0.0, Z: 3.0011823}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    28fb2ac822f05add81ce999ac1c1d12d: !ModelComponent
+                        Id: 391cfc48-a6db-4fed-ac17-af1f53940a76
+                        Model: 41a4c6ec-e879-472a-9e23-f24f4433be59:Prefabs/Plane
+                        Materials:
+                            6a75f7c5a91e5eff768bc84f02060057~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Folder: null
+            Entity:
+                Id: 236d7fad-a7a8-483e-8421-706b61e0754d
+                Name: Plane
+                Components:
+                    7f38c5bdc77954cdbb7ce391996235d3: !TransformComponent
+                        Id: 13b26553-4152-45f1-b2bc-04b9b30afdab
+                        Position*: {X: 7.0000772, Y: 0.0, Z: -1.997278}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    28fb2ac822f05add81ce999ac1c1d12d: !ModelComponent
+                        Id: 0a83eead-0d3e-448b-9bd7-7b9edaadc1a2
+                        Model: 41a4c6ec-e879-472a-9e23-f24f4433be59:Prefabs/Plane
+                        Materials:
+                            6a75f7c5a91e5eff768bc84f02060057~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Folder: null
+            Entity:
+                Id: 25f1b074-b0c0-4a21-a0b7-dc638acc237a
+                Name: Plane
+                Components:
+                    7f38c5bdc77954cdbb7ce391996235d3: !TransformComponent
+                        Id: 1353180b-cc3e-4f27-8306-b8b605250fb6
+                        Position: {X: 5.0000772, Y: 0.0, Z: 2.0011823}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    28fb2ac822f05add81ce999ac1c1d12d: !ModelComponent
+                        Id: 3f7c04ec-be26-4d4d-bcfb-a6ed69f1049d
+                        Model: 41a4c6ec-e879-472a-9e23-f24f4433be59:Prefabs/Plane
+                        Materials:
+                            6a75f7c5a91e5eff768bc84f02060057~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Folder: null
+            Entity:
+                Id: 2e56001a-f426-4491-8737-540fe8270ee3
+                Name: Plane
+                Components:
+                    7f38c5bdc77954cdbb7ce391996235d3: !TransformComponent
+                        Id: 74a173af-d7a5-40e8-8fb7-6afc5fc5be52
+                        Position: {X: 0.0, Y: 0.0, Z: 3.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    28fb2ac822f05add81ce999ac1c1d12d: !ModelComponent
+                        Id: 90ab412e-f204-4fa0-874b-5d39c81b1655
+                        Model: 41a4c6ec-e879-472a-9e23-f24f4433be59:Prefabs/Plane
+                        Materials:
+                            6a75f7c5a91e5eff768bc84f02060057~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Folder: null
+            Entity:
+                Id: 30a95877-2ab8-43f5-98ba-fed792200d74
+                Name: Roof1
+                Components:
+                    27132f9d093ed4bff1c4d2db0c57e8ee: !TransformComponent
+                        Id: f193b4f8-6a27-4339-9626-f64c58d5cdf0
+                        Position: {X: -1.5018498, Y: 0.9918128, Z: 0.48577523}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            52bde9733d5db72f291d4bc77baa38aa: ref!! 6281fbe1-543c-4209-bce4-3152c9fcea2a
+                            f80c9a667efc4f1d6541209936294762: ref!! e0950b67-3230-4ffa-84ec-35d9a617f573
+                            864bfa82dda329a1cffb17fc1e653d0b: ref!! 08c4e67b-81b8-4bb2-9525-06d2b22abd42
+                            6f0974ccb35dc134d6ffe3e6f0ba06dd: ref!! 53865da9-0b09-4e02-b903-762e817d7054
+                            1fa7f46cd44f33ae3d1af4fa407da052: ref!! f37df1b4-b6d7-4824-ab09-fa97b854d7e2
+                            db4d11795a406f8a19cd70cb85fdf351: ref!! 39cd1cd7-a2eb-4067-87f0-d6ea5b05e90e
+                            8cab24e13e0f983888584d96b6144bbd: ref!! b29c480c-1430-482e-b0ca-c2e6c2f8b9d9
+                            ae71c8443f5aa6cc06e3927567470de9: ref!! 74a173af-d7a5-40e8-8fb7-6afc5fc5be52
+        -   Folder: null
+            Entity:
+                Id: 321aca30-3022-4b4a-a737-9ef1a36a423e
+                Name: Plane
+                Components:
+                    7f38c5bdc77954cdbb7ce391996235d3: !TransformComponent
+                        Id: 08fcf748-43af-4b55-8bbd-f807d98f2f8f
+                        Position: {X: 2.0, Y: 0.0, Z: 1.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    28fb2ac822f05add81ce999ac1c1d12d: !ModelComponent
+                        Id: 3b0ba94b-ce21-4796-b501-394c910bb8c8
+                        Model: 41a4c6ec-e879-472a-9e23-f24f4433be59:Prefabs/Plane
+                        Materials:
+                            6a75f7c5a91e5eff768bc84f02060057~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Folder: null
+            Entity:
+                Id: 36a486c7-380c-41b1-a13e-9c46ae7ade43
+                Name: Plane
+                Components:
+                    7f38c5bdc77954cdbb7ce391996235d3: !TransformComponent
+                        Id: 097a99b1-e01c-4935-ad83-c311619e91b4
+                        Position: {X: 5.0000772, Y: 0.0, Z: 1.0011823}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    28fb2ac822f05add81ce999ac1c1d12d: !ModelComponent
+                        Id: 58c8c2c5-3593-405e-9da9-2ae32d684ab1
+                        Model: 41a4c6ec-e879-472a-9e23-f24f4433be59:Prefabs/Plane
+                        Materials:
+                            6a75f7c5a91e5eff768bc84f02060057~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Folder: null
+            Entity:
+                Id: 3dbddfbe-f63c-48fe-bffe-2bbc6669a8c1
+                Name: Plane
+                Components:
+                    7f38c5bdc77954cdbb7ce391996235d3: !TransformComponent
+                        Id: 10b57d97-2a90-4b7e-a1ec-dd058d0cfd53
+                        Position: {X: 7.0000772, Y: 0.0, Z: 3.0011823}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    28fb2ac822f05add81ce999ac1c1d12d: !ModelComponent
+                        Id: 0f5e710a-f2af-4708-9aca-146991e7402b
+                        Model: 41a4c6ec-e879-472a-9e23-f24f4433be59:Prefabs/Plane
+                        Materials:
+                            6a75f7c5a91e5eff768bc84f02060057~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Folder: null
+            Entity:
+                Id: 414cbe87-0cf7-446d-be43-1646c4838a3e
+                Name: Plane
+                Components:
+                    7f38c5bdc77954cdbb7ce391996235d3: !TransformComponent
+                        Id: 7f2f1dc5-8287-46e7-81ff-77d4c9f3d7e7
+                        Position: {X: 2.0, Y: 0.0, Z: 3.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    28fb2ac822f05add81ce999ac1c1d12d: !ModelComponent
+                        Id: 52ca3f56-6fb1-45ea-9038-f9303eb21cf2
+                        Model: 41a4c6ec-e879-472a-9e23-f24f4433be59:Prefabs/Plane
+                        Materials:
+                            6a75f7c5a91e5eff768bc84f02060057~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Folder: null
+            Entity:
+                Id: 41b4fee7-d080-4a76-8a69-7311e766ea78
+                Name: Plane
+                Components:
+                    7f38c5bdc77954cdbb7ce391996235d3: !TransformComponent
+                        Id: 1c1762f5-d2f5-44be-83a3-55d29911f744
+                        Position: {X: 7.0000772, Y: 0.0, Z: 3.0011823}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    28fb2ac822f05add81ce999ac1c1d12d: !ModelComponent
+                        Id: bebf8de4-7ce6-4df2-a7ea-b32915257ae7
+                        Model: 41a4c6ec-e879-472a-9e23-f24f4433be59:Prefabs/Plane
+                        Materials:
+                            6a75f7c5a91e5eff768bc84f02060057~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Folder: null
+            Entity:
+                Id: 4b05e732-38cc-4410-89e8-b3bc1630a48a
+                Name: Plane
+                Components:
+                    7f38c5bdc77954cdbb7ce391996235d3: !TransformComponent
+                        Id: 8f647384-3f26-43f0-88a1-f6f3490ac05c
+                        Position: {X: 7.0000772, Y: 0.0, Z: 3.0011823}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    28fb2ac822f05add81ce999ac1c1d12d: !ModelComponent
+                        Id: d4e8abc4-c64f-4a65-abcb-4dcee2ac6040
+                        Model: 41a4c6ec-e879-472a-9e23-f24f4433be59:Prefabs/Plane
+                        Materials:
+                            6a75f7c5a91e5eff768bc84f02060057~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Folder: null
+            Entity:
+                Id: 4bbf9abb-ba76-4d35-a952-2e8d81457800
+                Name: Plane
+                Components:
+                    7f38c5bdc77954cdbb7ce391996235d3: !TransformComponent
+                        Id: adb722d3-aace-4756-bb13-0ee88a45867a
+                        Position: {X: 6.0000772, Y: 0.0, Z: 1.0011823}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    28fb2ac822f05add81ce999ac1c1d12d: !ModelComponent
+                        Id: 31667a62-204c-45b3-93f6-432cdd83abdb
+                        Model: 41a4c6ec-e879-472a-9e23-f24f4433be59:Prefabs/Plane
+                        Materials:
+                            6a75f7c5a91e5eff768bc84f02060057~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Folder: null
+            Entity:
+                Id: 4c87193d-8930-4237-818e-31b43dbbcedd
+                Name: Plane
+                Components:
+                    7f38c5bdc77954cdbb7ce391996235d3: !TransformComponent
+                        Id: 79b665d6-38c4-4861-9921-4d789832bff1
+                        Position: {X: 3.0, Y: 0.0, Z: 3.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    28fb2ac822f05add81ce999ac1c1d12d: !ModelComponent
+                        Id: 4be7d27d-e1d4-4a63-93e2-8cd777d90575
+                        Model: 41a4c6ec-e879-472a-9e23-f24f4433be59:Prefabs/Plane
+                        Materials:
+                            6a75f7c5a91e5eff768bc84f02060057~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Folder: null
+            Entity:
+                Id: 510fb3fd-191e-4d76-b413-9c0b7d0fca8e
+                Name: Plane
+                Components:
+                    7f38c5bdc77954cdbb7ce391996235d3: !TransformComponent
+                        Id: 42efa429-6aba-4876-997a-130b99170e1f
+                        Position: {X: 3.0, Y: 0.0, Z: 3.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    28fb2ac822f05add81ce999ac1c1d12d: !ModelComponent
+                        Id: 9c6455f5-3fa1-4f36-8863-e5099c872bc0
+                        Model: 41a4c6ec-e879-472a-9e23-f24f4433be59:Prefabs/Plane
+                        Materials:
+                            6a75f7c5a91e5eff768bc84f02060057~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Folder: null
+            Entity:
+                Id: 511cab14-c688-451a-b3d8-9afd12f0aee3
+                Name: Plane
+                Components:
+                    7f38c5bdc77954cdbb7ce391996235d3: !TransformComponent
+                        Id: c7e2e4ea-5872-4446-9493-286d28394a81
+                        Position: {X: 3.0, Y: 0.0, Z: 2.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    28fb2ac822f05add81ce999ac1c1d12d: !ModelComponent
+                        Id: 1e40656f-5e99-43ba-bbd5-8be1484f066f
+                        Model: 41a4c6ec-e879-472a-9e23-f24f4433be59:Prefabs/Plane
+                        Materials:
+                            6a75f7c5a91e5eff768bc84f02060057~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Folder: null
+            Entity:
+                Id: 51d66fd1-2de2-43f3-855b-2f95239cb23a
+                Name: Plane
+                Components:
+                    7f38c5bdc77954cdbb7ce391996235d3: !TransformComponent
+                        Id: aa1d1a1c-b99e-485a-8ea7-2eb3bbd79361
+                        Position: {X: 7.0000772, Y: 0.0, Z: 2.0011823}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    28fb2ac822f05add81ce999ac1c1d12d: !ModelComponent
+                        Id: 8f62103f-e979-4a99-b3bd-e76125108dc6
+                        Model: 41a4c6ec-e879-472a-9e23-f24f4433be59:Prefabs/Plane
+                        Materials:
+                            6a75f7c5a91e5eff768bc84f02060057~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Folder: null
+            Entity:
+                Id: 5779f82b-8529-4945-9144-40b6e733a16e
+                Name: Plane
+                Components:
+                    7f38c5bdc77954cdbb7ce391996235d3: !TransformComponent
+                        Id: 89259cc4-456b-4efe-9970-390604756062
+                        Position: {X: 5.0000772, Y: 0.0, Z: 0.0011823112}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    28fb2ac822f05add81ce999ac1c1d12d: !ModelComponent
+                        Id: b78940ac-2877-4222-9b0b-6263a0169ca0
+                        Model: 41a4c6ec-e879-472a-9e23-f24f4433be59:Prefabs/Plane
+                        Materials:
+                            6a75f7c5a91e5eff768bc84f02060057~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Entity:
+                Id: 5a236e93-8ae3-4a42-a8f7-d1ab6646dec3
+                Name: WoodenRoof
+                Components:
+                    8811018303eee0e65b48aafa8da0fc2f: !TransformComponent
+                        Id: ffc46c77-b100-4a8c-8fc9-2652cde0af59
+                        Position: {X: -1.4843357, Y: 0.9812848, Z: -1.5080062}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            10b1f5d93a484321c0fa764ad1156593: ref!! 37a584a8-d0ef-4b76-9cee-907b2d01a015
+                            9ca364009b67a72890ce038adbb2f77e: ref!! 8ae5f8d2-cfda-4af2-8774-95307c4e29dd
+                            03b483b70d110b427ad5480a37248bbc: ref!! 8f6457d9-0fb7-40bc-9b24-07c4ccc27ede
+                            eb15cccaff4f5e15cb975515850d9002: ref!! 63aabccd-49fd-48f7-bf12-7364133b9572
+                            fcd8288c2bc34d5c700f1b46b40886ea: ref!! d8af8564-6c2b-4055-b289-230da7b8af97
+                            40c28752d8099662b14bf400b459ea57: ref!! cac4539c-1018-47cd-84e9-ec45d066af64
+                            4b3798e2dc26f9501835948bbddd7753: ref!! 8fd5184a-b23e-4b3e-984a-19e5b03f1493
+                            dd5b203f504f4905a403c71ff085d113: ref!! b830aefc-ac31-46c3-bdbc-0e8ef4c4342a
+                            abbe1c2d7c65a48c03bdc08697e6ec14: ref!! 6a74511c-b98e-4605-a4b8-cfa425f59964
+                            73bf38c052ec2789a07a9493349f0d7d: ref!! 3861ad3d-a836-4a8f-a301-64871bfca8dc
+                            298a55b5a2ad0abd6f9f3d59a95fcd01: ref!! 17faa252-706d-4ded-a70f-bf437b0c9393
+                            776025033f26a66511754c31551f8beb: ref!! 05a2546d-3d82-4986-a069-a47e4cb98640
+                            0f2f559981086de921d6c5ac2163e9e9: ref!! 08fcf748-43af-4b55-8bbd-f807d98f2f8f
+                            fb03a3acde35b4cdee28d35d9a498480: ref!! adb722d3-aace-4756-bb13-0ee88a45867a
+                            9ea2bc1e0ed9e8cf20375645bdcbf264: ref!! 7f2f1dc5-8287-46e7-81ff-77d4c9f3d7e7
+                            bef6b937351a688438ca267fcb2c9f7e: ref!! e8755bc1-264b-488c-9621-05a62cab2da7
+                            2f681a0f60a655357cb4e26e5380ce99: ref!! 72995328-8650-49fe-9187-162fb86c7fa9
+                            4dd567d0265b861a9c82c8cbba671455: ref!! 89259cc4-456b-4efe-9970-390604756062
+                            868a632e4f2f77fb5755235789920efe: ref!! e3d7065d-ddbd-4917-903a-1709c18f34df
+                            5c7ca1e94cdcac9ff9cdf3fa129db912: ref!! 1353180b-cc3e-4f27-8306-b8b605250fb6
+                            80da5dbb3e4c7036f6db86dbad0c72bb: ref!! d08aa8b0-2c61-4100-b618-9e884d4670f6
+                            c7246cc41e6d6b9f3eaee995187d7def: ref!! b6ea61f1-317d-44f4-a56b-5123412e4225
+                            ab967bff1c298cf0041196e9a5c00657: ref!! c7e2e4ea-5872-4446-9493-286d28394a81
+                            e272443268be3d39780f29f949ed353a: ref!! aa1d1a1c-b99e-485a-8ea7-2eb3bbd79361
+                            bd6c1c69c1136dca24e7701a3359cbe8: ref!! 2a646f9e-608f-4390-8e10-fe839e4c37a2
+                            b0931e5600b8962440bcb8db8839ae1f: ref!! 097a99b1-e01c-4935-ad83-c311619e91b4
+                            c1308090c18a21175c546c58dc08149a: ref!! 679cf329-fc8d-44d9-a2ed-897bbec01159
+                            6e969c5607b8edde7974cee8b73151c4: ref!! c42769b4-73ec-4693-af15-b0a99cc62ab5
+                            c4a6d4983fc04146df804511c7f6c6a3: ref!! 3931a0de-115f-4753-86bf-c2a8e01fe629
+                            58045391a821d8922af6cc4be715c111: ref!! ec1ca93a-f1b7-4158-aa7b-15b88a2597b9
+                            7a6076fa5c1ee7be28fb866dd3fc5780: ref!! 42efa429-6aba-4876-997a-130b99170e1f
+                            4bef3027f393bbefe9234f92a4b3aa91: ref!! 90c0179e-cbd0-4652-b777-1611bfdf009d
+        -   Folder: null
+            Entity:
+                Id: 5fb3d663-b9cd-4e2e-a358-4b0cf0912dcd
+                Name: Plane
+                Components:
+                    7f38c5bdc77954cdbb7ce391996235d3: !TransformComponent
+                        Id: e3d7065d-ddbd-4917-903a-1709c18f34df
+                        Position: {X: 1.0, Y: 0.0, Z: 2.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    28fb2ac822f05add81ce999ac1c1d12d: !ModelComponent
+                        Id: 083df07d-15e8-4828-8234-3adaf5a5f03e
+                        Model: 41a4c6ec-e879-472a-9e23-f24f4433be59:Prefabs/Plane
+                        Materials:
+                            6a75f7c5a91e5eff768bc84f02060057~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Folder: null
+            Entity:
+                Id: 619efe6e-971d-4f8e-9abf-3e6c9a5e39f4
+                Name: Plane
+                Components:
+                    7f38c5bdc77954cdbb7ce391996235d3: !TransformComponent
+                        Id: 3861ad3d-a836-4a8f-a301-64871bfca8dc
+                        Position: {X: 4.0000772, Y: 0.0, Z: 1.0011823}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    28fb2ac822f05add81ce999ac1c1d12d: !ModelComponent
+                        Id: 3046150d-6f86-4e68-aeb0-8eb90cabb601
+                        Model: 41a4c6ec-e879-472a-9e23-f24f4433be59:Prefabs/Plane
+                        Materials:
+                            6a75f7c5a91e5eff768bc84f02060057~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Entity:
+                Id: 67322d71-d4da-4616-8be8-9f328132c23c
+                Name: Roof1
+                Components:
+                    27132f9d093ed4bff1c4d2db0c57e8ee: !TransformComponent
+                        Id: 70fee561-2585-468b-9620-88386c0a6186
+                        Position: {X: -1.5018498, Y: 0.9918128, Z: -0.50930095}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            52bde9733d5db72f291d4bc77baa38aa: ref!! 1d2ab650-27e9-4b25-a629-8911e253644c
+                            f80c9a667efc4f1d6541209936294762: ref!! dcade1a0-9825-4cc1-abbd-87719bf78f48
+                            864bfa82dda329a1cffb17fc1e653d0b: ref!! 8c31f5f2-85d8-49f5-9536-97e010ba24ee
+                            6f0974ccb35dc134d6ffe3e6f0ba06dd: ref!! a080c77f-3132-4fad-b47c-44f718104970
+                            1fa7f46cd44f33ae3d1af4fa407da052: ref!! 79b665d6-38c4-4861-9921-4d789832bff1
+                            db4d11795a406f8a19cd70cb85fdf351: ref!! 95d0faaa-b6f0-4622-a62b-8bf8666f66c3
+                            8cab24e13e0f983888584d96b6144bbd: ref!! 0039ee66-232a-4119-a428-8172016c7faf
+                            ae71c8443f5aa6cc06e3927567470de9: ref!! c8cad0c9-e82e-4b72-8ed6-ac4c678a015c
+        -   Folder: null
+            Entity:
+                Id: 6750ee62-9e71-40ed-873d-1ec65f2327c0
+                Name: Plane
+                Components:
+                    7f38c5bdc77954cdbb7ce391996235d3: !TransformComponent
+                        Id: 0039ee66-232a-4119-a428-8172016c7faf
+                        Position: {X: 1.0, Y: 0.0, Z: 3.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    28fb2ac822f05add81ce999ac1c1d12d: !ModelComponent
+                        Id: 35388321-2b05-4dcd-aa80-dcafc241435c
+                        Model: 41a4c6ec-e879-472a-9e23-f24f4433be59:Prefabs/Plane
+                        Materials:
+                            6a75f7c5a91e5eff768bc84f02060057~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Folder: null
+            Entity:
+                Id: 706475cc-41fc-479e-ba29-f0d833fef4dc
+                Name: Plane
+                Components:
+                    7f38c5bdc77954cdbb7ce391996235d3: !TransformComponent
+                        Id: 8ae5f8d2-cfda-4af2-8774-95307c4e29dd
+                        Position: {X: 4.0000772, Y: 0.0, Z: 0.0011823112}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    28fb2ac822f05add81ce999ac1c1d12d: !ModelComponent
+                        Id: 64bc6623-1e91-4dce-bcdc-bacddfa47731
+                        Model: 41a4c6ec-e879-472a-9e23-f24f4433be59:Prefabs/Plane
+                        Materials:
+                            6a75f7c5a91e5eff768bc84f02060057~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Folder: null
+            Entity:
+                Id: 7075c902-d4d0-41b8-9e6d-28b423048b46
+                Name: Plane
+                Components:
+                    7f38c5bdc77954cdbb7ce391996235d3: !TransformComponent
+                        Id: 8fd5184a-b23e-4b3e-984a-19e5b03f1493
+                        Position: {X: 2.0, Y: 0.0, Z: 2.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    28fb2ac822f05add81ce999ac1c1d12d: !ModelComponent
+                        Id: c484ad84-d21b-4512-b461-565d3c53a428
+                        Model: 41a4c6ec-e879-472a-9e23-f24f4433be59:Prefabs/Plane
+                        Materials:
+                            6a75f7c5a91e5eff768bc84f02060057~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Folder: null
+            Entity:
+                Id: 74fb98b7-1111-4a9d-afc9-5e9986dc8e93
+                Name: Plane
+                Components:
+                    7f38c5bdc77954cdbb7ce391996235d3: !TransformComponent
+                        Id: d09ef577-89ec-4447-9a44-40859821441d
+                        Position: {X: 6.0000772, Y: 0.0, Z: 3.0011823}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    28fb2ac822f05add81ce999ac1c1d12d: !ModelComponent
+                        Id: 206710d9-ced7-456a-a4d0-17bd6cca0d1d
+                        Model: 41a4c6ec-e879-472a-9e23-f24f4433be59:Prefabs/Plane
+                        Materials:
+                            6a75f7c5a91e5eff768bc84f02060057~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Folder: null
+            Entity:
+                Id: 75064774-45bc-42be-8d9b-bdfa52284884
+                Name: Plane
+                Components:
+                    7f38c5bdc77954cdbb7ce391996235d3: !TransformComponent
+                        Id: e8755bc1-264b-488c-9621-05a62cab2da7
+                        Position: {X: 6.0000772, Y: 0.0, Z: 3.0011823}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    28fb2ac822f05add81ce999ac1c1d12d: !ModelComponent
+                        Id: 24341e3d-41ef-4da3-b8bb-9fa5ffe3bdf7
+                        Model: 41a4c6ec-e879-472a-9e23-f24f4433be59:Prefabs/Plane
+                        Materials:
+                            6a75f7c5a91e5eff768bc84f02060057~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Folder: null
+            Entity:
+                Id: 7e802395-32e4-4a8b-b4df-b9eaf00a8cd9
+                Name: Plane
+                Components:
+                    7f38c5bdc77954cdbb7ce391996235d3: !TransformComponent
+                        Id: 08c4e67b-81b8-4bb2-9525-06d2b22abd42
+                        Position: {X: 5.0000772, Y: 0.0, Z: 3.0011823}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    28fb2ac822f05add81ce999ac1c1d12d: !ModelComponent
+                        Id: f999f9ff-9f8b-4889-aa74-4d8b06fe4d09
+                        Model: 41a4c6ec-e879-472a-9e23-f24f4433be59:Prefabs/Plane
+                        Materials:
+                            6a75f7c5a91e5eff768bc84f02060057~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Folder: null
+            Entity:
+                Id: 83fe5e43-1749-4982-8066-1441b8f086c9
+                Name: Plane
+                Components:
+                    7f38c5bdc77954cdbb7ce391996235d3: !TransformComponent
+                        Id: 53865da9-0b09-4e02-b903-762e817d7054
+                        Position: {X: 4.0000772, Y: 0.0, Z: 3.0011823}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    28fb2ac822f05add81ce999ac1c1d12d: !ModelComponent
+                        Id: 264e7010-eb9e-4cea-aa42-a202ca5dafb4
+                        Model: 41a4c6ec-e879-472a-9e23-f24f4433be59:Prefabs/Plane
+                        Materials:
+                            6a75f7c5a91e5eff768bc84f02060057~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Folder: null
+            Entity:
+                Id: 84819267-24e7-48d8-9700-42960c4723e6
+                Name: Plane
+                Components:
+                    7f38c5bdc77954cdbb7ce391996235d3: !TransformComponent
+                        Id: a080c77f-3132-4fad-b47c-44f718104970
+                        Position: {X: 4.0000772, Y: 0.0, Z: 3.0011823}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    28fb2ac822f05add81ce999ac1c1d12d: !ModelComponent
+                        Id: d9113a8d-6d41-4d0b-b376-5f3cabeb0f2d
+                        Model: 41a4c6ec-e879-472a-9e23-f24f4433be59:Prefabs/Plane
+                        Materials:
+                            6a75f7c5a91e5eff768bc84f02060057~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Folder: null
+            Entity:
+                Id: 8d1ec91c-d683-45b4-8b06-44b786819605
+                Name: Plane
+                Components:
+                    7f38c5bdc77954cdbb7ce391996235d3: !TransformComponent
+                        Id: b830aefc-ac31-46c3-bdbc-0e8ef4c4342a
+                        Position: {X: 6.0000772, Y: 0.0, Z: 2.0011823}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    28fb2ac822f05add81ce999ac1c1d12d: !ModelComponent
+                        Id: 154940ef-9860-4cbc-b1b7-712f457f3ed8
+                        Model: 41a4c6ec-e879-472a-9e23-f24f4433be59:Prefabs/Plane
+                        Materials:
+                            6a75f7c5a91e5eff768bc84f02060057~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Folder: null
+            Entity:
+                Id: 90d1abdb-62aa-4d1d-9a14-6f4ab3fb90ef
+                Name: Plane
+                Components:
+                    7f38c5bdc77954cdbb7ce391996235d3: !TransformComponent
+                        Id: e0950b67-3230-4ffa-84ec-35d9a617f573
+                        Position: {X: 6.0000772, Y: 0.0, Z: 3.0011823}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    28fb2ac822f05add81ce999ac1c1d12d: !ModelComponent
+                        Id: dd5a9497-6bef-4adf-a177-afc591936de6
+                        Model: 41a4c6ec-e879-472a-9e23-f24f4433be59:Prefabs/Plane
+                        Materials:
+                            6a75f7c5a91e5eff768bc84f02060057~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Folder: null
+            Entity:
+                Id: 915745c4-61e0-4995-8a0e-4c88ddfe3561
+                Name: Plane
+                Components:
+                    7f38c5bdc77954cdbb7ce391996235d3: !TransformComponent
+                        Id: ec1ca93a-f1b7-4158-aa7b-15b88a2597b9
+                        Position: {X: 7.0000772, Y: 0.0, Z: 1.0011823}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    28fb2ac822f05add81ce999ac1c1d12d: !ModelComponent
+                        Id: 300aadc9-c396-44f6-afb8-6362be22c549
+                        Model: 41a4c6ec-e879-472a-9e23-f24f4433be59:Prefabs/Plane
+                        Materials:
+                            6a75f7c5a91e5eff768bc84f02060057~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Folder: null
+            Entity:
+                Id: 92fb063c-9b4e-4feb-baee-88e0fcf6483d
+                Name: Plane
+                Components:
+                    7f38c5bdc77954cdbb7ce391996235d3: !TransformComponent
+                        Id: b6ea61f1-317d-44f4-a56b-5123412e4225
+                        Position: {X: 7.0000772, Y: 0.0, Z: 0.0011823112}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    28fb2ac822f05add81ce999ac1c1d12d: !ModelComponent
+                        Id: e88b0f97-dba3-45de-aac7-c3d1f538a2fa
+                        Model: 41a4c6ec-e879-472a-9e23-f24f4433be59:Prefabs/Plane
+                        Materials:
+                            6a75f7c5a91e5eff768bc84f02060057~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Folder: null
+            Entity:
+                Id: 9a73ea83-7ee2-4bac-913a-bc624ce572ed
+                Name: Plane
+                Components:
+                    7f38c5bdc77954cdbb7ce391996235d3: !TransformComponent
+                        Id: 6281fbe1-543c-4209-bce4-3152c9fcea2a
+                        Position: {X: 7.0000772, Y: 0.0, Z: 3.0011823}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    28fb2ac822f05add81ce999ac1c1d12d: !ModelComponent
+                        Id: a21f9774-dbbb-4b23-a045-cc399de4493e
+                        Model: 41a4c6ec-e879-472a-9e23-f24f4433be59:Prefabs/Plane
+                        Materials:
+                            6a75f7c5a91e5eff768bc84f02060057~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Folder: null
+            Entity:
+                Id: 9afea958-a3df-434c-8ac9-9f8a51f268e6
+                Name: Plane
+                Components:
+                    7f38c5bdc77954cdbb7ce391996235d3: !TransformComponent
+                        Id: cc4471a6-128f-4adb-b573-0bc0f97446f4
+                        Position*: {X: 6.0000772, Y: 0.0, Z: -0.997278}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    28fb2ac822f05add81ce999ac1c1d12d: !ModelComponent
+                        Id: db0b0112-84d5-492d-bc7b-053cfdbd5008
+                        Model: 41a4c6ec-e879-472a-9e23-f24f4433be59:Prefabs/Plane
+                        Materials:
+                            6a75f7c5a91e5eff768bc84f02060057~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Folder: null
+            Entity:
+                Id: 9b32ef64-af03-4774-bcf0-e5f01f52021d
+                Name: Plane
+                Components:
+                    7f38c5bdc77954cdbb7ce391996235d3: !TransformComponent
+                        Id: 1d2ab650-27e9-4b25-a629-8911e253644c
+                        Position: {X: 7.0000772, Y: 0.0, Z: 3.0011823}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    28fb2ac822f05add81ce999ac1c1d12d: !ModelComponent
+                        Id: da7fafe7-9144-4c87-acda-1c72da867eef
+                        Model: 41a4c6ec-e879-472a-9e23-f24f4433be59:Prefabs/Plane
+                        Materials:
+                            6a75f7c5a91e5eff768bc84f02060057~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Folder: null
+            Entity:
+                Id: 9f8f6041-119b-4a6a-8a8b-ddfc2a9f9cd2
+                Name: Plane
+                Components:
+                    7f38c5bdc77954cdbb7ce391996235d3: !TransformComponent
+                        Id: 95d0faaa-b6f0-4622-a62b-8bf8666f66c3
+                        Position: {X: 2.0, Y: 0.0, Z: 3.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    28fb2ac822f05add81ce999ac1c1d12d: !ModelComponent
+                        Id: 9ac5130d-dfad-49e3-9f59-2b9a248db053
+                        Model: 41a4c6ec-e879-472a-9e23-f24f4433be59:Prefabs/Plane
+                        Materials:
+                            6a75f7c5a91e5eff768bc84f02060057~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Folder: null
+            Entity:
+                Id: a0f79c54-77fb-429f-8499-3c50a37aab1f
+                Name: Plane
+                Components:
+                    7f38c5bdc77954cdbb7ce391996235d3: !TransformComponent
+                        Id: 5f6fbb4c-7ea5-4256-b321-77e1fbe4cd76
+                        Position*: {X: 7.0000772, Y: 0.0, Z: -0.997278}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    28fb2ac822f05add81ce999ac1c1d12d: !ModelComponent
+                        Id: bdd23bd3-f818-443b-93b2-f381c104383a
+                        Model: 41a4c6ec-e879-472a-9e23-f24f4433be59:Prefabs/Plane
+                        Materials:
+                            6a75f7c5a91e5eff768bc84f02060057~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Folder: null
+            Entity:
+                Id: a115fa14-f06f-429c-a50a-f775639adba4
+                Name: Plane
+                Components:
+                    7f38c5bdc77954cdbb7ce391996235d3: !TransformComponent
+                        Id: e0e85079-4207-4d60-a5e5-601ff2195558
+                        Position: {X: 7.0000772, Y: 0.0, Z: 2.0011823}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    28fb2ac822f05add81ce999ac1c1d12d: !ModelComponent
+                        Id: 700665e4-5733-44d3-b788-9ae635d32371
+                        Model: 41a4c6ec-e879-472a-9e23-f24f4433be59:Prefabs/Plane
+                        Materials:
+                            6a75f7c5a91e5eff768bc84f02060057~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Entity:
+                Id: ae8bb02e-1a2e-44df-8e11-170f9fc92c8d
+                Name: Plane
+                Components:
+                    7f38c5bdc77954cdbb7ce391996235d3: !TransformComponent
+                        Id: 37a584a8-d0ef-4b76-9cee-907b2d01a015
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    28fb2ac822f05add81ce999ac1c1d12d: !ModelComponent
+                        Id: bb635629-b509-4581-8b0d-2fe7b3a22b2d
+                        Model: 41a4c6ec-e879-472a-9e23-f24f4433be59:Prefabs/Plane
+                        Materials:
+                            6a75f7c5a91e5eff768bc84f02060057~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Folder: null
+            Entity:
+                Id: afa9ec88-7cda-494e-b066-5409bfa82ddb
+                Name: Plane
+                Components:
+                    7f38c5bdc77954cdbb7ce391996235d3: !TransformComponent
+                        Id: 8d20b913-82b3-434e-a3c2-e08de1c78780
+                        Position: {X: 6.0000772, Y: 0.0, Z: 2.0011823}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    28fb2ac822f05add81ce999ac1c1d12d: !ModelComponent
+                        Id: 534ae787-05d8-424f-b5c2-94dbcabb305b
+                        Model: 41a4c6ec-e879-472a-9e23-f24f4433be59:Prefabs/Plane
+                        Materials:
+                            6a75f7c5a91e5eff768bc84f02060057~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Folder: null
+            Entity:
+                Id: b04a4ca6-5e68-4f33-9e79-0475c6fc1403
+                Name: Plane
+                Components:
+                    7f38c5bdc77954cdbb7ce391996235d3: !TransformComponent
+                        Id: 17faa252-706d-4ded-a70f-bf437b0c9393
+                        Position: {X: 0.0, Y: 0.0, Z: 3.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    28fb2ac822f05add81ce999ac1c1d12d: !ModelComponent
+                        Id: e9480267-e5ce-4191-a7ac-21ef438f657a
+                        Model: 41a4c6ec-e879-472a-9e23-f24f4433be59:Prefabs/Plane
+                        Materials:
+                            6a75f7c5a91e5eff768bc84f02060057~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Folder: null
+            Entity:
+                Id: bc438cb4-2085-4bc5-8bea-fd57596552d6
+                Name: Plane
+                Components:
+                    7f38c5bdc77954cdbb7ce391996235d3: !TransformComponent
+                        Id: b29c480c-1430-482e-b0ca-c2e6c2f8b9d9
+                        Position: {X: 1.0, Y: 0.0, Z: 3.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    28fb2ac822f05add81ce999ac1c1d12d: !ModelComponent
+                        Id: e3b9b1ec-ea0d-46c2-bd19-e553590c39e7
+                        Model: 41a4c6ec-e879-472a-9e23-f24f4433be59:Prefabs/Plane
+                        Materials:
+                            6a75f7c5a91e5eff768bc84f02060057~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Folder: null
+            Entity:
+                Id: c276fd24-0a7d-4414-99b4-46e71225a1a8
+                Name: Plane
+                Components:
+                    7f38c5bdc77954cdbb7ce391996235d3: !TransformComponent
+                        Id: 6a74511c-b98e-4605-a4b8-cfa425f59964
+                        Position: {X: 0.0, Y: 0.0, Z: 1.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    28fb2ac822f05add81ce999ac1c1d12d: !ModelComponent
+                        Id: 61e9fa36-3f0f-453d-8686-0f1bb9f8dec9
+                        Model: 41a4c6ec-e879-472a-9e23-f24f4433be59:Prefabs/Plane
+                        Materials:
+                            6a75f7c5a91e5eff768bc84f02060057~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Folder: null
+            Entity:
+                Id: c608a9fc-764d-4f33-bab3-5d61e96146e0
+                Name: Plane
+                Components:
+                    7f38c5bdc77954cdbb7ce391996235d3: !TransformComponent
+                        Id: 72995328-8650-49fe-9187-162fb86c7fa9
+                        Position: {X: 1.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    28fb2ac822f05add81ce999ac1c1d12d: !ModelComponent
+                        Id: 14edc286-19c3-43a9-84a4-d3c4078e61b5
+                        Model: 41a4c6ec-e879-472a-9e23-f24f4433be59:Prefabs/Plane
+                        Materials:
+                            6a75f7c5a91e5eff768bc84f02060057~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Folder: null
+            Entity:
+                Id: d4302a6b-420c-4b2d-9812-4cfb038d0d96
+                Name: Plane
+                Components:
+                    7f38c5bdc77954cdbb7ce391996235d3: !TransformComponent
+                        Id: 63aabccd-49fd-48f7-bf12-7364133b9572
+                        Position: {X: 4.0000772, Y: 0.0, Z: 2.0011823}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    28fb2ac822f05add81ce999ac1c1d12d: !ModelComponent
+                        Id: cbc3bb0e-9fdc-4f33-9e6a-739bf47eca88
+                        Model: 41a4c6ec-e879-472a-9e23-f24f4433be59:Prefabs/Plane
+                        Materials:
+                            6a75f7c5a91e5eff768bc84f02060057~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Folder: null
+            Entity:
+                Id: d8b2eaa8-b37e-4028-8b9a-685bebd1e53d
+                Name: Plane
+                Components:
+                    7f38c5bdc77954cdbb7ce391996235d3: !TransformComponent
+                        Id: 3f886d76-3734-43ec-af00-cfe37fc2d315
+                        Position: {X: 6.0000772, Y: 0.0, Z: 3.0011823}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    28fb2ac822f05add81ce999ac1c1d12d: !ModelComponent
+                        Id: 4ec9e174-d3fa-48af-baa2-c814813fcbaa
+                        Model: 41a4c6ec-e879-472a-9e23-f24f4433be59:Prefabs/Plane
+                        Materials:
+                            6a75f7c5a91e5eff768bc84f02060057~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Folder: null
+            Entity:
+                Id: d9b0bcb9-18f6-4596-a467-5c6a3a40673c
+                Name: Plane
+                Components:
+                    7f38c5bdc77954cdbb7ce391996235d3: !TransformComponent
+                        Id: cac4539c-1018-47cd-84e9-ec45d066af64
+                        Position: {X: 6.0000772, Y: 0.0, Z: 0.0011823112}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    28fb2ac822f05add81ce999ac1c1d12d: !ModelComponent
+                        Id: ce8946c6-9ab0-4781-b1b2-dc96e37b47eb
+                        Model: 41a4c6ec-e879-472a-9e23-f24f4433be59:Prefabs/Plane
+                        Materials:
+                            6a75f7c5a91e5eff768bc84f02060057~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Folder: null
+            Entity:
+                Id: d9c70b73-8caf-4eb0-9006-4b80aebc62c6
+                Name: Plane
+                Components:
+                    7f38c5bdc77954cdbb7ce391996235d3: !TransformComponent
+                        Id: c8cad0c9-e82e-4b72-8ed6-ac4c678a015c
+                        Position: {X: 0.0, Y: 0.0, Z: 3.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    28fb2ac822f05add81ce999ac1c1d12d: !ModelComponent
+                        Id: 4dc86894-b757-4d14-b750-8bffdb37e18c
+                        Model: 41a4c6ec-e879-472a-9e23-f24f4433be59:Prefabs/Plane
+                        Materials:
+                            6a75f7c5a91e5eff768bc84f02060057~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Folder: null
+            Entity:
+                Id: e1d01980-051a-4f60-91db-5ac79ec7d858
+                Name: Plane
+                Components:
+                    7f38c5bdc77954cdbb7ce391996235d3: !TransformComponent
+                        Id: c42769b4-73ec-4693-af15-b0a99cc62ab5
+                        Position: {X: 5.0000772, Y: 0.0, Z: 3.0011823}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    28fb2ac822f05add81ce999ac1c1d12d: !ModelComponent
+                        Id: 2e6872d1-2a55-4236-9d8f-1bad0aea9692
+                        Model: 41a4c6ec-e879-472a-9e23-f24f4433be59:Prefabs/Plane
+                        Materials:
+                            6a75f7c5a91e5eff768bc84f02060057~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Folder: null
+            Entity:
+                Id: e41d2d6b-3f4b-419e-9852-2e6fa390a9c1
+                Name: Plane
+                Components:
+                    7f38c5bdc77954cdbb7ce391996235d3: !TransformComponent
+                        Id: d8af8564-6c2b-4055-b289-230da7b8af97
+                        Position: {X: 2.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    28fb2ac822f05add81ce999ac1c1d12d: !ModelComponent
+                        Id: 3678cf58-587b-45f9-b61d-f0482be404c9
+                        Model: 41a4c6ec-e879-472a-9e23-f24f4433be59:Prefabs/Plane
+                        Materials:
+                            6a75f7c5a91e5eff768bc84f02060057~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Folder: null
+            Entity:
+                Id: e458e459-d312-488c-9460-fa1b677991ba
+                Name: Plane
+                Components:
+                    7f38c5bdc77954cdbb7ce391996235d3: !TransformComponent
+                        Id: d08aa8b0-2c61-4100-b618-9e884d4670f6
+                        Position: {X: 3.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    28fb2ac822f05add81ce999ac1c1d12d: !ModelComponent
+                        Id: 89da798d-8285-4ea6-8c0f-70411dfa5ec3
+                        Model: 41a4c6ec-e879-472a-9e23-f24f4433be59:Prefabs/Plane
+                        Materials:
+                            6a75f7c5a91e5eff768bc84f02060057~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Entity:
+                Id: e4fdf880-2eb6-4e3d-b9b1-ce3a11ffa026
+                Name: Roof2
+                Components:
+                    c049cb597e42d0112b219f4d4c03751e: !TransformComponent
+                        Id: fd529445-99d9-452b-8fce-d6d987cc80b4
+                        Position: {X: 0.4882116, Y: 0.98386896, Z: 0.47056103}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            2b4c6e4bf2fe02cde2dd236a325d26e9: ref!! 67ded4e1-17b1-4b58-8817-cab698efd7d7
+                            797906e02a704cf01dc80c58bc6e8b6b: ref!! d8d5aabb-9c13-4847-9a73-00e6cee3f497
+                            03b153fc000afe8ee70d4ff048139f40: ref!! d9934e25-9ee8-4642-894c-51eeb409eb6a
+                            89d61e035439b8ba2b9f501fc0375193: ref!! 13b26553-4152-45f1-b2bc-04b9b30afdab
+                            37bcf9cd1642d433ead9328a5a535ff3: ref!! 97c0fbd2-a8ad-44ba-a64f-29570d62c1cf
+                            a70eb8786571acfb87dd90b40ef7eb72: ref!! 5f6fbb4c-7ea5-4256-b321-77e1fbe4cd76
+                            acb3cab3ec24ec976a174622521911a3: ref!! bd10a070-c20f-438d-85db-845d64e28ce1
+                            f64914f5091d25f41ba0a2d67e43934f: ref!! cc4471a6-128f-4adb-b573-0bc0f97446f4
+                            67dfa8d71217f5ddcd5762322b264ef8: ref!! 8d20b913-82b3-434e-a3c2-e08de1c78780
+                            f754639a778979f687cdfb599167772f: ref!! e0e85079-4207-4d60-a5e5-601ff2195558
+                            2ade2aac7216775f2df4f37e6f83ffa2: ref!! 8f647384-3f26-43f0-88a1-f6f3490ac05c
+                            9ec0b870a6961bd2d07ebfc148f0b8a9: ref!! 3f886d76-3734-43ec-af00-cfe37fc2d315
+                            5b187243c6a4c45798efa24af731b94c: ref!! d09ef577-89ec-4447-9a44-40859821441d
+                            92e4fd174a9993c3f579593179108373: ref!! 1c1762f5-d2f5-44be-83a3-55d29911f744
+                            a39fa816e87136af72563f17ea7d7c73: ref!! 10b57d97-2a90-4b7e-a1ec-dd058d0cfd53
+                            1e2027b85c9eb4f13d7bf2875902a699: ref!! 87b536da-36fe-40dc-ba23-31fd9e8baa97
+        -   Folder: null
+            Entity:
+                Id: e6eb1aac-ab39-4b39-95ac-323022f508bd
+                Name: Plane
+                Components:
+                    7f38c5bdc77954cdbb7ce391996235d3: !TransformComponent
+                        Id: 2a646f9e-608f-4390-8e10-fe839e4c37a2
+                        Position: {X: 1.0, Y: 0.0, Z: 1.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    28fb2ac822f05add81ce999ac1c1d12d: !ModelComponent
+                        Id: 2ad2f1e4-610e-45ba-813d-b25e0f4867e3
+                        Model: 41a4c6ec-e879-472a-9e23-f24f4433be59:Prefabs/Plane
+                        Materials:
+                            6a75f7c5a91e5eff768bc84f02060057~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Folder: null
+            Entity:
+                Id: ec268a66-14e0-4c55-999e-1335b326f114
+                Name: Plane
+                Components:
+                    7f38c5bdc77954cdbb7ce391996235d3: !TransformComponent
+                        Id: 679cf329-fc8d-44d9-a2ed-897bbec01159
+                        Position: {X: 1.0, Y: 0.0, Z: 3.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    28fb2ac822f05add81ce999ac1c1d12d: !ModelComponent
+                        Id: 10cc2ee2-90aa-438f-a68e-63e777e6514d
+                        Model: 41a4c6ec-e879-472a-9e23-f24f4433be59:Prefabs/Plane
+                        Materials:
+                            6a75f7c5a91e5eff768bc84f02060057~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Folder: null
+            Entity:
+                Id: efbc782e-5d92-4399-8415-c134f9891a6f
+                Name: Plane
+                Components:
+                    7f38c5bdc77954cdbb7ce391996235d3: !TransformComponent
+                        Id: 87b536da-36fe-40dc-ba23-31fd9e8baa97
+                        Position: {X: 6.0000772, Y: 0.0, Z: 3.0011823}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    28fb2ac822f05add81ce999ac1c1d12d: !ModelComponent
+                        Id: 857db2a1-ce5f-4780-a125-0e74f5a608eb
+                        Model: 41a4c6ec-e879-472a-9e23-f24f4433be59:Prefabs/Plane
+                        Materials:
+                            6a75f7c5a91e5eff768bc84f02060057~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Folder: null
+            Entity:
+                Id: f2832e91-1363-4f7e-a263-17c68d3a3d29
+                Name: Plane
+                Components:
+                    7f38c5bdc77954cdbb7ce391996235d3: !TransformComponent
+                        Id: dcade1a0-9825-4cc1-abbd-87719bf78f48
+                        Position: {X: 6.0000772, Y: 0.0, Z: 3.0011823}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    28fb2ac822f05add81ce999ac1c1d12d: !ModelComponent
+                        Id: 3e653afb-119b-4a13-be46-fadccf160e53
+                        Model: 41a4c6ec-e879-472a-9e23-f24f4433be59:Prefabs/Plane
+                        Materials:
+                            6a75f7c5a91e5eff768bc84f02060057~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Folder: null
+            Entity:
+                Id: f399d408-167c-44ea-babc-fe4f931bb6d5
+                Name: Plane
+                Components:
+                    7f38c5bdc77954cdbb7ce391996235d3: !TransformComponent
+                        Id: 8f6457d9-0fb7-40bc-9b24-07c4ccc27ede
+                        Position: {X: 0.0, Y: 0.0, Z: 2.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    28fb2ac822f05add81ce999ac1c1d12d: !ModelComponent
+                        Id: 6f9ac9da-0a1f-45f4-bebf-83379747e078
+                        Model: 41a4c6ec-e879-472a-9e23-f24f4433be59:Prefabs/Plane
+                        Materials:
+                            6a75f7c5a91e5eff768bc84f02060057~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Folder: null
+            Entity:
+                Id: fde0b192-e244-48fc-a4df-fec97ff785e4
+                Name: Plane
+                Components:
+                    7f38c5bdc77954cdbb7ce391996235d3: !TransformComponent
+                        Id: bd10a070-c20f-438d-85db-845d64e28ce1
+                        Position: {X: 6.0000772, Y: 0.0, Z: 1.0011823}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    28fb2ac822f05add81ce999ac1c1d12d: !ModelComponent
+                        Id: b474ecd2-da76-4dab-8144-8e50510b6ed5
+                        Model: 41a4c6ec-e879-472a-9e23-f24f4433be59:Prefabs/Plane
+                        Materials:
+                            6a75f7c5a91e5eff768bc84f02060057~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1

@@ -1,0 +1,7 @@
+!Texture
+Id: 88e2348e-3124-4d85-aace-20ae5ce89d3a
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/Textures/Ground/mountain6.jpg
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

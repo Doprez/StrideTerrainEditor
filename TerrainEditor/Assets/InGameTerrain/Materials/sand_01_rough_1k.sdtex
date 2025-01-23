@@ -1,0 +1,7 @@
+!Texture
+Id: ab6e4103-6462-4e6f-b2ff-04eb4a0b27bb
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Resources/TRTerrain/sand_01_1k/sand_01_rough_1k.png
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

@@ -1,0 +1,14 @@
+!Skeleton
+Id: 9d670297-1a69-48ad-9344-6b948b2952de
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Resources/Vegetation/Tree_LL/Tree_LL.fbx
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Nodes:
+    ef0365eacd50cb9bf4e367dc004c1a1d: {Name: RootNode, Depth: 0}
+    8440e0a39bcd51b2342e02243b2f3b8f: {Name: tree, Depth: 1}
+    38859eaa2e0eaefc0dcf51fdb229fdbd: {Name: leaves, Depth: 2}
+    406541f7f9187e8e638d26fb9f9d1f58: {Name: Lamp, Depth: 1}
+    377ebbff2423ed3900150334ba1340b7: {Name: Camera, Depth: 1}
+~SourceHashes:
+    8399d2da41a636eeab6ccac96b83eade~../../../../Resources/Vegetation/Tree_LL/Tree_LL.fbx: 00a3075f1adfa7615b7ff0db174d2ee8

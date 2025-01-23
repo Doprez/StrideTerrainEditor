@@ -1,0 +1,7 @@
+!Texture
+Id: 07010794-59e7-4a98-98f4-25129117d334
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/Water/ripple.png
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

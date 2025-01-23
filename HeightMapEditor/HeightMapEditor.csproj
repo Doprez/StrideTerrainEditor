@@ -1,0 +1,60 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net6.0-windows</TargetFrameworks>
+    <OutputType>Library</OutputType>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Platforms>AnyCPU</Platforms>
+    <RunAnalyzersDuringBuild>false</RunAnalyzersDuringBuild>
+    <EnforceCodeStyleInBuild>false</EnforceCodeStyleInBuild>
+    <EnableNETAnalyzers>false</EnableNETAnalyzers>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="MathNet.Numerics" Version="5.0.0" />
+    <PackageReference Include="Stride.Assets" Version="4.1.0.1948" />
+    <PackageReference Include="Stride.Core" Version="4.1.0.1948" />
+    <PackageReference Include="Stride.Core.Assets.CompilerApp" Version="4.1.0.1948" />
+    <PackageReference Include="Stride.Graphics" Version="4.1.0.1948" />
+    <PackageReference Include="Stride.Particles" Version="4.1.0.1948" />
+    <PackageReference Include="Stride.Physics" Version="4.1.0.1948" />
+    <PackageReference Include="Stride.TextureConverter" Version="4.1.0.1948" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Effects\TerrainMultiBlendShader.sdsl.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>%(Filename)</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Effects\TerrainBlendShader.sdsl.cs">
+      <DesignTime>True</DesignTime>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Effects\TerrainHeightShader.sdsl.cs">
+      <DesignTime>True</DesignTime>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Effects\WaterShader.sdsl.cs">
+      <DesignTime>True</DesignTime>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Effects\TerrainMultiBlendShader.sdsl">
+      <LastGenOutput>TerrainMultiBlendShader.sdsl.cs</LastGenOutput>
+    </None>
+    <None Update="Effects\TerrainBlendShader.sdsl">
+      <LastGenOutput>TerrainBlendShader.sdsl.cs</LastGenOutput>
+    </None>
+    <None Update="Effects\TerrainHeightShader.sdsl">
+      <LastGenOutput>TerrainHeightShader.sdsl.cs</LastGenOutput>
+    </None>
+    <None Update="Effects\WaterShader.sdsl">
+      <LastGenOutput>WaterShader.sdsl.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+</Project>

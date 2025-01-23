@@ -1,0 +1,53 @@
+﻿//by Idomeneas
+shader TreeInstancingShader: ColorBase,ComputeColor,Texturing,//MaterialPixelShadingStream,
+                                 MaterialSurfaceDiffuse, IMaterialSurfacePixel,
+    Transformation, ShaderBase,  PositionStream4,TransformationInstancing
+  //  ,DynamicTexture<TTextureName, PerMaterial>, 
+ //   DynamicSampler<TSampler, PerMaterial>, DynamicTextureStream<TStream>
+{
+   //rgroup PerMaterial { stage Texture2D shaderTexture;   }
+    // stage float Phase=1.0f;
+   StructuredBuffer<float3> InstanceLocations;
+   StructuredBuffer<float4> InstanceColors;
+   //StructuredBuffer<int> InstanceType;
+   //StructuredBuffer<float3> InstanceScale;
+   //StructuredBuffer<float3> InstanceRotation;
+SamplerState MySampler
+{
+    Filter = MIN_MAG_MIP_LINEAR;
+    AddressU = Wrap;
+    AddressV = Wrap;
+};
+
+  //cbuffer PerView   {      stage float4 Viewport;   }
+  stage stream float3 Normal : NORMAL;
+   
+   stage override void VSMain() 
+   {
+        streams.Position.w=1;
+        streams.Position.x += InstanceLocations[streams.InstanceID].x;//*sin(2*3.14*Phase);
+        streams.Position.y += InstanceLocations[streams.InstanceID].y;
+        streams.Position.z += InstanceLocations[streams.InstanceID].z;
+   //     streams.ShadingPosition = mul(streams.Position, WorldViewProjection);
+        streams.ShadingPosition = projToWorld(streams.Position,streams.Normal); 
+   }      
+ 
+    float4 projToWorld(in float4 pos, in float3 normal)
+    {
+        float3 scaling = normal * (WorldScale - 1);
+        return mul(pos + float4(scaling.x, scaling.y, scaling.z, 0), WorldViewProjection);
+    }
+
+ // pixel shader
+    stage override void PSMain()    
+    {   
+      //  base.PSMain();   
+        streams.ColorTarget = //Texture0.Sample(LinearSampler, streams.TexCoord) 
+          InstanceColors[streams.InstanceID];
+      //streams.matDiffuse;
+      //  * Texture0.Sample(LinearRepeatSampler,streams.TexCoord);  
+        //* shaderTexture.Sample(LinearRepeatSampler,streams.TexCoord);  
+    }
+
+};
+

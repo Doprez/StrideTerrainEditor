@@ -1,0 +1,15 @@
+!Model
+Id: 22cd2f73-df96-4008-9a3b-15c757a5e276
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Resources/Vegetation/grass3/didelta_spinosa_4k.fbx
+Skeleton: 2b934c78-b5ff-4ad0-a311-055465632483:Models/Grass/grass3/didelta_spinosa_4k Skeleton
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    361d5b8ff511f72f269eb71193248973:
+        Name: didelta_spinosa
+        MaterialInstance:
+            Material: 5314bb2b-1abe-43f3-bca1-b84b43eb3052:Models/Grass/grass3/didelta_spinosa
+Modifiers: {}
+~SourceHashes:
+    ae86510ba641a04c580cdc7fdebf33c0~../../../../../Resources/Vegetation/grass3/didelta_spinosa_4k.fbx: 47c75a73db343f3c2513539b9dfd9f4b

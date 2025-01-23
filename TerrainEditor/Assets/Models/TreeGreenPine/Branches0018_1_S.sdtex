@@ -1,0 +1,7 @@
+!Texture
+Id: d69ff6ad-f176-4c6a-9d83-6764fcfb626a
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Resources/Vegetation/gylio8vtvaww-GreenPine/Branches0018_1_S.png
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

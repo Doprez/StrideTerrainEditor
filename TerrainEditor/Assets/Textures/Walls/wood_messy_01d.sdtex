@@ -1,0 +1,7 @@
+!Texture
+Id: 7959ac9e-31e3-492b-a768-60601b0680d7
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Resources/Textures/Walls/wood_messy_01d.dds
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

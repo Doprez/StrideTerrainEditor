@@ -1,0 +1,46 @@
+!MaterialAsset
+Id: abe441fe-e427-499e-a9e2-8a5a95627f4d
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Archetype: 8467c109-44cc-4c4b-a976-7a8d74491881:Materials/TerrainHeightBased/BaseMaterial
+Attributes:
+    Surface: !MaterialNormalMapFeature
+        NormalMap: !ComputeTextureColor
+            Texture: 41186ae0-57ea-4eb7-ab5f-220adba894ba:Materials/TerrainHeightBased/Ground037_2K_Normal
+            FallbackValue:
+                Value*: {R: 0.5019608, G: 0.5019608, B: 1.0, A: 1.0}
+            Scale: {X: 1.0, Y: 1.0}
+            Offset: {X: 0.0, Y: 0.0}
+            Swizzle: null
+    MicroSurface: !MaterialGlossinessMapFeature
+        GlossinessMap: !ComputeTextureScalar
+            Texture: 57dceae1-fef1-4937-abac-cec56d50205a:Materials/TerrainHeightBased/Ground037_2K_Roughness
+            FallbackValue:
+                Value: 1.0
+            Scale: {X: 1.0, Y: 1.0}
+            Offset: {X: 0.0, Y: 0.0}
+        Invert: true
+    Diffuse: !MaterialDiffuseMapFeature
+        DiffuseMap*: !ComputeBinaryColor
+            Operator: Multiply
+            LeftChild: !ComputeTextureColor
+                Texture: 419dea4c-d787-47cf-a4bd-26189a0a742b:Materials/TerrainHeightBased/sand_01_diff_1k
+                FallbackValue:
+                    Value: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                Scale: {X: 1.0, Y: 1.0}
+                Offset: {X: 0.0, Y: 0.0}
+                Swizzle: null
+            RightChild: !ComputeColor
+                Value: {R: 0.6156863, G: 0.6156863, B: 0.6156863, A: 1.0}
+    DiffuseModel: !MaterialDiffuseLambertModelFeature {}
+    Specular: !MaterialMetalnessMapFeature
+        MetalnessMap: !ComputeFloat
+            Value: 0.0
+    SpecularModel: !MaterialSpecularMicrofacetModelFeature
+        Fresnel: !MaterialSpecularMicrofacetFresnelSchlick {}
+        Visibility: !MaterialSpecularMicrofacetVisibilitySmithSchlickGGX {}
+        NormalDistribution: !MaterialSpecularMicrofacetNormalDistributionGGX {}
+        Environment: !MaterialSpecularMicrofacetEnvironmentGGXLUT {}
+    Overrides:
+        UVScale: {X: 1.0, Y: 1.0}
+Layers: {}

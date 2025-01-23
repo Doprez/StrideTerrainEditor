@@ -1,0 +1,7 @@
+!Texture
+Id: 3d5ecbc8-d2f2-4bac-984b-b63393ef05c5
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Resources/Textures/BumpMaps/bumpmap1.bmp
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

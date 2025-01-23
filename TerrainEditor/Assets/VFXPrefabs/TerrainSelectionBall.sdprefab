@@ -1,0 +1,23 @@
+!PrefabAsset
+Id: eff835e1-fc06-4f9e-860b-9c82fd509ded
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+Hierarchy:
+    RootParts:
+        - ref!! 392f3de8-b917-484f-84e1-47f3521e8497
+    Parts:
+        -   Entity:
+                Id: 392f3de8-b917-484f-84e1-47f3521e8497
+                Name: TerrainSelectionBall
+                Components:
+                    ec4cc96b29cd3c30f79fca57e3565381: !TransformComponent
+                        Id: a78a118c-b212-43ba-af29-f9cacd437008
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 10.0, Y: 10.0, Z: 10.0}
+                        Children: {}
+                    e93f5098c182dc7341b5c6e4a5401e1d: !ModelComponent
+                        Id: f246bc6c-d254-4e01-b014-3ba93e991a47
+                        Model: 29a9dc93-ce51-4167-be26-dc3070b1481f:TerrainSelectionSphere
+                        Materials:
+                            830045ebc3839cf9876a53f2773de035~0: b0eb5d48-86dd-446a-9471-d91cfdad26ab:Materials/Other/Sphere Material

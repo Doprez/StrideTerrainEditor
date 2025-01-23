@@ -1,0 +1,6 @@
+!Texture
+Id: 3a62bbae-df7b-4274-a08f-e879086a590d
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/Textures/Ground/dirt4norm.jpg
+Type: !NormalMapTextureType {}

@@ -1,0 +1,7 @@
+!Texture
+Id: aaa1f78c-9100-4532-baea-d6d62ada11be
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Resources/Textures/Walls/stonewall1_d.dds
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

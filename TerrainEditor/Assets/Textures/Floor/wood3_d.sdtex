@@ -1,0 +1,7 @@
+!Texture
+Id: 08df8d50-1daa-4908-96b0-fbb4620c442d
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Resources/Textures/Floor/wood3_d.dds
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

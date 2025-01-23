@@ -1,0 +1,19 @@
+!Model
+Id: fa7aeea9-81c6-4627-a37d-0d2892aedbcc
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Resources/Vegetation/Tree2/tree.fbx
+Skeleton: a2f5b498-211e-471c-807d-6deddec9029e:Models/Tree2/tree Skeleton
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    887040050c86f76674a9fcd8165bc09c:
+        Name: trunk
+        MaterialInstance:
+            Material: 456b155f-15d8-4b31-813b-e724bbb24ac6:Models/Tree2/trunk
+    b842d97ba24237e521bc712f7cc0449c:
+        Name: leaf
+        MaterialInstance:
+            Material: 3a73d98b-afa8-4c3f-b23f-b27ae5d2fb88:Models/Tree2/leaf
+Modifiers: {}
+~SourceHashes:
+    af90260185fd5d56071bcda4188a4b95~../../../../Resources/Vegetation/Tree2/tree.fbx: 9c1322640f8356de0bdf0661d27302db

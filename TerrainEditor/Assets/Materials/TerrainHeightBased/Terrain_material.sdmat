@@ -1,0 +1,31 @@
+!MaterialAsset
+Id: e3be4e3b-c729-4100-a1da-b3423acff194
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Attributes:
+    Overrides:
+        UVScale: {X: 1.0, Y: 1.0}
+Layers:
+    8c60ed697bac0707f0e91a6e57feec57:
+        Material: abe441fe-e427-499e-a9e2-8a5a95627f4d:Materials/TerrainHeightBased/Layer_Sand_Wet
+        BlendMap: !ComputeTextureScalar
+            FallbackValue:
+                Value: 1.0
+            Scale: {X: 1.0, Y: 1.0}
+            Offset: {X: 0.0, Y: 0.0}
+        Overrides:
+            UVScale: {X: 1.0, Y: 1.0}
+    0c996e82276ccbca579a52237aa1c0e5:
+        Material: cb8c510e-477f-4df5-8caf-8522e3c98581:Materials/TerrainHeightBased/Layer_Sand
+        BlendMap: !ComputeShaderClassScalar
+            MixinReference: Terrain_Blend_Height
+            Generics: {}
+            CompositionNodes:
+                c274bb22febeda23f54aa6c58a8be81f~MinHeight: !ComputeFloat
+                    Value: -100.0
+                0f1b31ecc2f287fd3b1ad83047bc514d~MaxHeight: !ComputeFloat
+                    Value: 100.0
+                3e11a2b783889856b236e1202bf9db86~Strength: !ComputeFloat
+                    Value: 400.0
+        Overrides:
+            UVScale: {X: 1.0, Y: 1.0}

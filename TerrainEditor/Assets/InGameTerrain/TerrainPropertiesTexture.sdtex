@@ -1,0 +1,7 @@
+!Texture
+Id: 3f748df8-3d8c-451e-8ccd-c9018d37b679
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/TerrainEditor/TerrainPropertiesTexture.bmp
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net6.0-windows</TargetFrameworks>
+    <OutputType>Library</OutputType>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+	  <LangVersion>latest</LangVersion>
+	  <Platforms>AnyCPU</Platforms>
+	  <RunAnalyzersDuringBuild>false</RunAnalyzersDuringBuild>
+	  <EnforceCodeStyleInBuild>false</EnforceCodeStyleInBuild>
+	  <EnableNETAnalyzers>false</EnableNETAnalyzers>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="ImGui.NET" Version="1.89.9.4" />
+    <PackageReference Include="Stride.Core" Version="4.1.0.1948" />
+    <PackageReference Include="Stride.Engine" Version="4.1.0.1948" />
+  </ItemGroup>
+
+</Project>

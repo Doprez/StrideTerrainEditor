@@ -1,0 +1,46 @@
+!MaterialAsset
+Id: e61e3ec5-2c7d-4c1b-91b2-fe59d87457c9
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Archetype: a49ffbf1-d19b-4f7b-b0cc-76e1e75d184b:InGameTerrain/Materials/BaseMaterial
+Attributes:
+    Surface: !MaterialNormalMapFeature
+        NormalMap: !ComputeTextureColor
+            Texture*: 2a19b1f7-741e-458b-ba4e-e64d2b059558:InGameTerrain/Materials/sand_01_nor_gl_1k
+            FallbackValue:
+                Value: {R: 0.5019608, G: 0.5019608, B: 1.0, A: 1.0}
+            Scale: {X: 1.0, Y: 1.0}
+            Offset: {X: 0.0, Y: 0.0}
+            Swizzle: null
+    MicroSurface: !MaterialGlossinessMapFeature
+        GlossinessMap: !ComputeTextureScalar
+            Texture*: ab6e4103-6462-4e6f-b2ff-04eb4a0b27bb:InGameTerrain/Materials/sand_01_rough_1k
+            FallbackValue:
+                Value: 1.0
+            Scale: {X: 1.0, Y: 1.0}
+            Offset: {X: 0.0, Y: 0.0}
+        Invert: true
+    Diffuse: !MaterialDiffuseMapFeature
+        DiffuseMap*: !ComputeBinaryColor
+            Operator: Multiply
+            LeftChild: !ComputeTextureColor
+                Texture: ebdf68d8-9cbf-459b-a33e-fded99b5eff1:InGameTerrain/Materials/sand_01_diff_1k
+                FallbackValue:
+                    Value: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                Scale: {X: 1.0, Y: 1.0}
+                Offset: {X: 0.0, Y: 0.0}
+                Swizzle: null
+            RightChild: !ComputeColor
+                Value: {R: 0.6156863, G: 0.6156863, B: 0.6156863, A: 1.0}
+    DiffuseModel: !MaterialDiffuseLambertModelFeature {}
+    Specular: !MaterialMetalnessMapFeature
+        MetalnessMap: !ComputeFloat
+            Value: 0.0
+    SpecularModel: !MaterialSpecularMicrofacetModelFeature
+        Fresnel: !MaterialSpecularMicrofacetFresnelSchlick {}
+        Visibility: !MaterialSpecularMicrofacetVisibilitySmithSchlickGGX {}
+        NormalDistribution: !MaterialSpecularMicrofacetNormalDistributionGGX {}
+        Environment: !MaterialSpecularMicrofacetEnvironmentGGXLUT {}
+    Overrides:
+        UVScale: {X: 256.0, Y: 256.0}
+Layers: {}

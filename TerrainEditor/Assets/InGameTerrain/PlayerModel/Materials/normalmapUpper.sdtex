@@ -1,0 +1,7 @@
+!Texture
+Id: 0b7165c9-6dd0-404f-bb7c-b4eba234ccc2
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Resources/Textures/normalmapUpper.png
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

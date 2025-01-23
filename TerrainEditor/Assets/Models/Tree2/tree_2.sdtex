@@ -1,0 +1,7 @@
+!Texture
+Id: 5520a3f9-4ac0-45a9-8e46-9fc414176c42
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Resources/Vegetation/Tree2/tree.png
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

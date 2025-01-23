@@ -1,0 +1,51 @@
+﻿//by Idomeneas
+//TextureRepeat is not used in this one
+shader TerrainMultiBlendShader : ComputeColor,Texturing, Transformation, ShaderBase
+{
+   rgroup PerMaterial    {
+        stage Texture2D Texture_1;
+        stage Texture2D Texture_2;
+        stage Texture2D Texture_3;
+        stage Texture2D Texture_4;
+        stage Texture2D Texture_5;
+        stage Texture2D Texture_6;
+        stage Texture2D Texture_7;
+        stage Texture2D Texture_8;
+    }
+
+    float4 Shading(float2 TexCoord)
+    {
+        float4 col=streams.Color,wt1=streams.Color1,wt2=streams.Color2;
+        float4 outputColour = float4(1.0f, 0.0f, 0.0f, 1.0f);
+        float sum=wt1[0]+wt1[1]+wt1[2]+wt1[3]+wt2[0]+wt2[1]+wt2[2]+wt2[3];
+        if(sum>0)
+        {
+        outputColour=
+        (Texture_1.Sample(AnisotropicRepeatSampler,TexCoord)*wt1[0]+
+        Texture_2.Sample(AnisotropicRepeatSampler, TexCoord)*wt1[1]+
+        Texture_3.Sample(AnisotropicRepeatSampler, TexCoord)*wt1[2]+
+        Texture_4.Sample(AnisotropicRepeatSampler, TexCoord)*wt1[3]+
+        Texture_5.Sample(AnisotropicRepeatSampler, TexCoord)*wt2[0]+
+        Texture_6.Sample(AnisotropicRepeatSampler, TexCoord)*wt2[1]+
+        Texture_7.Sample(AnisotropicRepeatSampler, TexCoord)*wt2[2]+
+        Texture_8.Sample(AnisotropicRepeatSampler, TexCoord)*wt2[3])/sum;
+        }
+        else outputColour=BlackColor;
+        return outputColour;
+    }
+
+    stage float4 BlackColor=float4(0,0,0,1);
+    stage stream float3 Normal : NORMAL;
+    stage stream float4 Position : POSITION;
+	stage stream float4 Color : COLOR0;
+	stage stream float4 Color1 : COLOR1;
+	stage stream float4 Color2 : COLOR2;
+
+    // vertex shader
+   // override stage void PSMain(){         streams.ShadingPosition = Shading(streams.TexCoord);    }
+
+    //this one for some reason paints the edges in a weird texture
+    //depending on camera distance or rotation? not sure
+    override float4 Compute()    {		return Shading(streams.TexCoord);    }
+    
+};

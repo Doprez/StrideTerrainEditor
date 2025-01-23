@@ -1,0 +1,183 @@
+!PrefabAsset
+Id: e38ff84c-7e9c-4389-85fa-6164c6ee7f06
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+Hierarchy:
+    RootParts:
+        - ref!! fb41e8c7-3b81-4591-81bf-8384144a382c
+        - ref!! 64c26b1c-ccf1-44a6-aaf6-e1104dd18b58
+        - ref!! d3f990fc-4f19-49ce-99d8-983952903889
+        - ref!! cec265a2-d472-4420-b7fa-9bf8a576afb6
+        - ref!! fe5fd443-b009-4581-a212-11a32384ff5e
+        - ref!! f5175cbe-f0fa-416c-9ece-d27975721d86
+        - ref!! ae8df4b9-e95c-4dd8-861b-630dd49e819b
+        - ref!! 47402472-2e76-4c2a-8750-f0912cb9bb06
+        - ref!! 1628939e-8e5d-40b9-926d-f4d8d690b68e
+        - ref!! ecf35ab7-8b90-43f9-a15b-bfcc68d1d98c
+        - ref!! de4f75d9-9f4a-4b3e-8976-34fc3ffdcab2
+    Parts:
+        -   Entity:
+                Id: 1628939e-8e5d-40b9-926d-f4d8d690b68e
+                Name: Wall0x2x5
+                Components:
+                    b3e84fef2440e7005ab97cab275d6f11: !TransformComponent
+                        Id: 760c9a05-c2ed-4e3e-9db7-4aff617a16e6
+                        Position: {X: 5.5, Y: 0.0, Z: -2.0}
+                        Rotation: {X: 0.0, Y: -0.70710677, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    ce6d0291752e42d3daea815a03cae7c7: !ModelComponent
+                        Id: 42eb7eed-e775-4736-8f64-8b63996256d9
+                        Model: 24060068-4814-46ee-bbc1-7c22011e1156:Models/Statics/Wall0x2x5
+                        Materials:
+                            6724ce8f5b2871901751b084c407c034~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Entity:
+                Id: 47402472-2e76-4c2a-8750-f0912cb9bb06
+                Name: Wall0x2x5
+                Components:
+                    b3e84fef2440e7005ab97cab275d6f11: !TransformComponent
+                        Id: d45e8a6c-eb92-4dc2-b686-fc1ff219b828
+                        Position: {X: 5.5, Y: 0.0, Z: 4.0}
+                        Rotation: {X: 0.0, Y: -0.70710677, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    ce6d0291752e42d3daea815a03cae7c7: !ModelComponent
+                        Id: 4c55e14d-f5e3-404b-b5ba-a11b2b33cc55
+                        Model: 24060068-4814-46ee-bbc1-7c22011e1156:Models/Statics/Wall0x2x5
+                        Materials:
+                            1a902f8d8f73f23ce2c152daafb25109~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Entity:
+                Id: 64c26b1c-ccf1-44a6-aaf6-e1104dd18b58
+                Name: Wall0x2x2
+                Components:
+                    9de5bb9f8d8e9793c423ef673547d26c: !TransformComponent
+                        Id: 55d4d6f6-a083-4745-87e7-7f449fd80632
+                        Position: {X: -2.0, Y: 1.1920929E-07, Z: 3.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    78868d80999e8ac572be64f4fb384a53: !ModelComponent
+                        Id: 450ee56a-f5bd-43ad-abc8-9e311cec6a94
+                        Model: 536e38c1-52c2-4b24-986a-3dc5a0a7fa39:Models/Statics/Wall0x2x2
+                        Materials:
+                            c0f3831d91c80fd5567b528fa1900bcb~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Entity:
+                Id: ae8df4b9-e95c-4dd8-861b-630dd49e819b
+                Name: Wall0x2x5Window
+                Components:
+                    35fe6bef724d433515f63d09ecd2ea4f: !TransformComponent
+                        Id: e16d99dc-f245-4c0a-b2d5-f2d21c2ec7f3
+                        Position: {X: 0.5, Y: 2.3841858E-07, Z: 4.0}
+                        Rotation: {X: 0.0, Y: -0.70710677, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    47f020d2980b8d79f7a433bedf4d985c: !ModelComponent
+                        Id: c6feedef-f6c1-4d6c-bb8b-2cf7968386c4
+                        Model: 6695b85f-78b5-480d-a4e1-aa2831adc72c:Models/Statics/Wall0x2x5Window
+                        Materials:
+                            365db96becdb41e62eed957eb5a38186~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Entity:
+                Id: cec265a2-d472-4420-b7fa-9bf8a576afb6
+                Name: Wall0x2x2
+                Components:
+                    9de5bb9f8d8e9793c423ef673547d26c: !TransformComponent
+                        Id: 76c911a5-8793-40db-9cdb-368f4f8849d6
+                        Position: {X: 8.0, Y: 1.1920929E-07, Z: -1.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    78868d80999e8ac572be64f4fb384a53: !ModelComponent
+                        Id: a922a237-947e-44a6-a44b-156211f6a867
+                        Model: 536e38c1-52c2-4b24-986a-3dc5a0a7fa39:Models/Statics/Wall0x2x2
+                        Materials:
+                            fb0050d9f94129427985e0cb1a76ba02~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Entity:
+                Id: d3f990fc-4f19-49ce-99d8-983952903889
+                Name: Wall0x2x2
+                Components:
+                    9de5bb9f8d8e9793c423ef673547d26c: !TransformComponent
+                        Id: 39676c3f-e50e-4dbf-90d0-c34538538581
+                        Position: {X: 8.0, Y: 1.1920929E-07, Z: 3.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    78868d80999e8ac572be64f4fb384a53: !ModelComponent
+                        Id: a3d9d5d6-a7f3-4d2a-969f-73abf8688f28
+                        Model: 536e38c1-52c2-4b24-986a-3dc5a0a7fa39:Models/Statics/Wall0x2x2
+                        Materials:
+                            fa6fe6626e4e641f9120ebd26bd02450~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Entity:
+                Id: de4f75d9-9f4a-4b3e-8976-34fc3ffdcab2
+                Name: Gate1x2x1
+                Components:
+                    b0318acb9379025d82d7cdfa0df07586: !TransformComponent
+                        Id: c97eac67-6e77-4b99-bbed-13840132b3f2
+                        Position: {X: 8.5, Y: 0.0, Z: 1.5}
+                        Rotation: {X: 0.0, Y: -0.70710677, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    9a334f036bf43051c69bd936b87aa6ff: !ModelComponent
+                        Id: e578f157-c153-4529-9045-29b00e2c6467
+                        Model: 82cce321-d5f7-4c33-b775-05dc4bdc3974:Models/Statics/Gate1x2x1
+                        Materials:
+                            665afaf6824178d6d84c51e5a4264dd3~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Entity:
+                Id: ecf35ab7-8b90-43f9-a15b-bfcc68d1d98c
+                Name: Gate1x2x1
+                Components:
+                    b0318acb9379025d82d7cdfa0df07586: !TransformComponent
+                        Id: 9f077c10-dc77-429d-9cd1-775c12e351fd
+                        Position: {X: 8.5, Y: 0.0, Z: 0.5}
+                        Rotation: {X: 0.0, Y: -0.70710677, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    9a334f036bf43051c69bd936b87aa6ff: !ModelComponent
+                        Id: 764d2a6a-56b8-4cc5-96cd-534866a5788d
+                        Model: 82cce321-d5f7-4c33-b775-05dc4bdc3974:Models/Statics/Gate1x2x1
+                        Materials:
+                            40ad411ac6908977f671ad5c1a1aaabc~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Entity:
+                Id: f5175cbe-f0fa-416c-9ece-d27975721d86
+                Name: Wall0x2x5Window
+                Components:
+                    35fe6bef724d433515f63d09ecd2ea4f: !TransformComponent
+                        Id: 960ae9df-cf20-440f-9498-1fb26c22ed57
+                        Position: {X: 0.5, Y: 2.3841858E-07, Z: -2.0}
+                        Rotation: {X: 0.0, Y: -0.70710677, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    47f020d2980b8d79f7a433bedf4d985c: !ModelComponent
+                        Id: 1b56fe37-b9d7-4017-8866-1ff5817f0614
+                        Model: 6695b85f-78b5-480d-a4e1-aa2831adc72c:Models/Statics/Wall0x2x5Window
+                        Materials:
+                            0c503b889d2a6d4c35f5f19ec1db368e~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Entity:
+                Id: fb41e8c7-3b81-4591-81bf-8384144a382c
+                Name: Wall0x2x2
+                Components:
+                    9de5bb9f8d8e9793c423ef673547d26c: !TransformComponent
+                        Id: 61234647-1783-47af-a3a6-75b3a9c8e058
+                        Position: {X: -2.0, Y: 1.1920929E-07, Z: -1.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    78868d80999e8ac572be64f4fb384a53: !ModelComponent
+                        Id: 4eba535d-8703-4608-ba23-d2474d99636a
+                        Model: 536e38c1-52c2-4b24-986a-3dc5a0a7fa39:Models/Statics/Wall0x2x2
+                        Materials:
+                            45776e89516acc50ab15c6f0eae3ce1f~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+        -   Entity:
+                Id: fe5fd443-b009-4581-a212-11a32384ff5e
+                Name: Wall0x2x2Window
+                Components:
+                    fabf578b32768822f9a391e3585ce54f: !TransformComponent
+                        Id: 16697c05-88f7-4626-9970-74037367071c
+                        Position: {X: -2.0, Y: 0.0, Z: 1.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    775f1ff77a0f240725681110c21b218b: !ModelComponent
+                        Id: 36c1a7d2-642b-45a1-a4be-e369968bf55f
+                        Model: 39569c94-17e4-4e27-a967-0889cd3ee805:Models/Statics/Wall0x2x2Window
+                        Materials:
+                            fb03ccb8d53cf74bf891f6538899603c~0: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1

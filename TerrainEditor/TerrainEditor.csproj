@@ -1,0 +1,114 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net6.0-windows</TargetFrameworks>
+	  <Platforms>AnyCPU</Platforms>
+    <ErrorReport>none</ErrorReport>
+    <RunAnalyzersDuringBuild>false</RunAnalyzersDuringBuild>
+    <EnforceCodeStyleInBuild>false</EnforceCodeStyleInBuild>
+    <EnableNETAnalyzers>false</EnableNETAnalyzers>
+  </PropertyGroup>
+   <ItemGroup>
+    <ProjectReference Include="..\HeightMapEditor\HeightMapEditor.csproj" />
+    <ProjectReference Include="..\ImGui\ImGui.csproj" />
+  </ItemGroup>
+   <ItemGroup>
+     <Compile Update="Effects\CubeInstancingShader.sdsl.cs">
+       <DesignTime>True</DesignTime>
+       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+       <AutoGen>True</AutoGen>
+     </Compile>
+     <Compile Update="Effects\MultiMeshShader.sdsl.cs">
+       <DesignTime>True</DesignTime>
+       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+       <AutoGen>True</AutoGen>
+     </Compile>
+     <Compile Update="Effects\SinglePassWireframeShader.sdsl.cs">
+       <DesignTime>True</DesignTime>
+       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+       <AutoGen>True</AutoGen>
+     </Compile>
+     <Compile Update="Effects\TerrainShader.sdsl.cs">
+       <DesignTime>True</DesignTime>
+       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+       <AutoGen>True</AutoGen>
+     </Compile>
+     <Compile Update="Effects\TerrainShaderOne.sdsl.cs">
+       <DesignTime>True</DesignTime>
+       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+       <AutoGen>True</AutoGen>
+     </Compile>
+     <Compile Update="Effects\TerrainShaderThree.sdsl.cs">
+       <DesignTime>True</DesignTime>
+       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+       <AutoGen>True</AutoGen>
+     </Compile>
+     <Compile Update="Effects\TerrainShaderTwo.sdsl.cs">
+       <DesignTime>True</DesignTime>
+       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+       <AutoGen>True</AutoGen>
+     </Compile>
+     <Compile Update="Effects\Terrain_Blend_Distance.sdsl.cs">
+       <DesignTime>True</DesignTime>
+       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+       <AutoGen>True</AutoGen>
+     </Compile>
+     <Compile Update="Effects\Terrain_Blend_Height.sdsl.cs">
+       <DesignTime>True</DesignTime>
+       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+       <AutoGen>True</AutoGen>
+     </Compile>
+     <Compile Update="Effects\Terrain_Blend_Slope.sdsl.cs">
+       <DesignTime>True</DesignTime>
+       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+       <AutoGen>True</AutoGen>
+     </Compile>
+     <Compile Update="Effects\TreeInstancingShader.sdsl.cs">
+       <DesignTime>True</DesignTime>
+       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+       <AutoGen>True</AutoGen>
+     </Compile>
+     <Compile Update="Effects\VegetationWind.sdsl.cs">
+       <DesignTime>True</DesignTime>
+       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+       <AutoGen>True</AutoGen>
+     </Compile>
+   </ItemGroup>
+   <ItemGroup>
+     <None Update="Effects\CubeInstancingShader.sdsl">
+       <LastGenOutput>CubeInstancingShader.sdsl.cs</LastGenOutput>
+     </None>
+     <None Update="Effects\MultiMeshShader.sdsl">
+       <LastGenOutput>MultiMeshShader.sdsl.cs</LastGenOutput>
+     </None>
+     <None Update="Effects\SinglePassWireframeShader.sdsl">
+       <LastGenOutput>SinglePassWireframeShader.sdsl.cs</LastGenOutput>
+     </None>
+     <None Update="Effects\TerrainShader.sdsl">
+       <LastGenOutput>TerrainShader.sdsl.cs</LastGenOutput>
+     </None>
+     <None Update="Effects\TerrainShaderOne.sdsl">
+       <LastGenOutput>TerrainShaderOne.sdsl.cs</LastGenOutput>
+     </None>
+     <None Update="Effects\TerrainShaderThree.sdsl">
+       <LastGenOutput>TerrainShaderThree.sdsl.cs</LastGenOutput>
+     </None>
+     <None Update="Effects\TerrainShaderTwo.sdsl">
+       <LastGenOutput>TerrainShaderTwo.sdsl.cs</LastGenOutput>
+     </None>
+     <None Update="Effects\Terrain_Blend_Distance.sdsl">
+       <LastGenOutput>Terrain_Blend_Distance.sdsl.cs</LastGenOutput>
+     </None>
+     <None Update="Effects\Terrain_Blend_Height.sdsl">
+       <LastGenOutput>Terrain_Blend_Height.sdsl.cs</LastGenOutput>
+     </None>
+     <None Update="Effects\Terrain_Blend_Slope.sdsl">
+       <LastGenOutput>Terrain_Blend_Slope.sdsl.cs</LastGenOutput>
+     </None>
+     <None Update="Effects\TreeInstancingShader.sdsl">
+       <LastGenOutput>TreeInstancingShader.sdsl.cs</LastGenOutput>
+     </None>
+     <None Update="Effects\VegetationWind.sdsl">
+       <LastGenOutput>VegetationWind.sdsl.cs</LastGenOutput>
+     </None>
+   </ItemGroup>
+</Project>

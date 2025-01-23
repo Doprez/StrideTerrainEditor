@@ -1,0 +1,6 @@
+!Texture
+Id: c6b83419-1092-4fec-93e6-82f55644cfeb
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Resources/TRTerrain/Ground037_2K-JPG/Ground037_2K_Normal.jpg
+Type: !NormalMapTextureType {}

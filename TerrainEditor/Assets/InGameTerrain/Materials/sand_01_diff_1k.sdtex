@@ -1,0 +1,7 @@
+!Texture
+Id: ebdf68d8-9cbf-459b-a33e-fded99b5eff1
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Resources/TRTerrain/sand_01_1k/sand_01_diff_1k.png
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

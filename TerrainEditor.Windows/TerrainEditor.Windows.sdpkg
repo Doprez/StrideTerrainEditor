@@ -1,0 +1,110 @@
+!Package
+SerializedVersion: {Assets: 3.1.0.0}
+Meta:
+    Name: Stride Community Terrain Editor by Idomeneas
+    Version: 1.0.0
+    Authors: []
+    Owners: []
+    Dependencies: null
+AssetFolders:
+    -   Path: !dir Assets
+ResourceFolders:
+    - !dir Resources
+OutputGroupDirectories: {}
+ExplicitFolders: []
+Bundles: []
+TemplateFolders: []
+RootAssets:
+    - 07010794-59e7-4a98-98f4-25129117d334:Water/ripple
+    - 08df8d50-1daa-4908-96b0-fbb4620c442d:Textures/Floor/wood3_d
+    - 09e2f864-70dd-4de0-b0b7-3ddb5b8e5262:Textures/HeightTerrainLevels/level_swamp
+    - 0b2d1141-7825-4085-be26-609287b1f9ad:Prefabs/walls1
+    - 15bc8668-1f2d-49a7-9387-ec8c5e7b95d9:Water/Water_Normals
+    - 16a39d89-57b2-4b3b-aeee-1971fff55016:Textures/Floor/stonefloor1_d
+    - 196e0723-800c-4e85-8ae5-b8bbd43893dc:Terrain/TerrainPropertiesTexture
+    - 1c0efde9-93df-4084-b79c-cc5c8355507f:Prefabs/Wall0x1x2
+    - 1c35f5f1-61d3-4659-8fa7-655ae0dfa388:Textures/Walls/woodpillar01d
+    - 2000be2e-31a5-4c83-ba47-cd4bc2d621c1:Water/caust_001
+    - 29a9dc93-ce51-4167-be26-dc3070b1481f:TerrainSelectionSphere
+    - 2cbe1fb2-6e0d-4206-8996-1c4b4b5de01e:Terrain/TerrainHeightmap
+    - 2e479ac8-6499-42a0-9275-f2b4895b0e94:Textures/HeightTerrainLevels/level_rock
+    - 308d9f6e-00c2-4b33-8eab-a24ac7401f9b:Prefabs/Wall0x2x5Window
+    - 31ff01ea-d307-4199-8274-bb92f8bca2a3:Textures/Floor/stonefloor3_d
+    - 32e2ada3-880e-488c-9b94-de446bba8d52:Prefabs/Wall0x2x2Window
+    - 37384704-1596-4b82-971c-3411d127e0e8:Water/wave1
+    - 3a62bbae-df7b-4274-a08f-e879086a590d:Terrain/dirt4norm
+    - 3a7de2e7-9512-46b0-b3e3-525111e442a0:Terrain/TerrainTexture5
+    - 3d066a93-80fa-4c23-ba04-e7b479656cfb:Terrain/FirstWeights
+    - 3d1425cf-ca9b-4cf6-9189-c17c65a34da9:Terrain/Layer8Material
+    - 3d5ecbc8-d2f2-4bac-984b-b63393ef05c5:Textures/BumpMaps/bumpmap1
+    - 41186ae0-57ea-4eb7-ab5f-220adba894ba:Materials/TerrainHeightBased/Ground037_2K_Normal
+    - 419dea4c-d787-47cf-a4bd-26189a0a742b:Materials/TerrainHeightBased/sand_01_diff_1k
+    - 41a4c6ec-e879-472a-9e23-f24f4433be59:Prefabs/Plane
+    - 462ab2bf-c160-4ec9-ac1b-cd8a50c1b0ea:Textures/HeightTerrainLevels/level_seabed
+    - 4b3d4705-ca90-4c4f-9150-5c4b7939fc1b:Materials/TerrainHeightBased/rock_wall_02_rough_1k
+    - 4d55018c-348a-40b9-9cc1-5bb24b0ed34b:Terrain/BlendTerrainMaterial
+    - 5100d6f7-1c15-4f99-8ebf-aa36d4b9876d:Terrain/TerrainTexture3
+    - 51162195-9830-4423-9b12-d00c1b705e73:Water/sky
+    - 513ea2e7-117e-425c-805c-71ee26761444:Terrain/TerrainObjectMaterialShader
+    - 550f3650-6f55-4182-98e0-dfd3cc189cbb:Water/flowmap
+    - 553efa2f-0364-4ca6-b8dd-5e47203af340:Textures/Walls/wood1_d
+    - 57dceae1-fef1-4937-abac-cec56d50205a:Materials/TerrainHeightBased/Ground037_2K_Roughness
+    - 59155274-12a2-47ef-b28c-ebe3c2ba1a58:Terrain/rock2norm
+    - 5acc9409-62d7-4a6b-a74f-991569427d50:Water/noise
+    - 5dc7b7fd-0095-4c7f-a551-3ad82abfe24d:Textures/HeightTerrainLevels/level_grass
+    - 5f030b12-9e6a-4352-bfca-21aa0bdd3f1a:Terrain/Layer5Material
+    - 60d54b5a-2fc6-46aa-99b8-f4f5b0d42774:Prefabs/WoodenRoof1
+    - 635d85b1-0e74-4a8f-8f4c-5c40208acb32:Terrain/TerrainTexture4
+    - 6853ce98-327d-4b71-8cb2-ec9525ce8183:Terrain/TerrainMultiBlendMaterialShader
+    - 73e70242-8c1d-4d03-980c-6543187365fd:Terrain/Layer3Material
+    - 756d892f-dee2-4a5a-aa6a-80c9c1bf560a:Water/WaterPlane
+    - 7777c0d7-9876-4ff4-858f-65a88a6e1e21:Materials/TerrainHeightBased/sand_01_nor_gl_1k
+    - 7959ac9e-31e3-492b-a768-60601b0680d7:Textures/Walls/wood_messy_01d
+    - 7c4adc21-c987-49bd-a7ac-9e90bd84ebf3:Terrain/Layer1Material
+    - 7e4e586e-3ca2-4132-b6fd-31f79c1a6543:Textures/BumpMaps/bumpmap2
+    - 84b8c10a-6eae-4324-b2d2-1fa6c73ab61a:Prefabs/Gate1x2x1
+    - 85fefe9c-756a-472d-8571-68ce1b5c640d:Textures/Floor/stonefloor_d
+    - 87060c8d-4278-4f19-ac65-6d834f12eda9:Prefabs/Wall0x2x5
+    - 8804a51c-596f-4ea0-863d-62813ca59d6d:Textures/Walls/stonewall_d
+    - 88e2348e-3124-4d85-aace-20ae5ce89d3a:Terrain/TerrainTexture7
+    - 88e92fc0-c103-4daf-b7a9-bbf06594c21c:Terrain/TerrainTexture6
+    - 8a6de6d8-374d-416b-b8c8-196b345d6ca4:Water/WaterMaterialShader
+    - 9020603a-c904-4c57-864e-eee978b1ec46:Textures/Walls/stonewall5_d
+    - 9497ee4f-c727-4d28-ba1a-46e313ce1abb:Materials/TerrainHeightBased/rock_wall_02_diff_1k
+    - 949fe801-6ce7-4f5f-afcd-3725130b357f:Textures/HeightTerrainLevels/level_dirt
+    - 98fce668-e0b9-4907-9101-9286f78f25d3:Terrain/Layer4Material
+    - 9a57bac1-1ff9-4834-9ebc-093a4a73e3d1:Textures/DetailTexture
+    - 9c7fe1c8-a0fe-4d17-a910-841b76fca2af:Prefabs/Wall0x2x2
+    - 9e714bcc-5414-4f6a-9bb6-a29f5e48c9b3:Terrain/TerrainTexture2
+    - a0f85cfc-7cba-4bf8-ac60-1998e5ada855:Textures/HeightTerrainLevels/level_desert
+    - a2854b24-4ddd-4d3d-bda1-9df3b876cfd8:Terrain/TerrainHeightMaterialShader
+    - a2eb1da7-a4f1-4d28-b4cc-9606b82cbff3:Materials/TerrainHeightBased/rock_wall_02_nor_gl_1k
+    - aaa1f78c-9100-4532-baea-d6d62ada11be:Textures/Walls/stonewall1_d
+    - af395711-8a56-44ac-8ef7-4c3bb361c31f:Terrain/Layer2Material
+    - b4f62822-8751-4613-b8f3-cb63a1fcf3de:Water/sand
+    - b4f75239-7614-4766-8b24-ca3803addc5e:Terrain/Heightmap
+    - b6b1c163-cead-4195-88c5-f1b8415484ee:Textures/Floor/wood2_d
+    - bda68145-623a-4dea-afde-1a2a8dd3c69c:Terrain/Layer6Material
+    - c4adcaa8-b4bf-419e-b2f4-93b761eefefa:Textures/Floor/wood1_d
+    - c543efd3-ee24-40a3-967c-ed2c939aa7ab:Textures/Floor/stonefloor2_d
+    - c7c8d425-a14c-485b-a615-6c1fdd4005e6:Textures/Walls/stonewall4_d
+    - c7df548e-1a42-4516-a352-d4f52aa7b06b:Terrain/SecondWeights
+    - c9e123c0-830a-4d1d-9b65-11482c0a9aa3:Terrain/TerrainTexture1
+    - cd1c68e5-9628-4bc0-97be-82951e6329c6:Textures/HeightTerrainLevels/level_mountain
+    - d9b43b7f-2e04-4903-93aa-d014a9638168:Textures/Walls/wood1_s
+    - dc3e315b-5da7-41da-a40b-eb5e5cb38d67:Textures/Walls/stonewall3_d
+    - de96aa83-96ec-41e2-a3a3-ba10a799cff9:Terrain/grass5norm
+    - df64c799-98de-456e-bee5-650c6180cb1b:Terrain/rock2
+    - e0ec6a51-531e-4b16-ba74-dac8beef3f8e:Textures/Walls/stonewall2_d
+    - e38ff84c-7e9c-4389-85fa-6164c6ee7f06:Prefabs/House1
+    - e609a593-fe00-4a13-a217-67ffb93a934b:Materials/TerrainHeightBased/sand_01_rough_1k
+    - ecdafc6d-2cc4-4572-ad92-7b1f48881f8a:Textures/HeightTerrainLevels/level_snow
+    - f1e512c1-80ae-4f12-9bf2-eb2e87556523:Water/wave0
+    - f33dd357-bafb-4593-9cda-33ba0f2b4883:Terrain/Layer7Material
+    - f518ac13-6b64-49c4-8871-f0762360de6a:Terrain/dirt4bump
+    - f5d65fee-cbc1-4916-8060-dcf3a50c036b:Materials/TerrainHeightBased/Ground037_2K_Color
+    - f67d53d1-8a90-49e7-92df-38327b24ecfb:Water/foam0
+    - f7499887-59da-47a7-b9a3-9affea174d87:Textures/HeightTerrainLevels/level_sand
+    - f82a74a7-9f40-424b-adc2-1b0eb1792148:Terrain/TerrainTexture8
+    - fbdba181-703d-48c8-8243-ad87dcfac4ce:Water/RipplesRenderTarget
+    - febbea05-09a5-4657-9a0e-9df8c8a8cf65:Water/foam1

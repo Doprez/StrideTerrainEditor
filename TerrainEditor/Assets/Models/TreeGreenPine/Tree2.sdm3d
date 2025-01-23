@@ -1,0 +1,19 @@
+!Model
+Id: 54bc7366-0d94-4e18-86f6-a59d0f9399af
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Resources/Vegetation/gylio8vtvaww-GreenPine/Tree2.fbx
+Skeleton: 29e18aa5-bcdb-46ee-a1ce-993c51799cb5:Models/TreeGreenPine/Tree2 Skeleton
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    76c0b6d1ca657e9c31bde3e7b7dd28fa:
+        Name: Material.002
+        MaterialInstance:
+            Material: 6f103d2c-8eaa-4a70-8a0e-e1291aa564cf:Models/TreeGreenPine/Material.002
+    757cef6b229dae484fa08a6c1ddb9185:
+        Name: Material.001
+        MaterialInstance:
+            Material: dece0edc-84c6-4413-b348-a6a851f1444c:Models/TreeGreenPine/Material.001
+Modifiers: {}
+~SourceHashes:
+    fb29070a9c139ae931c071cff0a87f81~../../../../Resources/Vegetation/gylio8vtvaww-GreenPine/Tree2.fbx: 21e395bc4a5b96af8231717dd5e3c801

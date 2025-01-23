@@ -1,0 +1,68 @@
+﻿//by Idomeneas
+//depending on TextureRepeat value, it will cover the mesh with repetitions
+//of the blended texture, set to 0 to cover each quad with the blended texture
+shader TerrainBlendShader : ComputeColor, Texturing, Transformation,
+ShaderBase,Camera
+{
+     cbuffer PerMaterial
+    {
+    stage int TextureRepeat = 1;  
+    stage float DetailMappingDistance=100.0f;
+    }
+    rgroup PerMaterial    {
+        stage Texture2D FirstWeights;
+        stage Texture2D SecondWeights;
+        stage Texture2D Texture_1;
+        stage Texture2D Texture_2;
+        stage Texture2D Texture_3;
+        stage Texture2D Texture_4;
+        stage Texture2D Texture_5;
+        stage Texture2D Texture_6;
+        stage Texture2D Texture_7;
+        stage Texture2D Texture_8;
+    }
+    stage float4 BlackColor=float4(0,0,0,1);
+
+    float4 Shading(float2 TexCoord)
+    {
+        float4 FirstWeightsColour,SecondWeightsColour, outputColour = float4(1.0f, 0.0f, 0.0f, 1.0f);
+        FirstWeightsColour = FirstWeights.Sample(AnisotropicRepeatSampler,TexCoord);
+        SecondWeightsColour = SecondWeights.Sample(AnisotropicRepeatSampler,TexCoord);
+        float sum=FirstWeightsColour[0]+
+        FirstWeightsColour[1]+FirstWeightsColour[2]+FirstWeightsColour[3]+
+        SecondWeightsColour[0]+SecondWeightsColour[1]+SecondWeightsColour[2]+SecondWeightsColour[3];
+        if(sum>0)
+        {
+        outputColour=(Texture_1.Sample(AnisotropicRepeatSampler,TexCoord)*
+        FirstWeightsColour[0]+
+        Texture_2.Sample(AnisotropicRepeatSampler, TexCoord)*FirstWeightsColour[1]+
+        Texture_3.Sample(AnisotropicRepeatSampler, TexCoord)*FirstWeightsColour[2]+
+        Texture_4.Sample(AnisotropicRepeatSampler, TexCoord)*FirstWeightsColour[3]+
+        Texture_5.Sample(AnisotropicRepeatSampler, TexCoord)*SecondWeightsColour[0]+
+        Texture_6.Sample(AnisotropicRepeatSampler, TexCoord)*SecondWeightsColour[1]+
+        Texture_7.Sample(AnisotropicRepeatSampler, TexCoord)*SecondWeightsColour[2]+
+        Texture_8.Sample(AnisotropicRepeatSampler, TexCoord)*SecondWeightsColour[3])/sum;
+        }
+        else outputColour=BlackColor;
+        return outputColour;
+    }
+
+    stage stream float3 Normal : NORMAL;
+    stage stream float4 Position : POSITION;
+	stage stream float4 Color : COLOR;
+
+    // vertex shader
+    stage override void VSMain()    { 
+    streams.ShadingPosition = mul(streams.Position, WorldViewProjection);
+    }
+
+ // pixel shader
+    stage override void PSMain()    
+    {    
+        if(TextureRepeat>0)
+       streams.ColorTarget = Shading(TextureRepeat*streams.TexCoord);
+       else
+        streams.ColorTarget = Shading(streams.TexCoord);
+   }
+    
+};

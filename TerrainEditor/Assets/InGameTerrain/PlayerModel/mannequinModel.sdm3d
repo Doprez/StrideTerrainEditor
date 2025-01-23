@@ -1,0 +1,39 @@
+!Model
+Id: ff927b10-d3b0-4e07-b858-40a3247057a5
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Resources/Model/StrideMannequin.fbx
+Skeleton: 17c61146-9d5c-4e14-a4b5-0a8c362f0eeb:InGameTerrain/PlayerModel/mannequinModel Skeleton
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    cc74cfad3a7098d4984063fc3ca885e0:
+        Name: semiGlossMT.006
+        MaterialInstance:
+            Material: c82c742c-d298-4423-a6bd-3dc13d620995:InGameTerrain/PlayerModel/Materials/BodyWhite
+    9c3241849e3fcc8d1664364b9f09dee4:
+        Name: glossMT.006
+        MaterialInstance:
+            Material: fa9914be-32e2-47e3-8a94-b1cc76813d8b:InGameTerrain/PlayerModel/Materials/BodyGray
+    86b1c944216cf1b58cf22f349a4bd1fe:
+        Name: upperMatteMT.004
+        MaterialInstance:
+            Material: e139d455-4819-4150-a49d-6578803642fc:InGameTerrain/PlayerModel/Materials/MattBlackUpper
+    fa78673a35945924cb4baccab0e9bd63:
+        Name: glowMT.005
+        MaterialInstance:
+            Material: 76229ab5-8749-452b-9dd4-841b0eac12e7:InGameTerrain/PlayerModel/Materials/Emissive
+    f3452f55e9fa486394bee73bd86295f7:
+        Name: lowerMatteMT.003
+        MaterialInstance:
+            Material: 6435f1d3-b40c-40c8-a2d9-6e014c9bca73:InGameTerrain/PlayerModel/Materials/MattBlackLower
+    01521eb2636482d3a415e997fdb8a567:
+        Name: lambert1.005
+        MaterialInstance:
+            Material: c2659882-2abf-4e72-a86f-0a106f6c61bb:InGameTerrain/PlayerModel/Materials/LambertMT
+    5f62dff8c8477038ea37b3ebdc5a19cd:
+        Name: logoMt.002
+        MaterialInstance:
+            Material: fa9914be-32e2-47e3-8a94-b1cc76813d8b:InGameTerrain/PlayerModel/Materials/BodyGray
+Modifiers: {}
+~SourceHashes:
+    c97541191711fb3cbe858f6204b10cad~../../../../Resources/Model/StrideMannequin.fbx: 79d6c06f54c9381c1265077d29822417

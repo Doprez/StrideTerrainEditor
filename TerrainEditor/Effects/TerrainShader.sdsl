@@ -1,0 +1,73 @@
+﻿shader TerrainShader : ComputeColor, Texturing, //PositionStream4,
+Transformation,
+ShaderBase
+{
+   stage float TextureRepeat =1.0f;
+
+    rgroup PerMaterial    {
+        stage Texture2D FirstWeights;
+        stage Texture2D SecondWeights;
+        stage Texture2D Texture_1;
+        stage Texture2D Texture_2;
+        stage Texture2D Texture_3;
+        stage Texture2D Texture_4;
+        stage Texture2D Texture_5;
+        stage Texture2D Texture_6;
+        stage Texture2D Texture_7;
+        stage Texture2D Texture_8;
+    }
+    
+    cbuffer PerView
+    {
+        stage float4 Viewport;
+    }
+     	
+    float4 Shading(float2 TexCoord)
+    {
+        float4 FirstWeightsCol,SecondWeightsCol,outputColour,Tex1Col,Tex2Col,Tex3Col,
+        Tex4Col,Tex5Col,Tex6Col,Tex7Col,Tex8Col,BlackColor=float4(0,0,0,1);
+        FirstWeightsCol = FirstWeights.SampleLevel(LinearRepeatSampler, TextureRepeat*TexCoord,0);
+        SecondWeightsCol = SecondWeights.SampleLevel(LinearRepeatSampler, TextureRepeat*TexCoord,0);
+        Tex1Col=Texture_1.SampleLevel(LinearRepeatSampler, TextureRepeat*TexCoord,0);
+        Tex2Col=Texture_2.SampleLevel(LinearRepeatSampler, TextureRepeat*TexCoord,0);
+        Tex3Col=Texture_3.SampleLevel(LinearRepeatSampler, TextureRepeat*TexCoord,0);
+        Tex4Col=Texture_4.SampleLevel(LinearRepeatSampler, TextureRepeat*TexCoord,0);
+        Tex5Col=Texture_5.SampleLevel(LinearRepeatSampler, TextureRepeat*TexCoord,0);
+        Tex6Col=Texture_6.SampleLevel(LinearRepeatSampler, TextureRepeat*TexCoord,0);
+        Tex7Col=Texture_7.SampleLevel(LinearRepeatSampler, TextureRepeat*TexCoord,0);
+        Tex8Col=Texture_8.SampleLevel(LinearRepeatSampler, TextureRepeat*TexCoord,0);
+
+	float4 color = lerp(BlackColor, Tex1Col, FirstWeightsCol.r);
+	color = lerp(color, Tex2Col, FirstWeightsCol.g);
+	color = lerp(color, Tex3Col, FirstWeightsCol.b);
+	color = lerp(color, Tex4Col, FirstWeightsCol.a);
+	color = lerp(color, Tex5Col, SecondWeightsCol.r);
+	color = lerp(color, Tex6Col, SecondWeightsCol.g);
+	color = lerp(color, Tex7Col, SecondWeightsCol.b);
+	color = lerp(color, Tex8Col, SecondWeightsCol.a);
+    
+    return color;
+    }
+
+    float4 projToWorld(in float4 pos, in float3 normal)
+    {
+        float3 scaling = normal * (WorldScale - 1);
+        return mul(pos + float4(scaling.x, scaling.y, scaling.z, 0), WorldViewProjection);
+    }
+        
+    stage stream float3 Normal : NORMAL;
+    stage stream float4 Position : POSITION;
+	stage stream float4 Color : COLOR;
+
+    // vertex shader
+    stage override void VSMain()    { 
+    //base.VSMain();
+    streams.ShadingPosition = projToWorld(streams.Position,streams.Normal);  
+    }
+
+ // pixel shader
+    stage override void PSMain()    {        
+    streams.ColorTarget = Shading(TextureRepeat*streams.TexCoord);  
+    }
+  
+};

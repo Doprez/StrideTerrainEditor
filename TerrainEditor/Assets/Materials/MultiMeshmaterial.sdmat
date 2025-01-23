@@ -1,0 +1,12 @@
+!MaterialAsset
+Id: e20a85a0-6296-4221-9b02-97fb7edb29f3
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Attributes:
+    Diffuse: !MaterialDiffuseMapFeature
+        DiffuseMap: !ComputeVertexStreamColor
+            Stream: !ColorVertexStreamDefinition {}
+    DiffuseModel: !MaterialDiffuseLambertModelFeature {}
+    Overrides:
+        UVScale: {X: 1.0, Y: 1.0}
+Layers: {}

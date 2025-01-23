@@ -1,0 +1,15 @@
+!Model
+Id: 24060068-4814-46ee-bbc1-7c22011e1156
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Resources/Models/Wall0x2x5.fbx
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    2a4c62502d84612cd0bc56d6d0bc56d6:
+        Name: GridMT
+        MaterialInstance:
+            Material: 8c88d386-0517-4718-9c32-1edce3b49c13:Models/Statics/WoodWall1
+Modifiers: {}
+~SourceHashes:
+    8b3be45c33943a836a4101bd287239c5~../../../../Resources/Models/Wall0x2x5.fbx: d8eef408ed94959207607e0ebfe92a1d

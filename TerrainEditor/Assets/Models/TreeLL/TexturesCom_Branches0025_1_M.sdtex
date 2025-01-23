@@ -1,0 +1,7 @@
+!Texture
+Id: 8fee89fa-8196-45f7-950c-8c22bdbd066d
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Resources/Vegetation/Tree_LL/TexturesCom_Branches0025_1_M.png
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

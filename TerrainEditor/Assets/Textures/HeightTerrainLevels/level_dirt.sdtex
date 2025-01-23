@@ -1,0 +1,7 @@
+!Texture
+Id: 949fe801-6ce7-4f5f-afcd-3725130b357f
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Resources/Textures/HeightTerrainLevels/level_dirt.jpg
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
