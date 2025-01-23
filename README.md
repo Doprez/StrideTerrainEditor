@@ -9,7 +9,8 @@ Stride Community Engine Editor for terrain creation and manipulation, and Textur
 * Download the source and extract somewhere. 
 * The Stride version used is 4.1. Make sure you open the project in the Stride Studio under that version. Unfortunately,
 version 4.2 seems to introduce some problems that I wasn't able to solve (or maybe it was just me...). So upgrade to 4.2 at your own risk.
-* If you have trouble with the project compiling in Visual Studio (VS), clean the solution and rebuild.
+* If you have trouble with the project compiling in Visual Studio (VS), clean the solution and rebuild (a few times).
+* Make sure you open the project with the Stride editor and Stride version 4.1. If an item gives an error that it is not found, note the location and fix any broken references.
 * If all goes well, open the editor either through Stride Game Studio or from VS.
 * Note the following:
   * There are default settings for many parameters of the Editor GUI that can be changed in the file ![TerrainEditorView.cs](https://github.com/Idomeneas1970/Stride-Terrain-Editor/blob/main/StrideTerrainEditor/TerrainEditorView.cs) .
