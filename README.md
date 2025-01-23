@@ -52,6 +52,7 @@ A lot of the magic happens here. Note the following:
 * All files involved with the current terrain are saved in the Resources/TerrainEditor/ folder. Click the SaveAs buttons to save them elsewhere.
 * The "New" button creates a new terrain mesh with the parameters you see on this tab. Weight and Property textures are reset in this case. Max terrain size is 1024x1024 but you can change that to suit your needs if you want.
 * The blended texture is important, and is utilized when rendering the terrain mesh object in game.
+* There are 3 types of shaders used to display terrain in editor, in game or in tiles mode, chosen via Display Mode: single texture, height based and multi blend.
 
 ### Area tab:
 ![Area tab](Areatab.png?raw=true "Area tab")
