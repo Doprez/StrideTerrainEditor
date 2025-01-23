@@ -96,4 +96,4 @@ A great number of useful image utilities here, enjoy!
   * Profan's ![XenkoByteSized](https://github.com/profan/XenkoByteSized) , one of the best projects to start studying stride and its capabilities.
   * Joreyk (IXLLEGACYIXL) and Doprez ![NexStandard/Terrain1](https://github.com/NexStandard/Terrain1) which helped a lot with showing how to change vertices on the GPU directly! Take care to get this kind of thing right if you change the code I provided or you can mess up your computer display!
   * Tom Groner's shader from ![XenkoFlowingWater](https://github.com/TomGroner/XenkoFlowingWater) is used for water planes.
-  * A lot of useful software by Dewald Esterhuizen ![Here](https://www.softwarebydefault.com/) . The filters used in the editor are from this source.
+  * A lot of useful software by Dewald Esterhuizen ![Here](https:// www.softwarebydefault.com/) . The filters used in the editor are from this source.
