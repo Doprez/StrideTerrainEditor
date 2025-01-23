@@ -37,23 +37,32 @@ The values you see here affect all "Generate" type procedures (when you click an
 Any important messages after some terrain operations can be found here.
 
 ### Terrain tab:
+![World tab](Worldtab.png?raw=true "World tab")
+
+You can build a whole world here, with an automated process. First make sure you have generated some unique tiles, then load 
+them. After that you can either generate the world map or load it. The tiles are loaded asynchronously as you move about the world. This part of the editor shows you how you can build a basic Civ type game and a lot of the issues invovled.
+
+### Terrain tab:
 ![Terrain tab](Terraintab.png?raw=true "Terrain tab")
 
 A lot of the magic happens here. Note the following:
-* Depending on what you are saving (hitting a "Save" button), an appropriate Filename is chosen and the corresponding file is overwritten.
+* Depending on what you are saving (hitting a "Save" button), an appropriate Filename is chosen and the corresponding file is overwritten. So use Save As button to store the file elsewhere (not in the resource folder).
 * All files involved with the current terrain are saved in the Resources/TerrainEditor/ folder. Click the SaveAs buttons (not shown in the picks here) to save them elsewhere.
 * The "New" button creates a new terrain mesh with the parameters you see on this tab. Weight and Property textures are reset in this case. Max terrain size is 1024x1024 but you can change that to suit your needs if you want.
 * The blended texture is important, and is utilized when rendering the terrain mesh object in game.
 
-### Vegetation tab:
-![Vegetation tab](Vegetation.png?raw=true "Vegetation tab")
+### Area tab:
+![Area tab](Areatab.png?raw=true "Area tab")
 
 Please note the following:
-* Currently, trees are not instanced. An entity is created for each tree and the max is set to 10k. There is a hit on FPS depending on how many are in the frustum.
-* The combined texture contains the following information: at each pixel location, the Red channel indicates a tree location, the Green channel indicates a road (aka like navigation), and the Blue channel indicates a collision. The latter is checked in game as the player moves about the terrain, to see on which vertices can they walk/jump to. The road is used like a navigation mess.
+* Currently, objects are not instanced. An entity is created for each object in the world. There is a hit on FPS depending on how many are in the frustum, so make sure you set the object visibility distance to what you need.
 * Make sure you change the values of the selection ball radius and strength in the terrain tab for finer/detailed combined texture and placement or trees, roads, and collisions.
-* The combined texture (terrain properties) is important, and is utilized when rendering the terrain mesh object trees in game.
+* You can load/save the created objects as an area!
 
+### Image Manipulation tab:
+![Image Manipulation tab](ImageManipulationtab.png?raw=true "Image Manipulation tab")
+
+A great number of useful image utilities here, enjoy!
 
 ### Credits:
 * The Stride community for all their discussions on discord and their great project contributions. I studied a lot of the existing projects as I was working on the editor. Special thanks and mention to the following members of the community: Simba (@Doprez), alex.mkIII, Nicogo, Kanter, Manio143, Joreyk, Vaso, Tebjan, and Eideren for answering all my questions on discord. Apologies if I forgot anyone!
@@ -65,3 +74,4 @@ Please note the following:
   * Tebjan's ![StrideTransformationInstancing](https://github.com/tebjan/StrideTransformationInstancing) although not used gave me many ideas on how to setup my model instancing as needed.
   * Profan's ![XenkoByteSized](https://github.com/profan/XenkoByteSized) , one of the best projects to start studying stride and its capabilities.
   * Joreyk (IXLLEGACYIXL) and Doprez ![NexStandard/Terrain1](https://github.com/NexStandard/Terrain1) which help a lot with showing how to change vertices on the GPU directly! Take care to get this kind of thing right or you can mess up your computer display!
+  * Tom Groner's shader from ![XenkoFlowingWater](https://github.com/TomGroner/XenkoFlowingWater) is used for water planes.
