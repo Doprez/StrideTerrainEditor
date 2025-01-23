@@ -7,7 +7,8 @@ Stride Community Engine Editor for terrain creation and manipulation, and Textur
 
 ### Getting Started:
 * Download the source and extract somewhere. 
-* The current version of Stride used is 4.1. Make sure you open the project in the Stride Studio under that version.
+* The Stride version used is 4.1. Make sure you open the project in the Stride Studio under that version. Unfortunately,
+  version 4.2 seems to introduce some problems that I wasn't able to solve. So upgrade to 4.2 at your own risk.
 * If you have trouble with the project compiling in Visual Studio (VS), clean the solution and rebuild.
 * If all goes well, open the editor either through Stride Game Studio or from VS.
 * Note the following:
