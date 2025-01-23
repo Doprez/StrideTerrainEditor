@@ -2,7 +2,7 @@
 Id: f951a4b0-84ed-4659-8db9-52d1e7f87acc
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
-Source: !file ../../../../../../StrideTerrain-master/StrideTerrain-master/Resources/Terrain/Models/Leaves.obj
+Source: !file ../../../../../Resources/Vegetation/grass1/Leaves.obj
 Skeleton: null
 PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
 Materials:
