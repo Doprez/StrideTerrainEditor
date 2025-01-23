@@ -65,6 +65,7 @@ A lot of the magic happens here. Note the following:
 * The blended texture is important and is utilized when rendering the terrain mesh object in game (under single texture display mode).
 * The best looking terrain mode is multi blend. The weights are part of the vertices in this case, and they provide a way to create as beautiful a terrain as your imagination will allow.
 * If you dont want to worry about texturing, use the height based shader. Just pick appropriate textures for each of the 10 possible levels.
+ ![Height based shader](Heightbasedshader.png?raw=true "Terrain displayed using Height based shader")
 
 ### Area tab:
 ![Area tab](Areatab.png?raw=true "Area tab")
