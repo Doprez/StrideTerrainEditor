@@ -58,8 +58,10 @@ A lot of the magic happens here. Note the following:
 * Depending on what you are saving (hitting a "Save" button), an appropriate Filename is chosen and the corresponding file is overwritten. So use Save As button to store the file elsewhere (not in the resource folder).
 * All files involved with the current terrain are saved in the Resources/TerrainEditor/ folder. Click the SaveAs buttons to save them elsewhere.
 * The "New" button creates a new terrain mesh with the parameters you see on this tab. Weight and Property textures are reset in this case. Max terrain size is 1024x1024 but you can change that to suit your needs if you want.
-* The blended texture is important, and is utilized when rendering the terrain mesh object in game.
 * There are 3 types of shaders used to display terrain in editor, in game or in tiles mode, chosen via Display Mode: single texture, height based and multi blend.
+* The blended texture is important and is utilized when rendering the terrain mesh object in game (under single texture display mode).
+* The best looking terrain mode is multi blend. The weights are part of the vertices in this case, and they provide a way to create as beautiful a terrain as your imagination will allow.
+* If you dont want to worry about texturing, use the height based shader. Just pick appropriate textures for each of the 10 possible levels.
 
 ### Area tab:
 ![Area tab](Areatab.png?raw=true "Area tab")
@@ -70,7 +72,7 @@ Please note the following:
 * If you open the 'All stride assets loaded' window, you can place any item already created in your stride studio, e.g., any prefabs and models!
 * If you open the 'Show all area objects' window, you can manipulate basic properties of a placed object, like location, scale and rotation! You can have other properties like hue, but it was not implemented.
 * You can load/save the created objects as an area!
-* You can trees, grass and water plane at will and where ever you want.
+* You can add trees, grass and water planes at will and where ever you want.
 * All objects are added at the current center of the selection ball, so if you don't click somewhere in the terrain and just click a place button, they'll go to the (0,0,0) point...
 
 ### Image Manipulation tab:
