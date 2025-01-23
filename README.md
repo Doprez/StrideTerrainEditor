@@ -42,14 +42,14 @@ Any important messages after some terrain operations can be found here.
 ![World tab](Worldtab.png?raw=true "World tab")
 
 You can build a whole world here, with an automated process. First make sure you have generated some unique tiles, then load 
-them. After that you can either generate the world map or load it. The tiles are loaded asynchronously as you move about the world. This part of the editor shows you how you can build a basic Civ type game and a lot of the issues invovled.
+them. After that you can either generate the world map or load it. The tiles are loaded asynchronously as you move about the world. This part of the editor shows you how you can build a basic Civ type game and a lot of the issues involved.
 
 ### Terrain tab:
 ![Terrain tab](Terraintab.png?raw=true "Terrain tab")
 
 A lot of the magic happens here. Note the following:
 * Depending on what you are saving (hitting a "Save" button), an appropriate Filename is chosen and the corresponding file is overwritten. So use Save As button to store the file elsewhere (not in the resource folder).
-* All files involved with the current terrain are saved in the Resources/TerrainEditor/ folder. Click the SaveAs buttons (not shown in the picks here) to save them elsewhere.
+* All files involved with the current terrain are saved in the Resources/TerrainEditor/ folder. Click the SaveAs buttons to save them elsewhere.
 * The "New" button creates a new terrain mesh with the parameters you see on this tab. Weight and Property textures are reset in this case. Max terrain size is 1024x1024 but you can change that to suit your needs if you want.
 * The blended texture is important, and is utilized when rendering the terrain mesh object in game.
 
