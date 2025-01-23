@@ -13,14 +13,15 @@ version 4.2 seems to introduce some problems that I wasn't able to solve (or may
 * Make sure you open the project with the Stride editor and Stride version 4.1. If an item gives an error that it is not found, note the location and fix any broken references.
 * If all goes well, open the editor either through Stride Game Studio or from VS.
 * Note the following:
-  * There are default settings for many parameters of the Editor GUI that can be changed in the file ![TerrainEditorView.cs](https://github.com/Idomeneas1970/Stride-Terrain-Editor/blob/main/StrideTerrainEditor/TerrainEditorView.cs) .
-  * Default camera settings can be changed in the file ![BasicCameraController.cs](https://github.com/Idomeneas1970/Stride-Terrain-Editor/blob/main/StrideTerrainEditor/BasicCameraController.cs) .
+  * There are default settings for many parameters of the Editor GUI that can be changed in the file ![TerrainEditorView.cs](https://github.com/Idomeneas1970/StrideTerrainEditor/blob/master/TerrainEditor/TerrainScripts/TerrainEditorView.cs) .
+  * Default camera settings can be changed in the file ![BasicCameraController.cs](https://github.com/Idomeneas1970/StrideTerrainEditor/blob/master/TerrainEditor/MultiTypeCameraController.cs) .
   * Basic Keyboard Navigation help is displayed on the top-left. Can disable at any time from the "Main Menu".
     ![Key Navigation](Intro2.png?raw=true "Key Navigation")
   * Single clicking anywhere in the terrain mess will move the current terrain point selected (indicated by a red cube) to that point. Only if you have left-shift pressed can you affect the terrain; either its vertices or texture weights.
   * In many places of the GUI you can see a question mark (?). Hover over it to get more info about the GUI item.
   * Single clicking any of the 8 texture images will switch the mode Editor Mode to "Paint Textures".
   * Clicking any "Apply" button will switch automatically to the corresponding mode. For example, clicking the apply button under the Heightmap will switch mode to "Edit Locations".
+  * There are several camera modes to try while in game preview mode. Press F8 to switch between them at will...
   * Certain methods are not used, but I left them there so you can see what gives issues. I spent almost two years on and off trying to figure things out, maybe these will save you some time and trouble.
   
 ### Render Info tab:
