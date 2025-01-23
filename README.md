@@ -66,12 +66,12 @@ A great number of useful image utilities here, enjoy!
 
 ### Credits:
 * The Stride community for all their discussions on discord and their great project contributions. I studied a lot of the existing projects as I was working on the editor. Special thanks and mention to the following members of the community: Simba (@Doprez), alex.mkIII, Nicogo, Kanter, Manio143, Joreyk, Vaso, Tebjan, and Eideren for answering all my questions on discord. Apologies if I forgot anyone!
-* Any .cs file gives credit at the top of the file.
+* Any .cs file gives credit at the top of the file. If I forgot something it was not intentional, just let me know and will add you.
 * Some of these projects deserve special mention:
   * Eideren's ![StrideCommunity.ImGuiDebug](https://github.com/Eideren/StrideCommunity.ImGuiDebug) . It is fully included in the terrain editor and was extended by yours trully to handle images and a message log.
   * johang88's stride terrain projects. Learned a lot from them. In particular, ![TR.Stride](https://github.com/johang88/TR.Stride) and ![StrideTerrain](https://github.com/johang88/StrideTerrain) .
   * Jeske's ![StrideWireframeShader](https://github.com/jeske/StrideWireframeShader)  is utilized in the editor.
   * Tebjan's ![StrideTransformationInstancing](https://github.com/tebjan/StrideTransformationInstancing) although not used gave me many ideas on how to setup my model instancing as needed.
   * Profan's ![XenkoByteSized](https://github.com/profan/XenkoByteSized) , one of the best projects to start studying stride and its capabilities.
-  * Joreyk (IXLLEGACYIXL) and Doprez ![NexStandard/Terrain1](https://github.com/NexStandard/Terrain1) which help a lot with showing how to change vertices on the GPU directly! Take care to get this kind of thing right or you can mess up your computer display!
+  * Joreyk (IXLLEGACYIXL) and Doprez ![NexStandard/Terrain1](https://github.com/NexStandard/Terrain1) which helped a lot with showing how to change vertices on the GPU directly! Take care to get this kind of thing right if you change the code I provided or you can mess up your computer display!
   * Tom Groner's shader from ![XenkoFlowingWater](https://github.com/TomGroner/XenkoFlowingWater) is used for water planes.
