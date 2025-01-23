@@ -51,7 +51,7 @@ Any important messages after some terrain operations can be found here.
 * The tiles are loaded asynchronously as you move about the world.
 * This part of the editor shows you how you can build a basic Civ type game and a lot of the issues involved.
 * Clicking somewhere inside the world map texture will move you to that location (tile) of the world.
-* Tiles Mode: Hold Right mouse button to move the world map texture gump around.
+* Hold the Right mouse button to move the world map texture gump around your screen.
   ![Tiles Mode](Tilesingame.png?raw=true "Tiles in game")
 
 ### Terrain tab:
