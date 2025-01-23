@@ -38,7 +38,7 @@ The values you see here affect all "Generate" type procedures (when you click an
 
 Any important messages after some terrain operations can be found here.
 
-### Terrain tab:
+### World tab:
 ![World tab](Worldtab.png?raw=true "World tab")
 
 You can build a whole world here, with an automated process. First make sure you have generated some unique tiles, then load 
