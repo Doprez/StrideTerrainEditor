@@ -47,7 +47,7 @@ Any important messages after some terrain operations can be found here.
 * You can build a whole world here, with an automated process.
 * First make sure you have generated some unique tiles, then load them. After that you can either generate the world map or load it.
 * When you click 'Generate with rules', the unique tiles are loaded first (if there are none loaded).
-* Any tile in the world is transformation of a unique tile.
+* Any tile in the world is a transformation of a unique tile.
 * The tiles are loaded asynchronously as you move about the world.
 * This part of the editor shows you how you can build a basic Civ type game and a lot of the issues involved.
 * Clicking somewhere inside the world map texture will move you to that location (tile) of the world.
