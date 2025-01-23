@@ -45,8 +45,9 @@ Any important messages after some terrain operations can be found here.
 * First make sure you have generated some unique tiles, then load them. After that you can either generate the world map or load it.
 * The tiles are loaded asynchronously as you move about the world.
 * This part of the editor shows you how you can build a basic Civ type game and a lot of the issues involved.
-* Clicking somewhere inside the world map texture will move you to that location of the world.
-* Tiles Mode ![Tiles Mode](Tilesingame.png?raw=true "Tiles in game")
+* Clicking somewhere inside the world map texture will move you to that location (tile) of the world.
+* Tiles Mode: Hold Right mouse button to move the world map texture gump around.
+  ![Tiles Mode](Tilesingame.png?raw=true "Tiles in game")
 
 ### Terrain tab:
 ![Terrain tab](Terraintab.png?raw=true "Terrain tab")
