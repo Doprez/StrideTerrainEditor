@@ -8,7 +8,7 @@ Stride Community Engine Editor for terrain creation and manipulation, and Textur
 ### Getting Started:
 * Download the source and extract somewhere. 
 * The Stride version used is 4.1. Make sure you open the project in the Stride Studio under that version. Unfortunately,
-version 4.2 seems to introduce some problems that I wasn't able to solve (or maybe it was just me...). So upgrade to 4.2 at your own risk.
+version 4.2 seems to introduce some problems that I wasn't able to solve (or maybe it wisas just me...). So upgrade to 4.2 ight cause issues, in particular with shader automatic compilation (the package Stride.Core.Assets.CompilerApp is not working for me in version 4.2).
 * If you have trouble with the project compiling in Visual Studio (VS), clean the solution and rebuild (a few times).
 * Make sure you open the project with the Stride editor and Stride version 4.1. If an item gives an error that it is not found, note the location and fix any broken references.
 * If all goes well, open the editor either through Stride Game Studio or from VS.
@@ -21,6 +21,7 @@ version 4.2 seems to introduce some problems that I wasn't able to solve (or may
   * In many places of the GUI you can see a question mark (?). Hover over it to get more info about the GUI item.
   * Single clicking any of the 8 texture images will switch the mode Editor Mode to "Paint Textures".
   * Clicking any "Apply" button will switch automatically to the corresponding mode. For example, clicking the apply button under the Heightmap will switch mode to "Edit Locations".
+  * Certain methods are not used, but I left them there so you can see what gives issues. I spent almost two years on and off trying to figure things out, maybe these will save you some time and trouble.
   
 ### Render Info tab:
 ![Render Info tab](RenderInfo.png?raw=true "Render Info tab")
