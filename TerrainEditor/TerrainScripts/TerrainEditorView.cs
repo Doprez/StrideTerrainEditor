@@ -535,8 +535,8 @@ namespace TerrainEditor
                 " unique tile heightmaps for each type of world tiles, e.g., mountains, " +
                 "hills, river masks etc. These can then be edited in the terrain editor and refined to your liking. " +
                 "These tiles form a database from which to pick a tile when generating world tiles. " +
-                "it is worth making these at least 1024x1024, even if it takes a while to generate them..." +
-                " All unique tiles are given specific anmes depending on the tile type and are " +
+                "It is worth making these at least 1024x1024, even if it takes a while to generate them..." +
+                " All unique tiles are given specific names depending on the tile type and are " +
                 "saved in "+ Utility.Resources_WorldTile_Directory+".");
             SameLine();
             if (Button("Load Unique World Tiles"))
