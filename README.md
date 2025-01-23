@@ -41,8 +41,11 @@ Any important messages after some terrain operations can be found here.
 ### World tab:
 ![World tab](Worldtab.png?raw=true "World tab")
 
-You can build a whole world here, with an automated process. First make sure you have generated some unique tiles, then load 
-them. After that you can either generate the world map or load it. The tiles are loaded asynchronously as you move about the world. This part of the editor shows you how you can build a basic Civ type game and a lot of the issues involved.
+* You can build a whole world here, with an automated process.
+* First make sure you have generated some unique tiles, then load them. After that you can either generate the world map or load it.
+* The tiles are loaded asynchronously as you move about the world.
+* This part of the editor shows you how you can build a basic Civ type game and a lot of the issues involved.
+* Clicking somewhere inside the world map texture will move you to that location of the world.
 
 ### Terrain tab:
 ![Terrain tab](Terraintab.png?raw=true "Terrain tab")
