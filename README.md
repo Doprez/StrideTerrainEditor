@@ -33,7 +33,7 @@ Here you will find all sorts of basic options, from camera properties to basic l
 ![Randomization tab](Randomization.png?raw=true "Randomization tab")
 
 * The values you see here affect all "Generate" type procedures (when you click any generate button).
-* You can create some amazing heightmaps if you choose the right values. You have a lot of flexibility to experiment, but for some cases like mountains I've found I think the ebst values and they are set in code by default.
+* You can create some amazing heightmaps if you choose the right values. You have a lot of flexibility to experiment, but for some cases like mountains I've found, I think, the best values and they are set in code by default.
 * You can create general images like Clouds, Smoke, Fire, Voronoi tesselations and Biome maps that can be used in many aspects of making a game, e.g., automatic placement of objects at the centers of the Voronoi hulls. Then use these images in the image manipulation tab to create all sorts of beauties...
 
 ### Messages tab:
