@@ -63,7 +63,9 @@ A lot of the magic happens here. Note the following:
 
 Please note the following:
 * Currently, objects are not instanced. An entity is created for each object in the world. There is a hit on FPS depending on how many are in the frustum, so make sure you set the object visibility distance to what you need.
-* Make sure you change the values of the selection ball radius and strength in the terrain tab for finer/detailed combined texture and placement or trees, roads, and collisions.
+* Make sure you change the values of the selection ball radius and strength in the terrain tab for finer/detailed weight texture and placement of objects.
+* If you open the 'All stride assets loaded' window, you can place any item already created in your stride studio, e.g., any prefabs and models!
+* If you open the 'Show all area objects' window, you can manipulate basic properties of a placed object, like location, scale and rotation! You can have other properties like hue, but it was not implemented.
 * You can load/save the created objects as an area!
 * You can trees, grass and water plane at will and where ever you want.
 * All objects are added at the current center of the selection ball, so if you don't click somewhere in the terrain and just click a place button, they'll go to the (0,0,0) point...
