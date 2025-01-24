@@ -1,7 +1,7 @@
 Stride Community Terrain Editor by Idomeneas
 =====
 
-Stride Community Engine Editor for terrain creation and manipulation, and Texture blending/manipulation. Includes my Perlin noise functions, extensions to the Heightmap, Texture and Color[] classes and much much more.
+Stride Community Terrain Editor for terrain creation and manipulation, and Texture blending/manipulation. Includes my Perlin noise functions, extensions to the Heightmap, Texture and Color[] classes and much much more.
 
 ![Stride Engine Editor](Intro1.png?raw=true "Stride Engine Editor")
 
@@ -17,7 +17,7 @@ version 4.2 seems to introduce some problems that I wasn't able to solve (or may
   * Default camera settings can be changed in the file ![BasicCameraController.cs](https://github.com/Idomeneas1970/StrideTerrainEditor/blob/master/TerrainEditor/MultiTypeCameraController.cs) .
   * Basic Keyboard Navigation help is displayed on the top-left. Can disable at any time from the "Main Menu".
     ![Key Navigation](Intro2.png?raw=true "Key Navigation")
-  * Single clicking anywhere in the terrain mess will move the current terrain point selected (indicated by a red cube) to that point. Only if you have left-shift pressed can you affect the terrain; either its vertices or texture weights.
+  * Single clicking anywhere in the terrain mesh will move the current terrain point selected (indicated by a red cube) to that point. Only if you have left-shift pressed can you affect the terrain; either its vertices or texture weights.
   * In many places of the GUI you can see a question mark (?). Hover over it to get more info about the GUI item.
   * Single clicking any of the 8 texture images will switch the mode Editor Mode to "Paint Textures".
   * Clicking any "Apply" button will switch automatically to the corresponding mode. For example, clicking the apply button under the Heightmap will switch mode to "Edit Locations".
