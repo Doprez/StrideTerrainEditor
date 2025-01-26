@@ -1,4 +1,4 @@
-﻿//by Idomeneas
+//by Idomeneas
 using HeightMapEditor;
 using ImGui;
 using Stride.Core;
@@ -94,6 +94,8 @@ namespace TerrainEditor
         public void BuildTerrainComponent(TerrainComponent tcomp,
              Texture wt1, Texture wt2)
         {
+            Width=tcomp.Width;
+            Height=tcomp.Height;
             HeightmapTexture = ImGuiSystem._loadedTextures[TerrainEditorView.TerrainHeightMapTextureIntPtr];
             HeightMapColors = HeightmapTexture.GetColorData(Game.GraphicsContext);
             SceneSystem.SceneInstance.RootScene.Entities.Remove(
@@ -197,7 +199,8 @@ namespace TerrainEditor
                 }
             HeightfieldColliderShape meshShape = new 
                 HeightfieldColliderShape(
-                Width, Height, Heightfield, HeightScale,
+                (int)(Width*m_QuadSideWidthX), 
+                (int)(Height*m_QuadSideWidthZ), Heightfield, HeightScale,
                 HeightRange.X, HeightRange.Y, false);
             StaticColliderComponent comp = new StaticColliderComponent();
             comp.ColliderShape = meshShape;
