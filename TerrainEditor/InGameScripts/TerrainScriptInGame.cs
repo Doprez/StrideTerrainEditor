@@ -187,6 +187,7 @@ namespace TerrainEditor
             Heightmap.GenerateCollider(TerrainModelEntity);*/
 
         }
+              
         public void GenerateCollider()
         {
             TerrainModelEntity.RemoveAll<StaticColliderComponent>();
@@ -199,8 +200,7 @@ namespace TerrainEditor
                 }
             HeightfieldColliderShape meshShape = new 
                 HeightfieldColliderShape(
-                (int)(Width*m_QuadSideWidthX), 
-                (int)(Height*m_QuadSideWidthZ), Heightfield, HeightScale,
+                Width, Height, Heightfield, HeightScale,
                 HeightRange.X, HeightRange.Y, false);
             StaticColliderComponent comp = new StaticColliderComponent();
             comp.ColliderShape = meshShape;
