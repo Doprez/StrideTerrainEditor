@@ -59,32 +59,6 @@ namespace TerrainEditor
         public override void Start()
         {
             if (!Enabled) return;
-   /*         HeightmapTexture = HeightmapTexture.DeCompress("HeightMap.sdtex", GraphicsDevice,
-                Game.GraphicsContext);
-            var model = new Model();
-            isGrayscale = HeightmapTexture.CheckGrayScale(Game.GraphicsContext);
-            HeightScale = isGrayscale ? 255 : 1;
-            Heightmap = HeightmapTexture.ToHeightMap(
-                Game.GraphicsContext, HeightRange,HeightScale,false);
-            var mesh = Heightmap.ToMesh(GraphicsDevice, m_QuadSideWidthX,
-                m_QuadSideWidthZ, TEXTURE_REPEAT,TerrainLOD, WorldLocation);
-            var materialDescription = new MaterialDescriptor
-            {
-                Attributes = {
-                        DiffuseModel = new MaterialDiffuseLambertModelFeature(),
-                        Diffuse = new MaterialDiffuseMapFeature(new ComputeTextureColor { Texture = BlendedTexture})
-                    }
-            };
-            var material = Material.New(GraphicsDevice, materialDescription);
-            model.Meshes.Add(mesh);
-            model.Materials.Add(material);
-            TerrainModelEntity = new Entity();
-            SceneSystem.SceneInstance.RootScene.Entities.Add(TerrainModelEntity);
-            ModelComponent modcomp = TerrainModelEntity.GetOrCreate<ModelComponent>();
-            modcomp.Model = model;
-            TerrainModelEntity.Name = "TerrainEntityTerrainScriptInGame";
-            //disable the model component
-            modcomp.Enabled = Enabled;*/
         }
 
         /// <summary>
@@ -114,9 +88,11 @@ namespace TerrainEditor
                 tcomp.HeightRange.X, tcomp.HeightRange.Y);// tcomp.Heightmap.HeightRange;
             HeightScale = 1;
             bool isGrayscale = HeightmapTexture.CheckGrayScale(Game.GraphicsContext);
-
+            meshShapevertices = new List<Vector3>();
+            meshShapeindices = new List<int>();
             List<VertexTypePosTexNormColor> VertexCPUBuffer = GenerateVertices(wt1, wt2);
             var indices = GenerateIndices();
+            meshShapeindices = indices.ToList();
             var indexBuffer = Stride.Graphics.Buffer.Index.New(GraphicsDevice, indices, GraphicsResourceUsage.Default);
             var vertexBuffer = Stride.Graphics.Buffer.New(
                 GraphicsDevice, VertexCPUBuffer.ToArray(),
@@ -158,7 +134,10 @@ namespace TerrainEditor
             {
                 model.Materials.Add(tcomp.MaterialBlendMulti);
             }
-            //  model.Materials.Add(material);
+            if(meshShape!=null)meshShape.Dispose();
+            meshShape = new //StaticMeshColliderShape(model,Services);
+              StaticMeshColliderShape(meshShapevertices, meshShapeindices);
+                //  model.Materials.Add(material);
             GenerateCollider();
             /*
             Heightmap =
@@ -187,26 +166,31 @@ namespace TerrainEditor
             Heightmap.GenerateCollider(TerrainModelEntity);*/
 
         }
-              
+        ICollection<Vector3> meshShapevertices;
+        ICollection<int> meshShapeindices;
+        StaticMeshColliderShape meshShape;
         public void GenerateCollider()
         {
             TerrainModelEntity.RemoveAll<StaticColliderComponent>();
             int size = Width * Height;
-            UnmanagedArray<float> Heightfield = new UnmanagedArray<float>(size);
-            for (int i = 0; i < Width; i++)
-                for (int j = 0; j < Height; j++)
-                {
-                    Heightfield[i+j*Width] = GetHeightAt(i, j);
-                }
-            HeightfieldColliderShape meshShape = new 
-                HeightfieldColliderShape(
-                Width, Height, Heightfield, HeightScale,
-                HeightRange.X, HeightRange.Y, false);
+            //the heightfield collider doesnt work if the quad lengths are not 1...
+            //need to use mesh based collider
+            /*    UnmanagedArray<float> Heightfield = new UnmanagedArray<float>(size);
+                for (int i = 0; i < Width; i++)
+                    for (int j = 0; j < Height; j++)
+                    {
+                        Heightfield[i+j*Width] = GetHeightAt(i, j);
+                    }
+                HeightfieldColliderShape meshShape = new 
+                    HeightfieldColliderShape(
+                    Width, Height, Heightfield, HeightScale,
+                    HeightRange.X, HeightRange.Y, false);*/
+
             StaticColliderComponent comp = new StaticColliderComponent();
             comp.ColliderShape = meshShape;
-            meshShape.LocalOffset = new Vector3(Width * m_QuadSideWidthX / 2,
-                -0.01f, Height * m_QuadSideWidthZ / 2);
-            meshShape.UpdateLocalTransformations();
+          //  meshShape.LocalOffset = new Vector3(Width * m_QuadSideWidthX / 2,
+         //       -0.01f, Height * m_QuadSideWidthZ / 2);
+        //    meshShape.UpdateLocalTransformations();
             TerrainModelEntity.Add(comp);
         }
 
@@ -232,6 +216,7 @@ namespace TerrainEditor
             Vector3 pos = new Vector3(minBounds.X, 0, minBounds.Z);
             byte R = 149, G = 135, B = 118;
             VertexTypePosTexNormColor[] m_vertices = new VertexTypePosTexNormColor[m_vertexCount];
+            Vector3 []vertices = new Vector3 [m_vertexCount];
             for (z = 0; z < numVertsZ; z++)
             {
                 pos.X = minBounds.X;
@@ -240,6 +225,7 @@ namespace TerrainEditor
                     index = z * numVertsX + x;
                     m_vertices[index].Position = new Vector3(
                         pos.X, GetHeightAt(x, z), pos.Z);
+                    vertices[index] = m_vertices[index].Position;
                     if (TEXTURE_REPEAT > 0)//whole terrain has the texture repeatedly
                     {
                         m_vertices[index].TexCoord.X = m_QuadSideWidthX * TEXTURE_REPEAT * x / (float)numVertsX * TerrainLOD;
@@ -261,7 +247,7 @@ namespace TerrainEditor
             }
             Array.Clear(Wt1ColorValues);
             Array.Clear(Wt2ColorValues);
-
+            meshShapevertices=vertices.ToList();
             return m_vertices.ToList();
         }
 
