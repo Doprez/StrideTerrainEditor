@@ -1,4 +1,4 @@
-﻿//by Idomeneas
+//by Idomeneas
 using HeightMapEditor;
 using ImGui;
 using Stride.Core;
@@ -172,7 +172,9 @@ namespace TerrainEditor
             resultsOutput = new List<HitResult>();
             //    if (Entity.GetParent() == null) throw new ArgumentException("ThirdPersonCamera should be placed as a child entity of its target entity!");
 
-            Midpointxy = new Vector2(tcomp.Width / 2, tcomp.Height / 2);
+            Midpointxy = new Vector2(
+                tcomp.m_QuadSideWidthX* tcomp.Width / 2,
+                tcomp.m_QuadSideWidthZ * tcomp.Height / 2);
 
             Entity a = Game.Services.GetService<SceneSystem>().SceneInstance.
                 FirstOrDefault(a => a.Name == "CubeInstancing");
@@ -214,6 +216,7 @@ namespace TerrainEditor
                 MultiCamera.FarClipPlane = 1000.0f;
                 Mannequin.Entity.Transform.Position = Vector3.Zero;
                 Character.Entity.Transform.Position = Vector3.Zero;
+                Midpointxy = new Vector2( tcomp.m_QuadSideWidthX * tcomp.Width / 2,tcomp.m_QuadSideWidthZ * tcomp.Height / 2);
                 float ht = tcomp.GetCPUHeightAt((int)Midpointxy.X, (int)Midpointxy.Y);
                 //  Character.Entity.Transform.Position=
                 //    new Vector3(Midpointxy.X, ht+150, Midpointxy.Y);//.Entity.Transform.Position = Vector3.Zero;
@@ -233,6 +236,7 @@ namespace TerrainEditor
                     MultiCamera.Entity.Transform.Position = new Vector3(0, 0, 5);
                     MultiCamera.Entity.Transform.Rotation =
                         new Quaternion(0, 0, 0, 1);
+                    Midpointxy = new Vector2(tcomp.m_QuadSideWidthX * tcomp.Width / 2, tcomp.m_QuadSideWidthZ * tcomp.Height / 2);
                     float ht = tcomp.GetCPUHeightAt((int)Midpointxy.X, (int)Midpointxy.Y);
                     Vector3 pos = new Vector3(Midpointxy.X, ht + 5, Midpointxy.Y);
                     Mannequin.Entity.Transform.Position = Vector3.Zero;
