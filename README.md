@@ -23,7 +23,7 @@ version 4.2 seems to introduce some problems that I wasn't able to solve (or may
   * Clicking any "Apply" button will switch automatically to the corresponding mode. For example, clicking the apply button under the Heightmap will switch mode to "Edit Locations".
   * There are several camera modes to try while in game preview mode. Press F8 to switch between them at will...
   * Certain methods are not used, but I left them there so you can see what gives issues. I spent almost two years on and off trying to figure things out, maybe these will save you some time and trouble.
-  * Note that the heightfield for the collider has problems if you do not use Quad Length 1 (on both sides).
+  * Note that the heightfield for the terrain collider has problems if you do not use Quad Wide/High Length 1.
   
 ### Render Info tab:
 ![Render Info tab](RenderInfo.png?raw=true "Render Info tab")
