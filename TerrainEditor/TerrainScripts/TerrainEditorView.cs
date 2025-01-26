@@ -1,4 +1,4 @@
-﻿//by Idomeneas
+//by Idomeneas
 using HeightMapEditor;
 using ImGui;
 using ImGuiNET;
@@ -3235,7 +3235,13 @@ color = blend(groundTextureSample.rgb, slopeTextureSample.rgb * weight);
             {
                 Mincutoff = 0.0f; Maxcutoff = 1.0f;
             }
-            
+            tcomp.Width = m_Width;
+            tcomp.Height = m_Height;
+            tcomp.m_QuadSideWidthX = quadlenx;
+            tcomp.m_QuadSideWidthZ = quadlenz;
+            tcomp.TEXTURE_REPEAT = texrepeat;
+
+
             #region methods
             Texture texture =new Texture();
             if (GenMethod == 0)// == "Greyscale (All Channels Same Value)")
