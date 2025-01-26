@@ -204,7 +204,8 @@ namespace TerrainEditor
                 HeightRange.X, HeightRange.Y, false);
             StaticColliderComponent comp = new StaticColliderComponent();
             comp.ColliderShape = meshShape;
-            meshShape.LocalOffset = new Vector3(Width / 2, -0.01f, Height / 2);
+            meshShape.LocalOffset = new Vector3(Width * m_QuadSideWidthX / 2,
+                -0.01f, Height * m_QuadSideWidthZ / 2);
             meshShape.UpdateLocalTransformations();
             TerrainModelEntity.Add(comp);
         }
