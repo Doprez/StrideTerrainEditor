@@ -1,4 +1,4 @@
-//by Idomeneas
+﻿//by Idomeneas
 using HeightMapEditor;
 using Stride.Core.Mathematics;
 using Stride.Engine;

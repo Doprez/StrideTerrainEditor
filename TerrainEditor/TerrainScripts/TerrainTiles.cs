@@ -1,4 +1,4 @@
-//by Idomeneas
+﻿//by Idomeneas
 using HeightMapEditor;
 using ImGui;
 using Microsoft.CodeAnalysis.CodeFixes;

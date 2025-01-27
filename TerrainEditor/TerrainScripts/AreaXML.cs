@@ -1,4 +1,4 @@
-//by Idomeneas
+﻿//by Idomeneas
 using ImGui;
 using HeightMapEditor;
 using Stride.Core;
