@@ -1,4 +1,4 @@
-//by Idomeneas. Credit given to the authors of other methods otherwise.
+﻿//by Idomeneas. Credit given to the authors of other methods otherwise.
 
 using Stride.Core.Mathematics;
 using Stride.Physics;

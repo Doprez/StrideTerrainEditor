@@ -1,4 +1,4 @@
-//by Idomeneas
+﻿//by Idomeneas
 using Stride.Core;
 using Stride.Core.Mathematics;
 using Stride.Engine;
