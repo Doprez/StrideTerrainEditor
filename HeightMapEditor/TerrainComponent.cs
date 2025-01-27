@@ -1,4 +1,4 @@
-﻿//by Idomeneas
+//by Idomeneas
 using Stride.Core;
 using Stride.Core.Mathematics;
 using Stride.Engine;
@@ -122,12 +122,13 @@ namespace HeightMapEditor
         {
             TerrainEntity.Enable<ActivableEntityComponent>(visible);
         }
-        public bool IntersectsRay(Ray ray, out Vector3 point)
+        public bool IntersectsRay(Ray ray, out Vector3 point, out Int2 index)
         {
             BoundingSphere sphere = new BoundingSphere(Vector3.Zero, 1.0f);
             int x, z;
             float mindist = 1000000000.0f;
             point = Vector3.Zero;
+            index=Int2.Zero;
             bool foundit = false;
             for (z = 0; z < Height; z++)
             {
@@ -143,6 +144,7 @@ namespace HeightMapEditor
                         {
                             mindist = dist;
                             point = sphere.Center;// pt;
+                            index=new Int2(x, z);
                             foundit = true;
                         }
                         //return true;//gets the first hit, replace out Vector3 pt with out point and comment the above
@@ -173,6 +175,19 @@ namespace HeightMapEditor
         public bool IsValidCoordinate(int x, int y)
           => x >= 0 && x < Width && y >= 0 && y < Height;
 
+        public Vector3 GetCPUPosAt(Int2 pos)
+        {
+            return GetCPUPosAt(pos.X, pos.Y);
+        }
+        public Vector3 GetCPUPosAt(int i, int j)
+        {
+            if (!IsValidCoordinate(i, j))
+            {
+                return Vector3.Zero;//no contribution for this point
+            }
+            return VertexCPUBuffer[j * Width + i].Position;
+        }
+        
         public float GetCPUHeightAt(Int2 pos)
         {
             return GetCPUHeightAt(pos.X, pos.Y);
@@ -488,13 +503,17 @@ namespace HeightMapEditor
                         pos.X, GetHeightAt(x,z), pos.Z);
                     if (TEXTURE_REPEAT > 0)//whole terrain has the texture repeatedly
                     {
-                        m_vertices[index].TexCoord.X = m_QuadSideWidthX * TEXTURE_REPEAT * x / (float)numVertsX * TerrainLOD;
-                        m_vertices[index].TexCoord.Y = m_QuadSideWidthZ * TEXTURE_REPEAT * (z * 1.0f) / (float)numVertsZ * TerrainLOD;
+                        m_vertices[index].TexCoord.X = //m_QuadSideWidthX * 
+                            TEXTURE_REPEAT * x / (float)numVertsX * TerrainLOD;
+                        m_vertices[index].TexCoord.Y =// m_QuadSideWidthZ * 
+                            TEXTURE_REPEAT * (z * 1.0f) / (float)numVertsZ * TerrainLOD;
                     }
                     else //comp.TEXTURE_REPEAT == 0//make each quad have the texture
                     {
-                        m_vertices[index].TexCoord.X = m_QuadSideWidthX * x * TerrainLOD;
-                        m_vertices[index].TexCoord.Y = m_QuadSideWidthZ * z * TerrainLOD;
+                        m_vertices[index].TexCoord.X = //m_QuadSideWidthX *
+                                                       x * TerrainLOD;
+                        m_vertices[index].TexCoord.Y =// m_QuadSideWidthZ * 
+                            z * TerrainLOD;
                     }
                     m_vertices[index].Normal = GetNormal(x, z);
                     m_vertices[index].Tangent = GetTangent(x, z);
