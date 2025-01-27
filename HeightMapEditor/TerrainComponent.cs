@@ -3,7 +3,6 @@ using Stride.Core;
 using Stride.Core.Mathematics;
 using Stride.Engine;
 using Stride.Graphics;
-using Stride.Importer.Assimp;
 using Stride.Rendering;
 using TerrainEditor;
 
@@ -233,8 +232,8 @@ namespace HeightMapEditor
         }
         public void SetVertexColor(Int2 pos, Vector4 col, Vector4 wt1, Vector4 wt2)
         {
-            SetVertexColor(pos, col.AsNumericVec4().ToStrideColor(), 
-                wt1.AsNumericVec4().ToStrideColor(), wt2.AsNumericVec4().ToStrideColor());
+            SetVertexColor(pos, col.AsNumericVec4(), 
+                wt1.AsNumericVec4(), wt2.AsNumericVec4());
         }            
         public void SetVertexColor(Int2 pos, Color col, Color wt1, Color wt2)
         {

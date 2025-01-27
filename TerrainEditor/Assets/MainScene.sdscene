@@ -79,7 +79,6 @@ Hierarchy:
                         GrassModel1: f951a4b0-84ed-4659-8db9-52d1e7f87acc:Models/Grass/grass1/Leaves
                         GrassModel2: 0021d6b6-f12d-4f0a-9ba0-f811062fbcdb:Models/Grass/grass2/fern_02_4k
                         GrassModel3: 22cd2f73-df96-4008-9a3b-15c757a5e276:Models/Grass/grass3/didelta_spinosa_4k
-                        GraphicsCommandList: null
         -   Entity:
                 Id: 27737b67-d6b6-499e-bd21-541ca788907b
                 Name: Crosshair256

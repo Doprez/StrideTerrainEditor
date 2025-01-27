@@ -1,5 +1,4 @@
 ﻿//by Idomeneas
-using Stride.Importer.Assimp;
 using System.Drawing;
 using System.Runtime.CompilerServices;
 using Color = Stride.Core.Mathematics.Color;

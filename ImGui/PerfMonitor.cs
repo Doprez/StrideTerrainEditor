@@ -406,57 +406,57 @@ namespace ImGui
                     {
                         // Consume events even if we are paused as the queue doesn't
                         // empty itself and will overflow given enough time.
-                        var events = Profiler.GetEvents(eType, false);
-                        // if there aren't any buffered events and we are paused, skip loop
-                        if (Depth(eType) == 0 && isPaused)
-                            continue;
-                        foreach (var perfEvent in events)
-                        {
-                            if (perfEvent.Type == ProfilingMessageType.Begin)
-                            {
-                                if (isPaused)
-                                    continue;
-                                TemporaryStrideSample txs = new TemporaryStrideSample
-                                {
-                                    Start = ComputeAccurateTimespan(perfEvent.TimeStamp.Seconds, eType),
-                                    Type = eType,
-                                    Depth = Depth(eType)++
-                                };
-                                _bufferedEvents.Add((perfEvent.Key, txs));
-                            }
-                            else if (perfEvent.Type == ProfilingMessageType.End)
-                            {
-                                int? index = null;
-                                for (int i = _bufferedEvents.Count - 1; i >= 0; i--)
-                                {
-                                    var v = _bufferedEvents[i];
-                                    if (v.key == perfEvent.Key)
-                                    {
-                                        // The closest begin doesn't own this end
-                                        // We probably paused and didn't quite reach depth 0
-                                        if (v.sample.Duration != null)
-                                            break;
-                                        index = i;
-                                        break;
-                                    }
-                                }
-
-                                // Process buffered messages to completion
-                                if (index == null)
-                                    continue;
-
-                                Depth(eType)--;
-                                var temp = _bufferedEvents[index.Value];
-                                temp.sample.Duration = ComputeAccurateTimespan(perfEvent.ElapsedTime.Seconds, eType);
-                                _bufferedEvents[index.Value] = temp;
-
-                                // All events started and ended
-                                if (Depth(eType) == 0)
-                                    PushStrideFrame(eType);
-                            }
-                            else
-                                continue;
-                        }
+                        //var events = Profiler.GetEvents(eType, false);
+                        //// if there aren't any buffered events and we are paused, skip loop
+                        //if (Depth(eType) == 0 && isPaused)
+                        //    continue;
+                        //foreach (var perfEvent in events)
+                        //{
+                        //    if (perfEvent.Type == ProfilingMessageType.Begin)
+                        //    {
+                        //        if (isPaused)
+                        //            continue;
+                        //        TemporaryStrideSample txs = new TemporaryStrideSample
+                        //        {
+                        //            Start = ComputeAccurateTimespan(perfEvent.TimeStamp.Seconds, eType),
+                        //            Type = eType,
+                        //            Depth = Depth(eType)++
+                        //        };
+                        //        _bufferedEvents.Add((perfEvent.Key, txs));
+                        //    }
+                        //    else if (perfEvent.Type == ProfilingMessageType.End)
+                        //    {
+                        //        int? index = null;
+                        //        for (int i = _bufferedEvents.Count - 1; i >= 0; i--)
+                        //        {
+                        //            var v = _bufferedEvents[i];
+                        //            if (v.key == perfEvent.Key)
+                        //            {
+                        //                // The closest begin doesn't own this end
+                        //                // We probably paused and didn't quite reach depth 0
+                        //                if (v.sample.Duration != null)
+                        //                    break;
+                        //                index = i;
+                        //                break;
+                        //            }
+                        //        }
+                        //
+                        //        // Process buffered messages to completion
+                        //        if (index == null)
+                        //            continue;
+                        //
+                        //        Depth(eType)--;
+                        //        var temp = _bufferedEvents[index.Value];
+                        //        temp.sample.Duration = ComputeAccurateTimespan(perfEvent.ElapsedTime.Seconds, eType);
+                        //        _bufferedEvents[index.Value] = temp;
+                        //
+                        //        // All events started and ended
+                        //        if (Depth(eType) == 0)
+                        //            PushStrideFrame(eType);
+                        //    }
+                        //    else
+                        //        continue;
+                        //}
                     }
                 }
 

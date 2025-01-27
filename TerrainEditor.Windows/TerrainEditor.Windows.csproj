@@ -1,8 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net6.0-windows</TargetFramework>
+	  <TargetFrameworks>net8.0-windows</TargetFrameworks>
     <ApplicationIcon>Resources\Icon.ico</ApplicationIcon>
-    <OutputType>WinExe</OutputType>
+    <OutputType>exe</OutputType>
     <Platforms>AnyCPU</Platforms>
     <RootNamespace>TerrainEditor.Windows</RootNamespace>
     <OutputPath>..\Bin\Windows\$(Configuration)\</OutputPath>

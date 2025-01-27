@@ -1,7 +1,6 @@
 ﻿//by Idomeneas
 using HeightMapEditor;
 using ImGui;
-using Microsoft.CodeAnalysis.CodeFixes;
 using Stride.Core.Mathematics;
 using Stride.Engine;
 using Stride.Graphics;
@@ -12,7 +11,6 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Color = Stride.Core.Mathematics.Color;
-using TextureExtensions= HeightMapEditor.TextureExtensions;
 
 namespace TerrainEditor
 {

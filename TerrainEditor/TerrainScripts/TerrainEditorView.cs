@@ -8,7 +8,6 @@ using Stride.Extensions;
 using Stride.Games;
 using Stride.Graphics;
 using Stride.Graphics.GeometricPrimitives;
-using Stride.Importer.Assimp;
 using Stride.Rendering;
 using Stride.Rendering.Materials;
 using System;
@@ -2983,8 +2982,8 @@ namespace TerrainEditor
             }
             if (update)
             {
-                tcomp.SetVertexColor(pos, col.ToStrideColor(), 
-                    wt1.ToStrideColor(), wt2.ToStrideColor());
+                tcomp.SetVertexColor(pos, col, 
+                    wt1, wt2);
             }
 
             #endregion ball
