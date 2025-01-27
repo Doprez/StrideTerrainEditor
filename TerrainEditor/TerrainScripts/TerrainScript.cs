@@ -1,4 +1,4 @@
-﻿//by Idomeneas
+//by Idomeneas
 using HeightMapEditor;
 using ImGui;
 using SinglePassWireframe;
@@ -269,8 +269,8 @@ namespace TerrainEditor
             return ray;
         }
 
-        public static void FlattenLocations(TerrainComponent tcomp, 
-            Vector3 WorldPosition)
+        public static void FlattenLocations(TerrainComponent tcomp,
+            ClickResult clickResult)
         {
             int Width = tcomp.Width,
                 Height = tcomp.Height;
@@ -278,26 +278,23 @@ namespace TerrainEditor
             int i, j, index;
             float radius = TerrainEditorView.Radius,// PerlinMenuCode.GetRadius(),
                   pow = TerrainEditorView.BallSelectionPower;// PerlinMenuCode.GetPower();
-            int minx = (int)Math.Max(0, WorldPosition.X - radius),
-                minz = (int)Math.Max(0, WorldPosition.Z - radius),
-                maxx = (int)Math.Min(Width, WorldPosition.X + radius),
-                maxz = (int)Math.Min(Height, WorldPosition.Z + radius);
+            int minx = (int)Math.Max(0, clickResult.index.X - 2 * radius),
+                minz = (int)Math.Max(0, clickResult.index.Y - 2 * radius),
+                maxx = (int)Math.Min(tcomp.Width, clickResult.index.X + 2 * radius),
+                maxz = (int)Math.Min(tcomp.Height, clickResult.index.Y + 2 * radius);
             for (j = minz; j < maxz; j++)
             {
                 for (i = minx; i < maxx; i++)
                 {
                     index = (Width * j) + i;
                     Int2 pos = new Int2(i, j);
-                    float ht = tcomp.//GetHeightAt(i,j);//
-                             GetCPUHeightAt(pos);
-                 //   float ht1 = tcomp.GetHeightAt(i, j);
+                    Vector3 vpos = tcomp.GetCPUPosAt(pos);
                     SelectedPoints[index] = false;
-                    if (Vector3.Distance(WorldPosition,//.XZ(),
-                        new Vector3(tcomp.m_QuadSideWidthX * i, ht,
-                        tcomp.m_QuadSideWidthZ * j)) <= radius)
+                    if (Vector3.Distance(clickResult.WorldPosition, vpos) 
+                        <= radius)
                     {
                         SelectedPoints[index] = true;
-                        tcomp.SetVertexHeight(pos, WorldPosition.Y);
+                        tcomp.SetVertexHeight(pos, clickResult.WorldPosition.Y);
                     }
                 }
             }
@@ -315,21 +312,21 @@ namespace TerrainEditor
             int i, j, index;
             float radius = TerrainEditorView.Radius,// PerlinMenuCode.GetRadius(),
                   pow = TerrainEditorView.BallSelectionPower;// PerlinMenuCode.GetPower();
-            int minx = (int)Math.Max(0, clickResult.WorldPosition.X - radius),
-                minz = (int)Math.Max(0, clickResult.WorldPosition.Z - radius),
-                maxx = (int)Math.Min(Width, clickResult.WorldPosition.X + radius),
-                maxz = (int)Math.Min(Height, clickResult.WorldPosition.Z + radius);
+            int minx = (int)Math.Max(0, clickResult.index.X - 2 * radius),
+                minz = (int)Math.Max(0, clickResult.index.Y - 2 * radius),
+                maxx = (int)Math.Min(Width, clickResult.index.X + 2 * radius),
+                maxz = (int)Math.Min(Height, clickResult.index.Y + 2 * radius);
             for (j = minz; j < maxz; j++)
             {
                 for (i = minx; i < maxx; i++)
                 {
                     index = (Width * j) + i;
                     Int2 pos = new Int2(i, j);
-                    float ht = tcomp.GetCPUHeightAt(pos);
+                    Vector3 vpos = tcomp.GetCPUPosAt(pos);
+                    float ht = vpos.Y;// tcomp.GetCPUHeightAt(pos);
                     SelectedPoints[index] = false;
-                    if (Vector3.Distance(clickResult.WorldPosition,
-                        new Vector3(tcomp.m_QuadSideWidthX * i, ht,
-                        tcomp.m_QuadSideWidthZ * j)) <= radius
+                    if (Vector3.Distance(clickResult.WorldPosition,vpos
+                        ) <= radius
                         && Utility.Runif() < TerrainEditorView.BallSelectionStrength)
                     {
                         SelectedPoints[index] = true;
@@ -431,23 +428,21 @@ namespace TerrainEditor
                 else
                     ColorValues = TerrainEditorView.TerrainWeights2.GetColorData(
                         GraphicsContext);
-                int minx = (int)Math.Max(0, clickResult.WorldPosition.X - radius),
-                    minz = (int)Math.Max(0, clickResult.WorldPosition.Z - radius),
-                    maxx = (int)Math.Min(tcomp.Width, clickResult.WorldPosition.X + radius),
-                    maxz = (int)Math.Min(tcomp.Height, clickResult.WorldPosition.Z + radius);
+                int minx = (int)Math.Max(0, clickResult.index.X - 2 * radius),
+                    minz = (int)Math.Max(0, clickResult.index.Y - 2 * radius),
+                    maxx = (int)Math.Min(tcomp.Width, clickResult.index.X + 2 * radius),
+                    maxz = (int)Math.Min(tcomp.Height, clickResult.index.Y + 2 * radius);
                 for (i = minx; i < maxx; i++)
                 {
                     for (j = minz; j < maxz; j++)
                     {
-                        // index = (tcomp.Width * j) + i;
-                        index_in_tex = (tcomp.Width * //(tcomp.Height-j)
-                            j) + i;
-                        float height = tcomp.GetCPUHeightAt(i, j);
+                        index_in_tex = (tcomp.Width * j) + i;
+                        Int2 pos=new Int2(i, j);   
+                        Vector3 vpos = tcomp.GetCPUPosAt(pos);
                         SelectedPoints[index_in_tex] = false;
-                        if (Vector3.Distance(clickResult.WorldPosition,
-                            new Vector3(tcomp.m_QuadSideWidthX * i, height,
-                            tcomp.m_QuadSideWidthZ * j)) <= radius
-                            && Utility.RandomFloat() < TerrainEditorView.BallSelectionStrength)
+                        if (Vector3.Distance(clickResult.WorldPosition, vpos
+                            ) <= radius
+                                && Utility.RandomFloat() < TerrainEditorView.BallSelectionStrength)
                         {
                             SelectedPoints[index_in_tex] = true;
                             if (TerrainEditorView.Selectedtexture == 0 ||
@@ -511,22 +506,23 @@ namespace TerrainEditor
                 else
                     ColorValues = TerrainEditorView.TerrainWeights2.GetColorData(
                         GraphicsContext);
-                int minx = (int)Math.Max(0, clickResult.WorldPosition.X - radius),
-                    minz = (int)Math.Max(0, clickResult.WorldPosition.Z - radius),
-                    maxx = (int)Math.Min(tcomp.Width, clickResult.WorldPosition.X + radius),
-                    maxz = (int)Math.Min(tcomp.Height, clickResult.WorldPosition.Z + radius);
+                int minx = (int)Math.Max(0, clickResult.index.X - 2 * radius),
+                    minz = (int)Math.Max(0, clickResult.index.Y - 2 * radius),
+                    maxx = (int)Math.Min(tcomp.Width, clickResult.index.X + 2 * radius),
+                    maxz = (int)Math.Min(tcomp.Height, clickResult.index.Y + 2 * radius);
                 for (i = minx; i < maxx; i++)
                 {
                     for (j = minz; j < maxz; j++)
                     {
                         //index = (tcomp.Width * j) + i;
-                        index_in_tex = (tcomp.Width * j//(tcomp.Height - j)
+                        index_in_tex = (tcomp.Width * j
+                            //(tcomp.Height - j)
                             ) + i;
-                        float height = tcomp.GetCPUHeightAt(i, j);
+                        Int2 pos = new Int2(i, j);
+                        Vector3 vpos = tcomp.GetCPUPosAt(pos);
                         SelectedPoints[index_in_tex] = false;
-                        if (Vector3.Distance(clickResult.WorldPosition,
-                            new Vector3(tcomp.m_QuadSideWidthX * i, height,
-                            tcomp.m_QuadSideWidthZ * j)) <= radius
+                        if (Vector3.Distance(clickResult.WorldPosition, vpos) 
+                            <= radius 
                             && Utility.RandomFloat() < TerrainEditorView.BallSelectionStrength)
                         {
                             SelectedPoints[index_in_tex] = true;
@@ -588,10 +584,10 @@ namespace TerrainEditor
                 else
                     ColorValues = TerrainEditorView.TerrainWeights2.GetColorData(
                         GraphicsContext);
-                int minx = (int)Math.Max(0, clickResult.WorldPosition.X - radius),
-                    minz = (int)Math.Max(0, clickResult.WorldPosition.Z - radius),
-                    maxx = (int)Math.Min(tcomp.Width, clickResult.WorldPosition.X + radius),
-                    maxz = (int)Math.Min(tcomp.Height, clickResult.WorldPosition.Z + radius);
+                int minx = (int)Math.Max(0, clickResult.index.X - 2 * radius),
+                    minz = (int)Math.Max(0, clickResult.index.Y - 2 * radius),
+                    maxx = (int)Math.Min(tcomp.Width, clickResult.index.X + 2 * radius),
+                    maxz = (int)Math.Min(tcomp.Height, clickResult.index.Y + 2 * radius);
                 for (i = minx; i < maxx; i++)
                 {
                     for (j = minz; j < maxz; j++)
@@ -599,12 +595,11 @@ namespace TerrainEditor
                         //index = (tcomp.Width * j) + i;
                         index_in_tex = (tcomp.Width * j//(tcomp.Height - j)
                             ) + i;
-                        float height = tcomp.GetCPUHeightAt(i, j);
+                        Int2 pos = new Int2(i, j);
+                        Vector3 vpos = tcomp.GetCPUPosAt(pos);
                         SelectedPoints[index_in_tex] = false;
-                        if (Vector3.Distance(clickResult.WorldPosition,
-                            new Vector3(tcomp.m_QuadSideWidthX * i, height,
-                            tcomp.m_QuadSideWidthZ * j)) <= radius
-                            && Utility.RandomFloat() < TerrainEditorView.BallSelectionStrength)
+                        if (Vector3.Distance(clickResult.WorldPosition, vpos
+                            ) <= radius && Utility.RandomFloat() < TerrainEditorView.BallSelectionStrength)
                         {
                             SelectedPoints[index_in_tex] = true;
                             Int2 size = new Int2(tcomp.Width, tcomp.Height); 
@@ -692,22 +687,21 @@ namespace TerrainEditor
             int i, j, index;
             float radius = TerrainEditorView.Radius,// PerlinMenuCode.GetRadius(),
                   pow = TerrainEditorView.BallSelectionPower;// PerlinMenuCode.GetPower();
-            int minx = (int)Math.Max(0, clickResult.WorldPosition.X - radius),
-                minz = (int)Math.Max(0, clickResult.WorldPosition.Z - radius),
-                maxx = (int)Math.Min(Width, clickResult.WorldPosition.X + radius),
-                maxz = (int)Math.Min(Height, clickResult.WorldPosition.Z + radius);
+            int minx = (int)Math.Max(0, clickResult.index.X - 2 * radius),
+                minz = (int)Math.Max(0, clickResult.index.Y - 2 * radius),
+                maxx = (int)Math.Min(tcomp.Width, clickResult.index.X + 2 * radius),
+                maxz = (int)Math.Min(tcomp.Height, clickResult.index.Y + 2 * radius);
             for (j = minz; j < maxz; j++)
             {
                 for (i = minx; i < maxx; i++)
                 {
                     index = (Width * j) + i;
                     Int2 pos = new Int2(i, j);
-                    float ht = tcomp.GetCPUHeightAt(pos);
+                    Vector3 vpos = tcomp.GetCPUPosAt(pos);
+                    float ht = vpos.Y;// tcomp.GetCPUHeightAt(pos);
                     SelectedPoints[index] = false;
-                    if (Vector3.Distance(clickResult.WorldPosition,
-                        new Vector3(tcomp.m_QuadSideWidthX * i, ht,
-                        tcomp.m_QuadSideWidthZ * j)) <= radius
-                        && Utility.Runif() < TerrainEditorView.BallSelectionStrength)
+                    if (Vector3.Distance(clickResult.WorldPosition, vpos
+                        ) <= radius && Utility.Runif() < TerrainEditorView.BallSelectionStrength)
                     {
                         SelectedPoints[index] = true;
                         Vector4 col = tcomp.GetCPUColorAt(i, j).ToVector4();
