@@ -2118,6 +2118,17 @@ namespace TerrainEditor
                 }
                 else
                 {
+                    foreach (IAreaObject obj in AreaXML.GetAreaObjects())
+                    {
+                        for (int i = obj.NumInstances - 1; i >= 0; i--)
+                        {
+                            AreaXML.RemoveModel(obj.ObjectName, tcomp, i);
+                        }
+                    }
+                    AreaHandleModels.ResetPoints();
+                    TerrainEditorView.CurrentTreeInstances = 0;
+                    TerrainEditorView.CurrentGrassInstances = 0;
+
                     //SwitchtoGeneralTab = 2;//messages
                     FilenameType = "HeightMap";
                     SwitchtoSpecificEditorTab = 0;//terrain
