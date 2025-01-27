@@ -678,6 +678,9 @@ namespace TerrainEditor
                     {
                         DebugText.Print("Point Clicked: " + lastClickResult.WorldPosition.ToString("F1"),
                           new Int2(10, ypos));//, timeOnScreen: TimeSpan.FromSeconds(3));
+                        ypos += 15;
+                        DebugText.Print("Point Index: " + lastClickResult.index.ToString(),
+                          new Int2(10, ypos));//, timeOnScreen: TimeSpan.FromSeconds(3));
                     }
                     else
                     {
@@ -818,7 +821,7 @@ namespace TerrainEditor
                             Input.IsKeyPressed(Keys.F))
                         {
                             TerrainScript.FlattenLocations(tcomp,
-                                lastClickResult.WorldPosition);
+                                lastClickResult);
                             return;
                         }
                         if (Input.IsKeyPressed(Keys.M) && Input.IsKeyDown(Keys.RightCtrl))
@@ -1010,9 +1013,10 @@ namespace TerrainEditor
                                 Ray ray = GetPickRay(pointerEvent.Position, new Vector2(
                                     Game.GraphicsContext.CommandList.Viewport.Width,
                                     Game.GraphicsContext.CommandList.Viewport.Height), MultiCamera);
-                                if (tcomp.IntersectsRay(ray,out Vector3 point))
+                                if (tcomp.IntersectsRay(ray,out Vector3 point, out Int2 index))
                                 {
                                     lastClickResult.WorldPosition = point;
+                                    lastClickResult.index = index;
                                     lastClickResult.HitResult.Succeeded = true;
                                     ClickEffect.Entities.FirstOrDefault(e => e.Name == "CubeInstancing");
                                     this.SpawnPrefabInstance(ClickEffect, null, 1.2f, Matrix.RotationQuaternion(Quaternion.BetweenDirections(Vector3.UnitY, lastClickResult.HitResult.Normal)) * Matrix.Translation(lastClickResult.WorldPosition));
@@ -1044,9 +1048,10 @@ namespace TerrainEditor
                                 Ray ray = GetPickRay(pointerEvent.Position, new Vector2(
                                     Game.GraphicsContext.CommandList.Viewport.Width,
                                     Game.GraphicsContext.CommandList.Viewport.Height), MultiCamera);
-                                if (tcomp.IntersectsRay(ray, out Vector3 point))
+                                if (tcomp.IntersectsRay(ray, out Vector3 point,out Int2 index))
                                 {
                                     lastClickResult.WorldPosition = point;
+                                    lastClickResult.index = index;
                                     lastClickResult.HitResult.Succeeded = true;
                                     this.SpawnPrefabInstance(ClickEffect, null, 1.2f, Matrix.RotationQuaternion(Quaternion.BetweenDirections(Vector3.UnitY, lastClickResult.HitResult.Normal)) * Matrix.Translation(lastClickResult.WorldPosition));
                                     ClickBallModelEntity.Transform.Position = lastClickResult.WorldPosition;
@@ -1076,8 +1081,8 @@ namespace TerrainEditor
                                 AreaHandleModels.ProcessGrass(tcomp, clickedtype, lastClickResult);
                             else if (TerrainEditorView.TerrainEditModeSelected == 3)//add trees
                                 AreaHandleModels.ProcessTrees(tcomp, clickedtype, lastClickResult);
-                            else if (TerrainEditorView.TerrainEditModeSelected == 4)//add water
-                                AreaHandleModels.ProcessWater(tcomp, clickedtype, lastClickResult);
+                          //  else if (TerrainEditorView.TerrainEditModeSelected == 4)//add water
+                          //      AreaHandleModels.ProcessWater(tcomp, clickedtype, lastClickResult);
                         }
                         // Rotate with mouse
                         if ((MMBDown||RMBDown) && !Input.IsKeyDown(Keys.LeftShift))
