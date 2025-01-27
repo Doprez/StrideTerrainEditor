@@ -11,8 +11,8 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="ImGui.NET" Version="1.89.9.4" />
-    <PackageReference Include="Stride.Core" Version="4.1.0.1948" />
-    <PackageReference Include="Stride.Engine" Version="4.1.0.1948" />
+    <PackageReference Include="Stride.Core" Version="4.2.0.2293" />
+    <PackageReference Include="Stride.Engine" Version="4.2.0.2293" />
   </ItemGroup>
 
 </Project>
