@@ -1,4 +1,4 @@
-﻿//by Idomeneas
+//by Idomeneas
 using HeightMapEditor;
 using ImGui;
 using Microsoft.CodeAnalysis.CodeFixes;
@@ -831,13 +831,17 @@ namespace TerrainEditor
                         pos.X, GetHeightAt(x, z), pos.Z);
                     if (tcomp.TEXTURE_REPEAT > 0)//whole terrain has the texture repeatedly
                     {
-                        m_vertices[index].TexCoord.X = tcomp.m_QuadSideWidthX * tcomp.TEXTURE_REPEAT * x / (float)numVertsX * TerrainLOD;
-                        m_vertices[index].TexCoord.Y = tcomp.m_QuadSideWidthZ * tcomp.TEXTURE_REPEAT * (z * 1.0f) / (float)numVertsZ * TerrainLOD;
+                        m_vertices[index].TexCoord.X =// tcomp.m_QuadSideWidthX *
+                            tcomp.TEXTURE_REPEAT * x / (float)numVertsX * TerrainLOD;
+                        m_vertices[index].TexCoord.Y = //tcomp.m_QuadSideWidthZ *
+                            tcomp.TEXTURE_REPEAT * (z * 1.0f) / (float)numVertsZ * TerrainLOD;
                     }
                     else //comp.TEXTURE_REPEAT == 0//make each quad have the texture
                     {
-                        m_vertices[index].TexCoord.X = tcomp.m_QuadSideWidthX * x * TerrainLOD;
-                        m_vertices[index].TexCoord.Y = tcomp.m_QuadSideWidthZ * z * TerrainLOD;
+                        m_vertices[index].TexCoord.X = //tcomp.m_QuadSideWidthX *
+                            x * TerrainLOD;
+                        m_vertices[index].TexCoord.Y = //tcomp.m_QuadSideWidthZ * 
+                            z * TerrainLOD;
                     }
                     m_vertices[index].Normal = GetNormal(x, z);
                     m_vertices[index].Tangent = GetTangent(x, z);
@@ -996,13 +1000,17 @@ namespace TerrainEditor
                         pos.X, GetHeightAt(x, z), pos.Z);
                     if (tcomp.TEXTURE_REPEAT > 0)//whole terrain has the texture repeatedly
                     {
-                        m_vertices[index].TexCoord.X = tcomp.m_QuadSideWidthX * tcomp.TEXTURE_REPEAT * x / (float)numVertsX * TerrainLOD;
-                        m_vertices[index].TexCoord.Y = tcomp.m_QuadSideWidthZ * tcomp.TEXTURE_REPEAT * (z * 1.0f) / (float)numVertsZ * TerrainLOD;
+                        m_vertices[index].TexCoord.X = //tcomp.m_QuadSideWidthX * 
+                            tcomp.TEXTURE_REPEAT * x / (float)numVertsX * TerrainLOD;
+                        m_vertices[index].TexCoord.Y = //tcomp.m_QuadSideWidthZ *
+                            tcomp.TEXTURE_REPEAT * (z * 1.0f) / (float)numVertsZ * TerrainLOD;
                     }
                     else //comp.TEXTURE_REPEAT == 0//make each quad have the texture
                     {
-                        m_vertices[index].TexCoord.X = tcomp.m_QuadSideWidthX * x * TerrainLOD;
-                        m_vertices[index].TexCoord.Y = tcomp.m_QuadSideWidthZ * z * TerrainLOD;
+                        m_vertices[index].TexCoord.X = //tcomp.m_QuadSideWidthX * 
+                            x * TerrainLOD;
+                        m_vertices[index].TexCoord.Y =// tcomp.m_QuadSideWidthZ * 
+                            z * TerrainLOD;
                     }
                     m_vertices[index].Normal = GetNormal(x, z);
                     m_vertices[index].Tangent = GetTangent(x, z);
