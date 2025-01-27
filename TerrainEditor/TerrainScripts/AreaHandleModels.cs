@@ -1,4 +1,4 @@
-﻿//by Idomeneas
+//by Idomeneas
 using HeightMapEditor;
 using Stride.Core.Mathematics;
 using Stride.Engine;
@@ -90,20 +90,19 @@ namespace TerrainEditor
                 float radius = TerrainEditorView.Radius;
                 int index,i, j,trees2add = TerrainEditorView.MaxTreeInstances -
                     TerrainEditorView.CurrentTreeInstances;
-                int minx = (int)Math.Max(0, clickResult.WorldPosition.X - radius),
-                    minz = (int)Math.Max(0, clickResult.WorldPosition.Z - radius),
-                    maxx = (int)Math.Min(tcomp.Width, clickResult.WorldPosition.X + radius),
-                    maxz = (int)Math.Min(tcomp.Height, clickResult.WorldPosition.Z + radius);
+                int minx = (int)Math.Max(0, clickResult.index.X - 2 * radius),
+                    minz = (int)Math.Max(0, clickResult.index.Y - 2 * radius),
+                    maxx = (int)Math.Min(tcomp.Width, clickResult.index.X + 2 * radius),
+                    maxz = (int)Math.Min(tcomp.Height, clickResult.index.Y + 2 * radius);
                 for (i = minx; i < maxx; i++)
                 {
                     for (j = minz; j < maxz; j++)
                     {
                         index = (tcomp.Width * j) + i;
-                        float height = tcomp.GetCPUHeightAt(i, j);/// 3.1f;
-                        Vector3 Point = new Vector3(tcomp.m_QuadSideWidthX * i, height,
-                            tcomp.m_QuadSideWidthZ * j);
-                        if (Vector3.Distance(clickResult.WorldPosition, Point
-                            ) <= radius
+                        Int2 pos = new Int2(i, j);
+                        Vector3 vpos = tcomp.GetCPUPosAt(pos);
+                        if (Vector3.Distance(clickResult.WorldPosition, vpos)
+                            <= radius
                             && Utility.Runif() < TerrainEditorView.BallSelectionStrength)
                         {
                             float randx = Utility.Runif(clickResult.WorldPosition.X -
@@ -116,14 +115,14 @@ namespace TerrainEditor
                                 bool valid = true;
                                 for (int l = 0; l < Points.Count; l++)
                                 {
-                                    if (Vector3.Distance(Point, Points[l]) <=
+                                    if (Vector3.Distance(vpos, Points[l]) <=
                                         TerrainEditorView.Repulsion_Distance)
                                     {
                                         valid = false;
                                         break;
                                     }
                                 }
-                                if (valid) Points.Add(Point); else return;
+                                if (valid) Points.Add(vpos); else return;
                             }
                             int type = 0;
                             if (TerrainEditorView.TreeEditorPlaceRandom)
@@ -131,7 +130,7 @@ namespace TerrainEditor
                             else
                                 type = TerrainEditorView.TerrainTreeModeSelected;
                             TerrainEditorView.CurrentTreeInstances++;
-                            AreaXML.AddVegetationModel(tcomp.AllTreeModels[type], Point.AsNumericVec3(), tcomp);
+                            AreaXML.AddVegetationModel(tcomp.AllTreeModels[type], vpos.AsNumericVec3(), tcomp);
                             trees2add--;
                         }
                     }
@@ -193,20 +192,19 @@ namespace TerrainEditor
                 float radius = TerrainEditorView.Radius;
                 int index, i, j, grass2add = TerrainEditorView.MaxGrassInstances -
                     TerrainEditorView.CurrentGrassInstances;
-                int minx = (int)Math.Max(0, clickResult.WorldPosition.X - radius),
-                    minz = (int)Math.Max(0, clickResult.WorldPosition.Z - radius),
-                    maxx = (int)Math.Min(tcomp.Width, clickResult.WorldPosition.X + radius),
-                    maxz = (int)Math.Min(tcomp.Height, clickResult.WorldPosition.Z + radius);
+                int minx = (int)Math.Max(0, clickResult.index.X - 2 * radius),
+                    minz = (int)Math.Max(0, clickResult.index.Y - 2 * radius),
+                    maxx = (int)Math.Min(tcomp.Width, clickResult.index.X + 2 * radius),
+                    maxz = (int)Math.Min(tcomp.Height, clickResult.index.Y + 2 * radius);
                 for (i = minx; i < maxx; i++)
                 {
                     for (j = minz; j < maxz; j++)
                     {
                         index = (tcomp.Width * j) + i;
-                        float height = tcomp.GetCPUHeightAt(i, j);/// 3.1f;
-                        Vector3 Point = new Vector3(tcomp.m_QuadSideWidthX * i, height,
-                            tcomp.m_QuadSideWidthZ * j);
-                        if (Vector3.Distance(clickResult.WorldPosition, Point
-                            ) <= radius
+                        Int2 pos = new Int2(i, j);
+                        Vector3 vpos = tcomp.GetCPUPosAt(pos);
+                        if (Vector3.Distance(clickResult.WorldPosition, vpos)
+                            <= radius
                             && Utility.Runif() < TerrainEditorView.BallSelectionStrength)
                         {
                             float randx = Utility.Runif(clickResult.WorldPosition.X -
@@ -219,14 +217,14 @@ namespace TerrainEditor
                                 bool valid = true;
                                 for (int l = 0; l < Points.Count; l++)
                                 {
-                                    if (Vector3.Distance(Point, Points[l]) <=
+                                    if (Vector3.Distance(vpos, Points[l]) <=
                                         TerrainEditorView.Repulsion_Distance)
                                     {
                                         valid = false;
                                         break;
                                     }
                                 }
-                                if (valid) Points.Add(Point); else return;
+                                if (valid) Points.Add(vpos); else return;
                             }
                             int type = 0;
                             if (TerrainEditorView.GrassEditorPlaceRandom)
@@ -234,8 +232,8 @@ namespace TerrainEditor
                             else
                                 type = TerrainEditorView.TerrainGrassModeSelected;
                             TerrainEditorView.CurrentGrassInstances++;
-                            AreaXML.AddVegetationModel(tcomp.AllGrassModels[type], 
-                                Point.AsNumericVec3(), tcomp);
+                            AreaXML.AddVegetationModel(tcomp.AllGrassModels[type],
+                                vpos.AsNumericVec3(), tcomp);
                             grass2add--;
                         }
                     }
