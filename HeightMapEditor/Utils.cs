@@ -1,4 +1,4 @@
-﻿// Copyright (c) .NET Foundation and Contributors (https://dotnetfoundation.org/ & https://stride3d.net) and Silicon Studio Corp. (https://www.siliconstudio.co.jp)
+// Copyright (c) .NET Foundation and Contributors (https://dotnetfoundation.org/ & https://stride3d.net) and Silicon Studio Corp. (https://www.siliconstudio.co.jp)
 // Distributed under the MIT license. See the LICENSE.md file in the project root for more information.
 //Changes by Idomeneas
 
@@ -59,6 +59,11 @@ namespace HeightMapEditor
         /// The HitResult received from the physics simulation
         /// </summary>
         public HitResult HitResult;
+
+        /// <summary>
+        /// index into the mess, (i,j) point
+        /// </summary>
+        public Int2 index;
     }
     public static class Utils
     {
@@ -252,6 +257,7 @@ namespace HeightMapEditor
 
             clickResult.ClickedEntity = null;
             clickResult.WorldPosition = Vector3.Zero;
+            clickResult.index = Int2.Zero;
             clickResult.Type = ClickType.Empty;
             clickResult.HitResult = new HitResult();
 
