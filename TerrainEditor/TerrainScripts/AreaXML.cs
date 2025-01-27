@@ -1,4 +1,4 @@
-﻿//by Idomeneas
+//by Idomeneas
 using ImGui;
 using HeightMapEditor;
 using Stride.Core;
@@ -637,10 +637,18 @@ namespace TerrainEditor
             //have the assets in game studio and load from there
             TerrainHeightMap = Utility.GetText(terrain["TerrainHeightMap"], null);
             TerrainBlendedTexture = Utility.GetText(terrain["TerrainBlendedTexture"], null);
+
+            tcomp.m_QuadSideWidthX=float.Parse(
+                Utility.GetText(terrain["m_QuadSideWidthX"],"32"));
+            TerrainEditorView.quadlenx = tcomp.m_QuadSideWidthX;
+            tcomp.m_QuadSideWidthZ = float.Parse(Utility.GetText
+                (terrain["m_QuadSideWidthZ"],"32"));
+            TerrainEditorView.quadlenz = tcomp.m_QuadSideWidthZ;
+
             //load textures for heightmap and terrain mesh
-        //    texture = tcomp.Content.Load<Texture>(TerrainBlendedTexture);
-         //   TerrainEditorView.TerrainBlendedTexture = texture;
-         //   TerrainEditorView.TerrainBlendedTextureIntPtr = ImGuiSystem.BindTexture(TerrainEditorView.TerrainBlendedTexture);
+            //    texture = tcomp.Content.Load<Texture>(TerrainBlendedTexture);
+            //   TerrainEditorView.TerrainBlendedTexture = texture;
+            //   TerrainEditorView.TerrainBlendedTextureIntPtr = ImGuiSystem.BindTexture(TerrainEditorView.TerrainBlendedTexture);
 
             //read all objects in the scene
             foreach (XmlElement obj in root.GetElementsByTagName("Object"))
@@ -857,6 +865,16 @@ namespace TerrainEditor
                 xml.WriteString(TerrainBlendedTexture);
                 xml.WriteEndElement();
 
+                xml.WriteStartElement("m_QuadSideWidthX");
+                string st = tcomp.m_QuadSideWidthX.ToString();
+                xml.WriteString(st);
+                xml.WriteEndElement();
+
+                xml.WriteStartElement("m_QuadSideWidthZ");
+                st = tcomp.m_QuadSideWidthZ.ToString();
+                xml.WriteString(st);
+                xml.WriteEndElement();
+                
                 xml.WriteEndElement();
 
                 //save all objects
