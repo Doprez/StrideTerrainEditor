@@ -228,13 +228,17 @@ namespace TerrainEditor
                     vertices[index] = m_vertices[index].Position;
                     if (TEXTURE_REPEAT > 0)//whole terrain has the texture repeatedly
                     {
-                        m_vertices[index].TexCoord.X = m_QuadSideWidthX * TEXTURE_REPEAT * x / (float)numVertsX * TerrainLOD;
-                        m_vertices[index].TexCoord.Y = m_QuadSideWidthZ * TEXTURE_REPEAT * (z * 1.0f) / (float)numVertsZ * TerrainLOD;
+                        m_vertices[index].TexCoord.X =// m_QuadSideWidthX * 
+                            TEXTURE_REPEAT * x / (float)numVertsX * TerrainLOD;
+                        m_vertices[index].TexCoord.Y =// m_QuadSideWidthZ * 
+                            TEXTURE_REPEAT * (z * 1.0f) / (float)numVertsZ * TerrainLOD;
                     }
                     else //if (comp.TEXTURE_REPEAT == 0)//make each quad have the texture
                     {
-                        m_vertices[index].TexCoord.X = m_QuadSideWidthX * x * TerrainLOD;
-                        m_vertices[index].TexCoord.Y = m_QuadSideWidthZ * z * TerrainLOD;
+                        m_vertices[index].TexCoord.X =// m_QuadSideWidthX * 
+                            x * TerrainLOD;
+                        m_vertices[index].TexCoord.Y = //m_QuadSideWidthZ *
+                            z * TerrainLOD;
                     }
                     m_vertices[index].Normal = GetNormal(x, z);
                     m_vertices[index].Tangent = GetTangent(x, z);
