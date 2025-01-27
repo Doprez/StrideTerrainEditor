@@ -1,4 +1,4 @@
-﻿//by Idomeneas. Credit given to the authors of other methods otherwise.
+//by Idomeneas. Credit given to the authors of other methods otherwise.
 
 using Stride.Core.Mathematics;
 using Stride.Physics;
@@ -320,13 +320,17 @@ namespace HeightMapEditor
                     TerrainPoints[count] = m_vertices[count].Position;
                     if (TEXTURE_REPEAT > 0)//whole terrain has the texture repeatedly
                     {
-                        m_vertices[count].TexCoord.X = m_QuadSideWidthX * TEXTURE_REPEAT * x / (float)numVertsX * Tesselation;
-                        m_vertices[count].TexCoord.Y = m_QuadSideWidthZ * TEXTURE_REPEAT * (z * 1.0f) / (float)numVertsZ * Tesselation;
+                        m_vertices[count].TexCoord.X = //m_QuadSideWidthX * 
+                            TEXTURE_REPEAT * x / (float)numVertsX * Tesselation;
+                        m_vertices[count].TexCoord.Y =// m_QuadSideWidthZ * 
+                            TEXTURE_REPEAT * (z * 1.0f) / (float)numVertsZ * Tesselation;
                     }
                     else //if (comp.TEXTURE_REPEAT == 0)//make each quad have the texture
                     {
-                        m_vertices[count].TexCoord.X = m_QuadSideWidthX * x * Tesselation;
-                        m_vertices[count].TexCoord.Y = m_QuadSideWidthZ * z * Tesselation;
+                        m_vertices[count].TexCoord.X =// m_QuadSideWidthX * 
+                            x * Tesselation;
+                        m_vertices[count].TexCoord.Y =// m_QuadSideWidthZ * 
+                            z * Tesselation;
                     }
                     m_vertices[count].Normal = ColorValues.GetNormal(
                         texture,x, z, range);
