@@ -1,7 +1,132 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<AreaObjects Count="0" AreaName="Area0001">
+<AreaObjects Count="4" AreaName="Area0001">
 	<Terrain>
 		<TerrainHeightMap>InGameTerrain/HeightMap</TerrainHeightMap>
 		<TerrainBlendedTexture>InGameTerrain/BlendedTexture</TerrainBlendedTexture>
+		<m_QuadSideWidthX>1</m_QuadSideWidthX>
+		<m_QuadSideWidthZ>1</m_QuadSideWidthZ>
 	</Terrain>
+	<Object>
+		<ObjectName>WaterPlane</ObjectName>
+		<ObjType>Water</ObjType>
+		<Instances Count="1">
+			<Instance>
+				<EntityName>WaterModelComponent</EntityName>
+				<PlaneDimensions>256,256</PlaneDimensions>
+				<Position>887, -31.85791, 410</Position>
+				<Rotation>0, 0, 0</Rotation>
+				<Scale>1, 1, 1</Scale>
+				<Hue>1, 1, 1, 1</Hue>
+			</Instance>
+		</Instances>
+	</Object>
+	<Object>
+		<ObjectName>Models/TreeGreenPine/Tree2</ObjectName>
+		<ObjType>Tree</ObjType>
+		<Instances Count="4">
+			<Instance>
+				<EntityName>Vegetation, Entity Added by Script</EntityName>
+				<Position>872.8516, 1.5578842, 388.37894</Position>
+				<Rotation>0, 0, 0</Rotation>
+				<Scale>1, 1, 1</Scale>
+				<Hue>1, 1, 1, 1</Hue>
+			</Instance>
+			<Instance>
+				<EntityName>Vegetation, Entity Added by Script</EntityName>
+				<Position>868.8477, 1.0235062, 405.39554</Position>
+				<Rotation>0, 0, 0</Rotation>
+				<Scale>1, 1, 1</Scale>
+				<Hue>1, 1, 1, 1</Hue>
+			</Instance>
+			<Instance>
+				<EntityName>Vegetation, Entity Added by Script</EntityName>
+				<Position>873.8526, -7.4305725, 407.3975</Position>
+				<Rotation>0, 0, 0</Rotation>
+				<Scale>1, 1, 1</Scale>
+				<Hue>1, 1, 1, 1</Hue>
+			</Instance>
+			<Instance>
+				<EntityName>Vegetation, Entity Added by Script</EntityName>
+				<Position>874.8536, -0.6803131, 432.4219</Position>
+				<Rotation>0, 0, 0</Rotation>
+				<Scale>1, 1, 1</Scale>
+				<Hue>1, 1, 1, 1</Hue>
+			</Instance>
+		</Instances>
+	</Object>
+	<Object>
+		<ObjectName>Models/Tree2/tree</ObjectName>
+		<ObjType>Tree</ObjType>
+		<Instances Count="6">
+			<Instance>
+				<EntityName>Vegetation, Entity Added by Script</EntityName>
+				<Position>866.84576, 5.9396286, 395.38577</Position>
+				<Rotation>0, 0, 0</Rotation>
+				<Scale>1, 1, 1</Scale>
+				<Hue>1, 1, 1, 1</Hue>
+			</Instance>
+			<Instance>
+				<EntityName>Vegetation, Entity Added by Script</EntityName>
+				<Position>878.8575, -8.956894, 387.37796</Position>
+				<Rotation>0, 0, 0</Rotation>
+				<Scale>1, 1, 1</Scale>
+				<Hue>1, 1, 1, 1</Hue>
+			</Instance>
+			<Instance>
+				<EntityName>Vegetation, Entity Added by Script</EntityName>
+				<Position>878.8575, -8.303917, 372.3633</Position>
+				<Rotation>0, 0, 0</Rotation>
+				<Scale>1, 1, 1</Scale>
+				<Hue>1, 1, 1, 1</Hue>
+			</Instance>
+			<Instance>
+				<EntityName>Vegetation, Entity Added by Script</EntityName>
+				<Position>874.8536, -5.064789, 420.4102</Position>
+				<Rotation>0, 0, 0</Rotation>
+				<Scale>1, 1, 1</Scale>
+				<Hue>1, 1, 1, 1</Hue>
+			</Instance>
+			<Instance>
+				<EntityName>Vegetation, Entity Added by Script</EntityName>
+				<Position>870.8497, 9.7567215, 433.42288</Position>
+				<Rotation>0, 0, 0</Rotation>
+				<Scale>1, 1, 1</Scale>
+				<Hue>1, 1, 1, 1</Hue>
+			</Instance>
+			<Instance>
+				<EntityName>Vegetation, Entity Added by Script</EntityName>
+				<Position>865.8448, 15.94664, 422.41214</Position>
+				<Rotation>0, 0, 0</Rotation>
+				<Scale>1, 1, 1</Scale>
+				<Hue>1, 1, 1, 1</Hue>
+			</Instance>
+		</Instances>
+	</Object>
+	<Object>
+		<ObjectName>Models/TreeLL/Tree_LL</ObjectName>
+		<ObjType>Tree</ObjType>
+		<Instances Count="3">
+			<Instance>
+				<EntityName>Vegetation, Entity Added by Script</EntityName>
+				<Position>876.8555, -10.625145, 397.38773</Position>
+				<Rotation>0, 0, 0</Rotation>
+				<Scale>1, 1, 1</Scale>
+				<Hue>1, 1, 1, 1</Hue>
+			</Instance>
+			<Instance>
+				<EntityName>Vegetation, Entity Added by Script</EntityName>
+				<Position>872.8516, 0.33818054, 446.43558</Position>
+				<Rotation>0, 0, 0</Rotation>
+				<Scale>1, 1, 1</Scale>
+				<Hue>1, 1, 1, 1</Hue>
+			</Instance>
+			<Instance>
+				<EntityName>Vegetation, Entity Added by Script</EntityName>
+				<Position>874.8536, -7.812294, 454.4434</Position>
+				<Rotation>0, 0, 0</Rotation>
+				<Scale>1, 1, 1</Scale>
+				<Hue>1, 1, 1, 1</Hue>
+			</Instance>
+		</Instances>
+	</Object>
 </AreaObjects>
